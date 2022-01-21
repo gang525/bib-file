@@ -4,7 +4,7 @@ This is the reference BibTeX bibliographic database for the MDO Lab. Please obse
 
 * I do not provide write access to this file (in part because the software I use to handle the bib file (BibDesk) is picky and changes that would normally work might break it, and there are other reasons).
 
-* This file is a clean version of the bib file I keep in BibDesk. I use a Python script that removes BibDesk custom fields and notes.
+* This file is a clean version of the bib file I keep in BibDesk. I use bibtool to remove BibDesk custom fields and notes.
 
 * If you have corrections to mdolab.bib, message or email them to me <jrram@umich.edu>. If you have a lot of changes, please make clear which entries are new and which entries are edits to existing ones. Please make sure that you do not send me duplicates.
 
@@ -14,7 +14,7 @@ This is the reference BibTeX bibliographic database for the MDO Lab. Please obse
 
 * Please use this file as your starting point. Do not create bib entries from scratch if they are in this file, and please follow the conventions in this file when you create new entries. Unless you have a very good reason, please use the same convention for the keys (first author last name + year + unique character `a`,`b`,...)
 
-* Do not be lazy and rely on bibtex entries directly downloaded from the web, or automatically generated entries. Make it consistent with current mdolab.bib (although not all are currently consistent; work in progress).
+* Do not be lazy and rely on bibtex entries directly downloaded from the web, or automatically generated entries. Make it consistent with current mdolab.bib (although not all are currently consistent; work in progress!).
 
 * Do not use the "URL" field, only the "doi" one, which will already be hyperlinked to the source.
 

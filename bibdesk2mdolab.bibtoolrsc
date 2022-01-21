@@ -1,0 +1,50 @@
+# bibtool -i mdolab-bibdesk.bib -o mdolab.bib -r bibdesk2mdolab.bibtoolrsc
+
+# general
+parse.exit.on.error = on
+preserve.key.case = on
+
+# define new entries
+new.entry.type = {url}
+new.entry.type = {webpage}
+new.entry.type = {software}
+new.entry.type = {patent}
+new.entry.type = {electronic}
+new.entry.type = {periodical}
+
+# delete BibDesk fields
+delete.field = {annote}
+delete.field = {local-url}
+delete.field = {bdsk-file-1}
+delete.field = {bdsk-file-2}
+delete.field = {bdsk-file-3}
+delete.field = {bdsk-file-4}
+delete.field = {bdsk-file-5}
+delete.field = {bdsk-url-1}
+delete.field = {bdsk-url-2}
+delete.field = {bdsk-url-3}
+delete.field = {bdsk-url-4}
+delete.field = {bdsk-url-5}
+delete.field = {date-added}
+delete.field = {date-modified}
+
+# sorting
+sort = on
+# this sets the sort order of fields within each entry
+sort.order{* = author # title}
+
+# formatting
+print.line.length = 1000
+print.use.tab = off
+print.indent = 4
+print.align.key = 0
+
+# updating keys
+# key.generation = on
+# key.format = {
+#     {%1n(author)#}
+#     {%4d(year)#}
+# }
+# key.base = lower
+# key.number.separator = {}
+# fmt.et.al = {}
