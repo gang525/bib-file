@@ -291,6 +291,22 @@
     abstract    = {In the past, aerostructural optimizations have used a single or small number of analyses in cruise to roughly estimate mission performance. This is accurate enough for long missions where the majority of time is spent near a single flight condition in cruise. But for regional and narrowbody aircraft, the fuel burn in climb is a substantial portion of the block fuel burn---traditional methods do not account for this. This work introduces a new approach: mission-based optimization. This approach gives the optimizer detailed information throughout the mission so the optimizer can optimally trade off performance at different flight conditions. The mission is computed by numerically integrating states such as fuel burn across this mission, satisfying force balance at each integration point, and using a physics-based turbofan model.}
 }
 
+@Article{Adler2022b,
+    author      = {Adler, Eytan J. and Brelje, Benjamin J. and Martins, Joaquim R. R. A.},
+    title       = {Thermal Management System Optimization for a Parallel Hybrid Aircraft Considering Mission Fuel Burn},
+    article-number={243},
+    doi         = {10.3390/aerospace9050243},
+    issn        = {2226-4310},
+    journal     = {Aerospace},
+    keywords    = {OpenMDAO, OpenConcept},
+    month       = {April},
+    number      = {5},
+    volume      = {9},
+    year        = {2022},
+    abstract    = {Electrified aircraft propulsion enables new aircraft designs with fewer emissions. One challenge of electrified architectures is handling the electrical components&rsquo; waste heat. This is because batteries and other electrical components are sensitive to high temperatures and accumulate heat within their structure. In this work, we investigate using a thermoacoustic refrigerator to cool the battery of a parallel hybrid single-aisle commercial transport aircraft. This thermoacoustic refrigeration system is powered by waste heat from the turbofan engine core, whereas a conventional refrigerator consumes electricity from the battery or shaft power offtakes. Compared to a conventional vapor cycle refrigerator, the thermoacoustic refrigeration system results in greater mission fuel burn because of pressure losses attributable to the extraction of heat from the turbofan to drive the thermoacoustic refrigerator. Heat exchangers with very low pressure losses may render
+                  the thermoacoustic refrigeration system beneficial compared to conventional refrigeration in certain use cases, such as low-altitude missions.}
+}
+
 @webpage{ADtools,
     title       = {Tools for Automatic Differentiation},
     keywords    = {AD},
@@ -28506,12 +28522,23 @@
     year        = {2021}
 }
 
+@Article{Martins2021c,
+    author      = {Joaquim R. R. A. Martins},
+    title       = {Computer Algorithms Make For Best Design},
+    journal     = {Aviation Week \& Space Technology},
+    month       = {October},
+    url         = {https://aviationweek.com/aerospace/emerging-technologies/opinion-computer-algorithms-make-best-design},
+    year        = {2021}
+}
+
 @Article{Martins2022a,
     author      = {Joaquim R. R. A. Martins},
     title       = {Aerodynamic Design Optimization: Challenges and Perspectives},
-    journal     = {Computers and Fluids},
+    doi         = {10.1016/j.compfluid.2022.105391},
+    journal     = {Computers \& Fluids},
     keywords    = {AFRL, NASA},
-    note        = {(In press)},
+    pages       = {105391},
+    volume      = {239},
     year        = {2022},
     abstract    = {Antony Jameson pioneered CFD-based aerodynamic design optimization in the late 1980s. In addition to developing the fundamental theory, Jameson implemented that theory in codes that were practical enough to be used in industry. As a result of Jameson's seminal efforts, a research community has been established in aerodynamic design optimization. This research area has experienced sustained improvements in CFD solvers, mesh deformation, sensitivity computation, and optimization tools. We review recent developments for each of these components and present open-source tools available for aerodynamic shape optimization. A variety of applications is presented, including the optimization of a supercritical airfoil starting from a circle, a web application that optimizes airfoils within a few seconds, aircraft aerodynamic and aerostructural optimization, and aeropropulsive optimization. We also review the Aerodynamic Design Optimization Discussion Group (ADODG) benchmarks
                   and other aerodynamic shape optimization problems. Among the ADODG benchmarks, we focus on the RANS-based problems and discuss some of the issues encountered, including comparing Euler and RANS results and design-space multimodality. The availability of these benchmarks and the open-source tools is expected to enable further studies and benchmarks in CFD-based aerodynamic design optimization and MDO.}
@@ -31878,7 +31905,7 @@
 @Article{OLeary-Roseberry2021,
     author      = {Thomas O'Leary-Roseberry and Xiaosong Du and Anirban Chaudhuri and Joaquim R. R. A. Martins and Karen Willcox and Omar Ghattas},
     title       = {Adaptive Projected Residual Networks for Learning Parametric Maps from Sparse Data},
-    url         = {http://arxiv.org/abs/2112.07096},
+    doi         = {10.48550/arXiv.2112.07096},
     year        = {2021}
 }
 
