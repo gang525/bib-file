@@ -395,6 +395,15 @@
                   }
 }
 
+@InProceedings{AGray2022a,
+    author      = {Alasdair C. Gray and Cristina Riso and Eirikur Jonsson and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
+    title       = {High-fidelity Aerostructural Optimization with a Geometrically Nonlinear Flutter Constraint},
+    address     = {Madrid, Spain},
+    booktitle   = {International Forum on Aeroelasticity and Structural Dynamics ({IFASD} 2022)},
+    month       = {June 13--17},
+    year        = {2022}
+}
+
 @Article{Agte2010,
     author      = {Jeremy Agte and Olivier de Weck and Jaroslaw Sobieszczanski--Sobieski and Paul Arendsen and Alan Morris and Martin Spieck},
     title       = {{MDO}: Assessment and Direction for Advancement---An Opinion of One International Group},
@@ -4722,6 +4731,17 @@
     pages       = {3159--3172},
     volume      = {57},
     year        = 2019
+}
+
+@Article{Bordogna2017a,
+    author      = {Bordogna, Marco Tito and Lancelot, Paul and Bettebghor, Dimitri and {De Breuker}, Roeland},
+    title       = {Aeroelastic tailoring for static and dynamic loads with blending constraints},
+    isbn        = {9788897576280},
+    journal     = {17th International Forum on Aeroelasticity and Structural Dynamics, IFASD 2017},
+    keywords    = {Aeroelastic Tailoring,Blending,Composite,ESL,Gust},
+    number      = {June},
+    volume      = {2017-June},
+    year        = {2017}
 }
 
 @Article{Borglund:2002:AAA,
@@ -10087,6 +10107,18 @@
     year        = {2020}
 }
 
+@InProceedings{Drachinsky2022,
+    author      = {Drachinsky, A. and Avin, O. and Raveh, D. E. and Ben-Shmuel, Y. and Tur, M.},
+    title       = {Flutter Tests of the Pazy Wing},
+    address     = {San Diego, CA and Online},
+    booktitle   = {2022 AIAA SciTech Forum},
+    doi         = {10.2514/6.2022-2186},
+    month       = {3--7 January},
+    note        = {AIAA-2022-2186},
+    pages       = {1--19},
+    year        = {2022}
+}
+
 @Unpublished{Drela-08-spl8,
     author      = {Mark Drela},
     title       = {Lab 8 Notes---Basic Aircraft Design Rules},
@@ -11252,6 +11284,12 @@
     month       = {September},
     number      = {DOT/FAA/SD-400-98/1},
     year        = {1998}
+}
+
+@Book{FAAFlutter,
+    author      = {{Department} of {Transportation}, {Federal} {Aviation} {Administration}},
+    title       = {{25.629-1B} - Aeroelastic Stability Substantiation of Transport Category Airplanes},
+    url         = {https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1026175}
 }
 
 @InProceedings{fabiano2016adjoint,
@@ -17868,6 +17906,17 @@
     year        = {1991}
 }
 
+@Article{Hinton1976a,
+    author      = {Hinton, E. and Rock, T. and Zienkiewicz, O. C.},
+    title       = {A note on mass lumping and related processes in the finite element method},
+    doi         = {https://doi.org/10.1002/eqe.4290040305},
+    journal     = {Earthquake Engineering \& Structural Dynamics},
+    number      = {3},
+    pages       = {245-249},
+    volume      = {4},
+    year        = {1976}
+}
+
 @Article{Hinton2002,
     author      = {Hinton, Geoffrey E.},
     title       = {Training Products of Experts by Minimizing Contrastive Divergence},
@@ -18566,7 +18615,6 @@
     booktitle   = {Proceedings of the 14th AIAA/ISSMO Multidisciplinary Analysis Optimization Conference},
     doi         = {10.2514/6.2012-5605},
     month       = {September},
-    note        = {AIAA 2012-5605},
     year        = {2012}
 }
 
@@ -19277,6 +19325,16 @@
                   demonstrated with an automated method based on the adjoint sensitivities and the matrix pencil method. While the matrix pencil method is robust, identification of the flutter boundary using gradient-based optimization is shown to be sensitive to the initial dynamic pressure guess.}
 }
 
+@InProceedings{Jacobson2022,
+    author      = {Jacobson, Kevin E. and Stanford, Bret K.},
+    title       = {{Flutter-Constrained Optimization with the Linearized Frequency-Domain Approach}},
+    booktitle   = {AIAA Science and Technology Forum and Exposition, AIAA SciTech Forum 2022},
+    doi         = {10.2514/6.2022-2242},
+    year        = {2022},
+    abstract    = {Due to the high computational cost associated with unsteady aeroelastic analysis, state-of-the-art aeroelastic optimizations based on computational fluid dynamics typically ignore critical constraints like flutter and aeroelastic gust response. The linearized frequency-domain method offers an approach for adding high-fidelity flutter constraints to multidisciplinary optimizations at relatively low cost compared to other unsteady computational fluid dynamics methods. In recent work, sensitivities have been implemented for the linearized frequency-domain method in FUN3D. In this work, the linearized frequency-domain method and associated sensitivities are applied to gradient-based aeroelastic optimization with flutter constraints based on computational fluid dynamics. An overview of the flutter constraint formulation and implementation is provided, and then two optimization problems are presented. The first optimization increases the flutter speed of a pitch and plunge
+                  airfoil at transonic conditions using the minimal amount of geometric changes. The second optimization minimizes the mass of the AGARD 445.6 wing subject to a flutter constraint.}
+}
+
 @Article{Jafarsalehi2012,
     author      = {A. Jafarsalehi and P. Mohammad Zadeh and M. Mirshams},
     title       = {Collaborative Optimization of Remote Sensing Small Satellite Mission using Genetic Algorithms},
@@ -19696,7 +19754,9 @@
     number      = {5},
     pages       = {1491--1503},
     volume      = {47},
-    year        = {2010}
+    year        = {2010},
+    abstract    = {Nonplanar lifting surfaces can lower the induced drag relative to planar surfaces by redistributing vorticity. Other sources of drag, such as viscous drag, as well as nonaerodynamic considerations, such as structural weight, also play an important role in assessing the overall efficiency of such lifting surfaces. In this paper we solve a series of problems to find optimal nonplanar lifting surfaces and to explain the various factors and tradeoffs at play. A panel method and an equivalent beam finite-element model are used to explore nonplanar lifting surfaces, while taking into account the coupling and design tradeoffs between aerodynamics and structures. Both single-discipline aerodynamic optimization and multidisciplinary aerostructural optimization problems are investigated. The design variables are chosen to give the lifting-surface arrangement as much freedom as possible. This is accomplished by allowing a number of wing segments to vary their area, taper,
+                  twist, sweep, span, and dihedral, with the constraint that they must not intersect each other. Because of the complexity of the resulting design space and the presence of multiple local minima, an augmented Lagrangian particle swarm optimizer is used to solve the optimization problems. When only aerodynamics are considered, closed lifting-surface configurations, such as the box wing and joined wing, are found to be optimal. When aerostructural optimization is performed, a winglet configuration is found to be optimal when the overall span is constrained, and a wing with a raked wingtip is optimal when there is no such constraint.}
 }
 
 @Article{Jansen2011a,
@@ -21769,7 +21829,7 @@
 
 @TechReport{Kenway2016d,
     author      = {Gaetan K.W. Kenway and Joaquim R. R. A. Martins},
-    title       = {High-Fidelity Aerostructural Optimization of the Airbus {XRF1} Aircraft Configuration},
+    title       = {High-Fidelity Aerostructural Optimization of the {Airbus} {XRF1} Aircraft Configuration},
     institution = {Multidisciplinary Design Optimization Laboratory},
     month       = {June},
     year        = {2016}
@@ -26910,6 +26970,13 @@
     address     = {San Diego, California},
     booktitle   = {2019 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference},
     publisher   = {AIAA},
+    year        = {2019}
+}
+
+@InProceedings{Lupp2019b,
+    author      = {Lupp, Christopher A and Cesnik, CE and Beran, Philip and Deaton, Joshua and Easterling, David},
+    title       = {Including Geometrically Nonlinear Flutter Constraints in High Fidelity Aircraft Optimization},
+    booktitle   = {International Forum on Aeroelasticity and Structural Dynamics ({IFASD} 2019)},
     year        = {2019}
 }
 
@@ -32872,6 +32939,16 @@
     year        = {2007}
 }
 
+@Article{Patil2001,
+    author      = {Patil,M. J. and Hodges, D. H. and Cesnik, C. E. S.},
+    title       = {Limit-Cycle Oscillations in High-Aspect-Ratio Wings},
+    journal     = {Journal of Fluids and Structures},
+    number      = {1},
+    pages       = {107--132},
+    volume      = {15},
+    year        = {2001}
+}
+
 @Article{Patrikalakis1993a,
     author      = {Patrikalakis, N. M.},
     title       = {Surface-to-surface intersections},
@@ -33411,6 +33488,17 @@
     title       = {Discrete adjoint method for shape optimization and mesh adaptation in the $els${A} code, status and challenges},
     booktitle   = {50h 3AF International Conference on Applied Aerodynamics},
     year        = {2015}
+}
+
+@Article{Peters2007,
+    author      = {Peters, D. A. and Hsieh, M. C. A. and Torrero, A.},
+    title       = {A State-Space Airloads Theory for Flexible Airfoils},
+    doi         = {10.4050/JAHS.52.329},
+    journal     = {Journal of the American Helicopter Society},
+    number      = {4},
+    pages       = {329--342},
+    volume      = {52},
+    year        = {2007}
 }
 
 @Article{Petersen1971,
@@ -34544,6 +34632,20 @@
     year        = {2018}
 }
 
+@Article{Rajpal2019b,
+    author      = {Rajpal, D. and Gillebaart, E. and {De Breuker}, R.},
+    title       = {Preliminary aeroelastic design of composite wings subjected to critical gust loads},
+    doi         = {10.1016/j.ast.2018.11.051},
+    issn        = {12709638},
+    journal     = {Aerospace Science and Technology},
+    keywords    = {Aeroelasticity,Composite wing,Gust loads,Structural optimization},
+    pages       = {96--112},
+    publisher   = {Elsevier Masson SAS},
+    url         = {https://doi.org/10.1016/j.ast.2018.11.051},
+    volume      = {85},
+    year        = {2019}
+}
+
 @Article{Rakshith2015,
     author      = {Rakshith, B. R. and Deshpande, S. M. and Narasimha, R. and Praveen, C.},
     title       = {Optimal Low-Drag Wing Planforms for Tractor-Configuration Propeller-Driven Aircraft},
@@ -35437,6 +35539,30 @@
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
     volume      = {58},
     year        = {2020}
+}
+
+@InProceedings{Riso2020b,
+    author      = {Cristina Riso and Divya Sanghi and Carlos E. S. Cesnik and Fabio Vetrano and Patrick Teufel},
+    title       = {Parametric Roll Maneuverability Analysis of a High-Aspect-Ratio-Wing Civil Transport Aircraft},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2020-1191},
+    month       = {January 6--10},
+    note        = {AIAA-2020-1191},
+    pages       = {1--23},
+    year        = {2020}
+}
+
+@InProceedings{Riso2021,
+    author      = {Cristina Riso and Carlos E. S. Cesnik},
+    title       = {Correlations Between {UM/NAST} Nonlinear Aeroelastic Simulations and the {Pre-Pazy} Wing Experiment},
+    address     = {Online},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2021-1712},
+    month       = {January 11-15 \& 19--21},
+    note        = {AIAA-2021-1712},
+    pages       = {1--24},
+    year        = {2021}
 }
 
 @PhDThesis{risse2016preliminary,
@@ -40368,6 +40494,17 @@
     year        = {2011}
 }
 
+@Article{Su2011b,
+    author      = {Su, W. and Cesnik, C. E. S.},
+    title       = {Strain-Based Geometrically Nonlinear Beam Formulation for Modeling Very Flexible Aircraft},
+    doi         = {10.1016/j.ijsolstr.2011.04.012},
+    journal     = {International Journal of Solids and Structures},
+    number      = {16--17},
+    pages       = {2349--2360},
+    volume      = {48},
+    year        = {2011}
+}
+
 @Article{Su2014,
     author      = {Weihua Su and Carlos E. S. Cesnik},
     title       = {Strain-Based Analysis for Geometrically Nonlinear Beams: A Modal Approach},
@@ -40772,6 +40909,15 @@
     url         = {http://www.sciencedirect.com/science/article/pii/0961355291900353},
     volume      = {13},
     year        = {1991}
+}
+
+@Article{Tang2001,
+    author      = {Tang, D. and Dowell, E. H.},
+    title       = {Experimental and Theoretical Study on Aeroelastic Response of High-Aspect-Ratio Wings},
+    journal     = {AIAA Journal},
+    pages       = {1430--1441},
+    volume      = {39},
+    year        = {2001}
 }
 
 @InProceedings{tang2002clusteringME,
@@ -44178,6 +44324,20 @@
     year        = {2011}
 }
 
+@Article{Werter2016a,
+    author      = {Werter, N. P.M. and {De Breuker}, R.},
+    title       = {A novel dynamic aeroelastic framework for aeroelastic tailoring and structural optimisation},
+    doi         = {10.1016/j.compstruct.2016.09.044},
+    issn        = {02638223},
+    journal     = {Composite Structures},
+    keywords    = {Aeroelastic tailoring,Aeroelasticity,Structural optimisation},
+    pages       = {369--386},
+    pmid        = {8149161},
+    url         = {http://dx.doi.org/10.1016/j.compstruct.2016.09.044},
+    volume      = {158},
+    year        = {2016}
+}
+
 @Misc{WES5,
     author      = {Wind Energy Solutions},
     title       = {Wes5 Tulipo},
@@ -44932,6 +45092,14 @@
     pages       = {67--75},
     publisher   = {Elsevier},
     volume      = {105},
+    year        = {2017}
+}
+
+@Article{Xie2017b,
+    author      = {Xie, Changchuan and Meng, Yang and Wang, Fei and Wan, Zhiqiang},
+    title       = {Aeroelastic Optimization Design for High-Aspect-Ratio Wings with Large Deformation},
+    journal     = {Shock and Vibration},
+    pages       = {1--16},
     year        = {2017}
 }
 
