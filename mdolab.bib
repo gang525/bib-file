@@ -166,6 +166,7 @@
 }
 
 @Misc{ac75_2021,
+    author      = {{Royal New Zealand Yacht Squadron}},
     title       = {{AC75} Class Rule},
     month       = {November},
     url         = {https://drive.google.com/drive/u/0/folders/1o1BMm3RBb56C0nZPGOcadTE4AXW5dFgp},
@@ -173,7 +174,8 @@
 }
 
 @Misc{ac_technology2021,
-    title       = {THE TECHNOLOGY},
+    author      = {{A}merica's {Cup}},
+    title       = {The Technology},
     url         = {https://www.americascup.com/the-technology},
     abstract    = {THE TECHNOLOGY}
 }
@@ -307,6 +309,16 @@
                   the thermoacoustic refrigeration system beneficial compared to conventional refrigeration in certain use cases, such as low-altitude missions.}
 }
 
+@InProceedings{Adler2022c,
+    author      = {Eytan J. Adler and Alasdair Christison Gray and Joaquim R. R. A. Martins},
+    title       = {To {CFD} or not to {CFD}? {C}omparing {RANS} and viscous panel methods for airfoil shape optimization},
+    booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    month       = {September},
+    year        = {2022},
+    abstract    = {As the computational resources available to aerodynamicists increase, so does the number of tools with which they can analyze their designs. The key skill of a good engineer is understanding when each tool produces realistic results. Even if no available tool can capture all relevant physical phenomena, this knowledge allows engineers to alter their designs to account for the missing physics. However, with the increasing use of numerical optimization for aerodynamic shape design, the opportunity for this intuition to shape the design is reduced as the optimizer makes design decisions based purely on numerical results. This makes the choice of analysis method critical. Previous studies have compared panel-based aerodynamic tools and RANS CFD to predict and analyze the key aerodynamic phenomena in different flight conditions. But few, if any, have compared the impact of proper tool selection on the optimal aerodynamic shapes. In this work we show the effect of
+                  aerodynamic analysis method selection on the optimal aerodynamic shape and the consequences of choosing one that does not capture the relevant flow physics. In particular, we show that modelling boundary layer transition can produce significantly lower drag designs across almost the entire range of Reynolds numbers at which airfoils are used in practice. Additionally, we find that the simple compressibility correction used in XFOIL is sufficient to produce well performing airfoils for flight Mach numbers up to 0.65, after which point the ability for the flow solver to model shock formation is critical. Our results will provide aerodynamicists with the data and intuition to make informed decisions when selecting analysis methods for optimization.}
+}
+
 @webpage{ADtools,
     title       = {Tools for Automatic Differentiation},
     keywords    = {AD},
@@ -390,7 +402,7 @@
     month       = {January},
     year        = {2021},
     abstract    = {Over the past decade, advances in multidisciplinary design optimization (MDO) have enabled the optimization of aircraft wings using high-fidelity simulations of their coupled aerodynamic and structural behavior. However, as their aspect-ratios increase, these wings increasingly exhibit geometrically nonlinear behavior that cannot be correctly modeled by typical linear structural analysis methods. Although many low-fidelity aeroelastic analysis and optimization tools feature geometrically nonlinear finite element models, all examples to date of high-fidelity aerostructural optimization have been restricted to linear finite element models due to concerns over computational cost and complexity. In this work, we develop a tool for high-fidelity, geometrically nonlinear structural and aerostructural optimization and demonstrate it by performing detailed structural sizing optimization of a high aspect-ratio wingbox using high-fidelity RANS CFD and a geometrically nonlinear
-                  shell finite element formulation. By comparing the results of aerostructural analysis and optimization using both geometrically linear and nonlinear structural finite element formulations, we find that geometric nonlinearity results in a 5-10% increase in the bending stress and optimized structural mass of the wingbox. Geometrically nonlinear analysis not only results in deflected wing shapes and lift distributions which are more physically accurate, but also captures new loading phenomena within the wingbox, both of which lead to more realistic structural sizing. We also show that the increase in computational cost when optimizing with geometrically nonlinear analysis can be as low as 15\%, meaning these formulations should not be viewed as prohibitively expensive.
+                  shell finite element formulation. By comparing the results of aerostructural analysis and optimization using both geometrically linear and nonlinear structural finite element formulations, we find that geometric nonlinearity results in a 5--10\% increase in the bending stress and optimized structural mass of the wingbox. Geometrically nonlinear analysis not only results in deflected wing shapes and lift distributions which are more physically accurate, but also captures new loading phenomena within the wingbox, both of which lead to more realistic structural sizing. We also show that the increase in computational cost when optimizing with geometrically nonlinear analysis can be as low as 15\%, meaning these formulations should not be viewed as prohibitively expensive.
                   
                   }
 }
@@ -561,8 +573,8 @@
     author      = {Mehmet A. Akgun},
     title       = {New family of modal methods for calculating eigenvector derivatives},
     doi         = {10.2514/3.11995},
-    journal     = {{AIAA} Journal},
-    month       = february,
+    journal     = {AIAA Journal},
+    month       = {February},
     number      = {2},
     pages       = {379--386},
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
@@ -1314,8 +1326,8 @@
     doi         = {10.2514/6.2021-3061},
     month       = {August},
     year        = {2021},
-    abstract    = {We have seen the emerging applications of deep neural networks for flow field predictions in the past few years. Most of the efforts rely on the increased complexity of the model itself or take advantage of novel network architectures, such as convolutional neural networks (CNN). However, reaching low prediction error cannot guarantee the quality of the predicted flow fields in terms of the perceived visual quality. This work introduces the multi-scale structural similarity (MS-SSIM) index method for flow field prediction. First, we train CNN models using the commonly used root mean squared error (RMSE) loss function as the reference. Then we introduce the SSIM loss function to capture the high-level features. Furthermore, we investigate the effects of the MS-SSIM weights on the predictive performance. Our results show that while the pixel-wise prediction error of RMSE-based models is as low as 1.3141 × 10(−2), the perceived visual quality of the predicted flow
-                  fields, such as contour-line smoothness, is poorly represented. In contrast, the MS-SSIM models significantly improve the perceived visual quality with an SSIM loss value as low as 7.370 × 10(−3), although having a slightly higher prediction error of 1.3912×10(−2). These values are 41.7% lower in the SSIM loss and 5.9% higher in the RMSE than the best RMSE model. In particular, we report that a weight combination of 0.3 and 0.7 for the MS-SSIM loss function provides the best predictive performance in our case. Our study has pointed out a possible future endeavor to invent a quality metric based on structural similarity, which should excel in flow-field-related approximations.}
+    abstract    = {We have seen the emerging applications of deep neural networks for flow field predictions in the past few years. Most of the efforts rely on the increased complexity of the model itself or take advantage of novel network architectures, such as convolutional neural networks (CNN). However, reaching low prediction error cannot guarantee the quality of the predicted flow fields in terms of the perceived visual quality. This work introduces the multi-scale structural similarity (MS-SSIM) index method for flow field prediction. First, we train CNN models using the commonly used root mean squared error (RMSE) loss function as the reference. Then we introduce the SSIM loss function to capture the high-level features. Furthermore, we investigate the effects of the MS-SSIM weights on the predictive performance. Our results show that while the pixel-wise prediction error of RMSE-based models is as low as $1.3141 \times 10^{−2}$, the perceived visual quality of the predicted
+                  flow fields, such as contour-line smoothness, is poorly represented. In contrast, the MS-SSIM models significantly improve the perceived visual quality with an SSIM loss value as low as $7.370 \times 10^{−3}$, although having a slightly higher prediction error of $1.3912 \times 10^{−2}$. These values are 41.7\% lower in the SSIM loss and 5.9\% higher in the RMSE than the best RMSE model. In particular, we report that a weight combination of 0.3 and 0.7 for the MS-SSIM loss function provides the best predictive performance in our case. Our study has pointed out a possible future endeavor to invent a quality metric based on structural similarity, which should excel in flow-field-related approximations.}
 }
 
 @Book{Analytical_Dyn,
@@ -1660,8 +1672,8 @@
     booktitle   = {Proceedings of the AIAA Scitech 2020 Forum},
     doi         = {10.2514/6.2020-0541},
     year        = {2020},
-    abstract    = {We present an efficient aerodynamic shape optimization framework for optimization problems under unsteady flow conditions. The optimization framework consists of a parallel Newton-Krylov flow solver for multi-block grids and an integrated geometry parameterization and mesh-deformation algorithm based on linear elasticity. We apply the adjoint method to the discretized governing equations to compute the gradients required by the sequential quadratic programming optimization algorithm. We propose two lift-constrained drag minimization problems for the purposes of testing and evaluating the framework. First, we consider a laminar flow airfoil optimization problem at a Reynolds number of 800 and also investigate the convexity of the optimization problem. We show that the optimizer is capable of reducing the drag for this problem by about 23% and produces a nearly steady flow compared to the vortex shedding observed for the baseline geometry at the required lift target.
-                  The second benchmark case is a lift-constrained drag minimization of an aspect ratio eight rectangular wing in a laminar flow at a Reynolds number of 800. Section shape, twist, and angle of attack are free. Although only partially converged at the time of writing, the preliminary results show a 20% drag reduction.}
+    abstract    = {We present an efficient aerodynamic shape optimization framework for optimization problems under unsteady flow conditions. The optimization framework consists of a parallel Newton-Krylov flow solver for multi-block grids and an integrated geometry parameterization and mesh-deformation algorithm based on linear elasticity. We apply the adjoint method to the discretized governing equations to compute the gradients required by the sequential quadratic programming optimization algorithm. We propose two lift-constrained drag minimization problems for the purposes of testing and evaluating the framework. First, we consider a laminar flow airfoil optimization problem at a Reynolds number of 800 and also investigate the convexity of the optimization problem. We show that the optimizer is capable of reducing the drag for this problem by about 23\% and produces a nearly steady flow compared to the vortex shedding observed for the baseline geometry at the required lift target.
+                  The second benchmark case is a lift-constrained drag minimization of an aspect ratio eight rectangular wing in a laminar flow at a Reynolds number of 800. Section shape, twist, and angle of attack are free. Although only partially converged at the time of writing, the preliminary results show a 20\% drag reduction.}
 }
 
 @Article{Arakeri1979,
@@ -3184,6 +3196,36 @@
     year        = {1982}
 }
 
+@InProceedings{Bedonian2021accounting,
+    author      = {Garo Bedonian and Jason E. Hicken},
+    title       = {Accounting for model error in optimization under uncertainty using efficient propagation techniques},
+    booktitle   = {AIAA Aviation 2021 Forum},
+    doi         = {10.2514/6.2021-3042},
+    keywords    = {CCAVD},
+    location    = {Virtual Event},
+    month       = aug,
+    note        = {AIAA 2021-3042},
+    pages       = {14},
+    year        = {2021}
+}
+
+@InProceedings{Bedonian2022adaptive,
+    author      = {Garo Bedonian and Jason E. Hicken},
+    title       = {An Adaptive Sampling Method for Gradient-Enhanced Surrogate Modeling},
+    booktitle   = {AIAA AVIATION 2022 Forum},
+    doi         = {10.2514/6.2022-3998},
+    keywords    = {CCAVD},
+    year        = {2022}
+}
+
+@Article{Bedonian2022gradient,
+    author      = {Garo Bedonian and Jason Hicken and Edwin Forster},
+    title       = {A Gradient-Enhanced Surrogate Model and Adaptive Sampling Strategy Without Hyperparameter Tuning},
+    journal     = {Structural and Multidisciplinary Optimization},
+    keywords    = {CCAVD},
+    year        = {2022}
+}
+
 @Book{Beer2014,
     author      = {Ferdinand P. Beer and E. Russell Johnston, Jr. and John T. DeWolf and David F. Mazurek},
     title       = {Mechanics of Materials, 7th Edition},
@@ -3926,7 +3968,7 @@
     title       = {Prediction of aerodynamic flow fields using convolutional neural networks},
     doi         = {10.1007/s00466-019-01740-0},
     journal     = {Computational Mechanics},
-    month       = jun,
+    month       = {June},
     number      = {2},
     pages       = {525--545},
     publisher   = {Springer Science and Business Media {LLC}},
@@ -4691,16 +4733,21 @@
     pages       = {118},
     volume      = {7},
     year        = {2020},
-    abstract    = {Multidisciplinary design optimization (MDO) has been previously applied to aerostructural wing design problems with great success. Most previous applications involve fine-tuning a well-designed aircraft wing. In this work, we broaden the scope of the optimization problem by exploring the design space of aerostructural wing design optimization. We start with a rectangular wing and optimize the aerodynamic shape and the sizing of the internal structure to achieve minimum fuel burn on a transonic cruise mission. We use a multi-level optimization procedure to decrease computational cost by 40%. We demonstrate that the optimization can transform the rectangular wing into a swept, tapered wing typical of a transonic aircraft. The optimizer converges to the same wing shape when starting from a different initial design. Additionally, we use a separation constraint at a low-speed, high-lift condition to improve the off-design performance of the optimized wing. The separation
+    abstract    = {Multidisciplinary design optimization (MDO) has been previously applied to aerostructural wing design problems with great success. Most previous applications involve fine-tuning a well-designed aircraft wing. In this work, we broaden the scope of the optimization problem by exploring the design space of aerostructural wing design optimization. We start with a rectangular wing and optimize the aerodynamic shape and the sizing of the internal structure to achieve minimum fuel burn on a transonic cruise mission. We use a multi-level optimization procedure to decrease computational cost by 40\%. We demonstrate that the optimization can transform the rectangular wing into a swept, tapered wing typical of a transonic aircraft. The optimizer converges to the same wing shape when starting from a different initial design. Additionally, we use a separation constraint at a low-speed, high-lift condition to improve the off-design performance of the optimized wing. The separation
                   constraint results in a substantially different wing design with better low-speed performance and only a slight decrease in cruise performance.}
 }
 
 @Article{Bons2022,
     author      = {Nicolas Bons and Joaquim R. R. A. Martins and Felipe Odaguil and Ana Paula Curty Cuco},
     title       = {Aerostructural wing optimization of a regional jet considering mission fuel burn},
+    doi         = {10.1115/1.4055630},
     journal     = {ASME Open Journal of Engineering},
-    note        = {(In press)},
-    year        = {2022}
+    month       = {October},
+    pages       = {011046},
+    volume      = {1},
+    year        = {2022},
+    abstract    = {High-fidelity multidisciplinary design optimization (MDO) promises rigorous balancing of the multidisciplinary trade-offs inherent to aircraft wings. However, collaborations between academia and industry rarely put MDO to the test on practical design problems. In this work, MDO is applied to the design of a regional jet wing to minimize fuel burn. High-fidelity aerostructural analysis is used to model the wing and capture tradeoffs between structural weight and aerodynamic performance. A novel approach is used to calculate fuel burn for climb and descent using a low-fidelity model, improving the relevancy of the optimization results for short-haul missions. A wing-only geometry is used to explore the design space and generate a series of Pareto fronts for different geometric parametrizations. Finally, an aerostructural optimization is conducted with a complete wing-body-tail geometry of an Embraer regional jet. The optimizer increases the wingspan and decreases the
+                  sweep of the original wing to achieve a 3.6\% decrease in fuel burn.}
 }
 
 @Book{Booch2005,
@@ -5049,7 +5096,7 @@
     title       = {Convex Optimization},
     address     = {Cambridge, UK},
     isbn        = {0521833787},
-    month       = {Mar},
+    month       = {March},
     publisher   = {Cambridge University Press},
     year        = {2004}
 }
@@ -5065,14 +5112,6 @@
     publisher   = {Springer Nature},
     volume      = {8},
     year        = 2007
-}
-
-@Book{Boyd:2004:AAA,
-    author      = {Stephen Boyd},
-    title       = {Convex Optimization},
-    keywords    = {optimization},
-    publisher   = {Cambridge University Press},
-    year        = {2004}
 }
 
 @TechReport{Bradley2011,
@@ -5288,7 +5327,7 @@
     title       = {Multidisciplinary Design Optimization of Electric Aircraft Considering Systems Modeling and Packaging},
     address     = {Ann Arbor, MI},
     doi         = {10.7302/2703},
-    keywords    = {ank},
+    keywords    = {ccavd, ank},
     school      = {University of Michigan},
     year        = {2021},
     abstract    = {Electric aircraft propulsion is an intriguing path towards sustainable aviation, but the technological challenges are significant. Bulky and heavy electrical components such as batteries create spatial integration and aircraft performance challenges, especially for longer-range aircraft. A common thread among all aircraft with electric propulsion is the close coupling of aircraft design disciplines, such as aerodynamics, structures, propulsion, controls, and thermal management. Multidisciplinary design optimization (MDO) is a promising technique for solving design problems with many closely-coupled physical disciplines. The first half of this dissertation focuses on MDO of electric aircraft considering systems modeling. First, design of electric aircraft is reviewed in detail from the perspective of the various disciplines. Next, methods and models for electric aircraft propulsion systems are introduced. A case study involving a general aviation airplane is explored
@@ -5302,7 +5341,7 @@
     title       = {Aerostructural Wing Optimization for a Hydrogen Fuel Cell Aircraft},
     booktitle   = {Proceedings of the AIAA SciTech Forum},
     doi         = {10.2514/6.2021-1132},
-    keywords    = {ank},
+    keywords    = {ccavd, ank},
     month       = {January},
     year        = {2021},
     abstract    = {Hydrogen has been identified as a potential fuel for air transportation without carbon emissions. Hydrogen contains much higher energy per unit mass than any conceivable rechargeable battery, potentially making longer-range missions possible than pure electric configurations. However, hydrogen's low volumetric energy density presents practical challenges. Hydrogen must either be kept under deep cryogenic conditions or compressed under very high pressure. Either solution is likely to require adding significant drag and tank weight to the airplane. This is a packing optimization problem subject to aerostructural physics, and we can employ multidisciplinary design optimization techniques to provide insight into optimal wing design for novel hydrogen aircraft concepts. In this paper, we extend prior work on wing packing optimization subject to aerodynamics only, and now incorporate structural analysis and structure geometry into the problem. We optimize the range of a
@@ -5403,7 +5442,7 @@
     title       = {The Analyticity of the Roots of a Polynomial as Functions of the Coefficients},
     doi         = {10.1080/0025570x.1966.11975702},
     journal     = {Mathematics Magazine},
-    month       = may,
+    month       = {May},
     number      = {3},
     pages       = {145--147},
     publisher   = {Informa {UK} Limited},
@@ -5604,7 +5643,7 @@
     volume      = {88},
     year        = {2019},
     abstract    = {Over the past several decades, composites have increasingly become the material of choice in modern aircraft structural design. This is primarily due to the high stiffness- and strength-to-weight ratios offered by conventional composites when compared to metals. Unconventional composite designs, such as tow-steered composites, have demonstrated potential for further expanding these advantages. Unlike their conventional composite counterparts, tow-steered composites feature layers with spatially varying fiber orientations. When applied to wing design, tow-steered composites offer an increase in design freedom at the cost of higher design complexity, making them ideal candidates for design optimization. We develop a methodology for the aerostructural design optimization of tow-steered composite wings using high-fidelity physics models. We also quantify the benefits of this new technology by performing a fuel burn minimization for both a tow-steered and a conventional
-                  composite wing design. This assessment is done for the undeflected Common Research Model, which is representative of a twin-aisle transport aircraft. We find improvements of up to 2.4% in fuel burn and 24% in wing weight relative to the optimized conventional composite design. We show that this improvement is due to a combination of improved passive aeroelastic tailoring and local strength tailoring in high-stress regions in the tow-steered structure. For a higher-aspect-ratio (13.5) wing design, we find improvements of up to 1.5% and 14% in fuel savings and wing weight, respectively. To better understand the effect of aspect ratio on tow-steered wing design, we perform an optimization study where the aspect ratio is varied between 7.5 and 13.5. We found that there are diminishing returns in the benefit of tow steering as the aspect ratio is increased because less passive load alleviation is possible.}
+                  composite wing design. This assessment is done for the undeflected Common Research Model, which is representative of a twin-aisle transport aircraft. We find improvements of up to 2.4\% in fuel burn and 24\% in wing weight relative to the optimized conventional composite design. We show that this improvement is due to a combination of improved passive aeroelastic tailoring and local strength tailoring in high-stress regions in the tow-steered structure. For a higher-aspect-ratio (13.5) wing design, we find improvements of up to 1.5\% and 14\% in fuel savings and wing weight, respectively. To better understand the effect of aspect ratio on tow-steered wing design, we perform an optimization study where the aspect ratio is varied between 7.5 and 13.5. We found that there are diminishing returns in the benefit of tow steering as the aspect ratio is increased because less passive load alleviation is possible.}
 }
 
 @Article{Brooks2020a,
@@ -6083,8 +6122,8 @@
     pages       = {192--203},
     volume      = {81},
     year        = {2018},
-    abstract    = {Novel aircraft configurations and technologies like adaptive morphing trailing edges offer the potential to improve the fuel efficiency of commercial transport aircraft. To accurately quantify the benefits of morphing wing technology for commercial transport aircraft, high-fidelity design optimization that considers both aerodynamic and structural design with a large number of design variables is required. To address this need, we use a high fidelity aerostructural model that enables the detailed optimization of wing shape and sizing using hundreds of design variables. We perform a number of multipoint aerostructural optimizations to demonstrate the performance benefits offered by morphing technology and identify how those benefits are enabled. In a comparison of optimizations considering seven flight conditions, the addition of a morphing trailing edge device along the aft 40% of the wing can reduce cruise fuel burn by more than 5%. A large portion of fuel burn
-                  reduction due to morphing trailing edges results from a significant reduction in structural weight, enabled by adaptive maneuver load alleviation. We also show that a smaller morphing device along the aft 30% of the wing produces nearly as much fuel burn reduction as the larger morphing device, and that morphing technology is particularly effective for high aspect ratio wings.}
+    abstract    = {Novel aircraft configurations and technologies like adaptive morphing trailing edges offer the potential to improve the fuel efficiency of commercial transport aircraft. To accurately quantify the benefits of morphing wing technology for commercial transport aircraft, high-fidelity design optimization that considers both aerodynamic and structural design with a large number of design variables is required. To address this need, we use a high fidelity aerostructural model that enables the detailed optimization of wing shape and sizing using hundreds of design variables. We perform a number of multipoint aerostructural optimizations to demonstrate the performance benefits offered by morphing technology and identify how those benefits are enabled. In a comparison of optimizations considering seven flight conditions, the addition of a morphing trailing edge device along the aft 40\% of the wing can reduce cruise fuel burn by more than 5\%. A large portion of fuel burn
+                  reduction due to morphing trailing edges results from a significant reduction in structural weight, enabled by adaptive maneuver load alleviation. We also show that a smaller morphing device along the aft 30\% of the wing produces nearly as much fuel burn reduction as the larger morphing device, and that morphing technology is particularly effective for high aspect ratio wings.}
 }
 
 @Article{Burdette2019a,
@@ -6098,8 +6137,8 @@
     pages       = {369--384},
     volume      = {56},
     year        = {2019},
-    abstract    = {Nonmorphing, conventional aircraft wings are designed for a compromise of good performance at a variety of flight conditions. Accordingly, such wings perform suboptimally when considered at a single flight condition. Morphing trailing-edge devices offer an opportunity to change this wing design paradigm by allowing wings to adapt to varying flight conditions. This adaptability weakens the correlation between performance at various flight conditions and increases the robustness of the wing's performance, providing closer-to-optimal performance at each flight condition. To study the isolated aerodynamic effects of this increased robustness, we perform a number of aerodynamic and aerostructural shape optimizations of a morphing trailing-edge device that can change the shape of the rear 10% of the wing at a variety of flight conditions on the Common Research Model aircraft configuration. The aerodynamically optimized morphing configuration yields a 1.0% fuel burn
-                  reduction for a long-range mission. When performing aerostructural optimization, which considers structural deformations and structural weight reductions enabled by active load alleviation, the fuel burn reduction is 2.7%.}
+    abstract    = {Nonmorphing, conventional aircraft wings are designed for a compromise of good performance at a variety of flight conditions. Accordingly, such wings perform suboptimally when considered at a single flight condition. Morphing trailing-edge devices offer an opportunity to change this wing design paradigm by allowing wings to adapt to varying flight conditions. This adaptability weakens the correlation between performance at various flight conditions and increases the robustness of the wing's performance, providing closer-to-optimal performance at each flight condition. To study the isolated aerodynamic effects of this increased robustness, we perform a number of aerodynamic and aerostructural shape optimizations of a morphing trailing-edge device that can change the shape of the rear 10\% of the wing at a variety of flight conditions on the Common Research Model aircraft configuration. The aerodynamically optimized morphing configuration yields a 1.0\% fuel burn
+                  reduction for a long-range mission. When performing aerostructural optimization, which considers structural deformations and structural weight reductions enabled by active load alleviation, the fuel burn reduction is 2.7\%.}
 }
 
 @Article{Burdyshaw2005,
@@ -7548,7 +7587,7 @@
     volume      = {139},
     year        = {2020},
     abstract    = {Drone delivery is known as a potential contributor in improving efficiency and alleviating last-mile delivery problems. For this reason, drone routing and scheduling has become a highly active area of research in recent years. Unlike the vehicle routing problem, however, designing drones' routes is challenging due to multiple operational characteristics including multi-trip operations, recharge planning, and energy consumption calculation. To fill some important gaps in the literature, this paper solves a multi-trip drone routing problem, where drones' energy consumption is modeled as a nonlinear function of payload and travel distance. We propose adding logical cuts and subgradient cuts in the solution process to tackle the more complex nonlinear (convex) energy function, instead of using the linear approximation method as in the literature, which can fail to detect infeasible routes due to excess energy consumption. We use a 2-index formulation to model the problem
-                  and develop a branch-and-cut algorithm for the formulation. Benchmark instances are first generated for this problem. Numerical tests indicate that even though the original model is nonlinear, the proposed approach can solve large problems to optimality. In addition, in multiple instances, the linear approximation model yields routes that under the nonlinear energy model would be energy infeasible. Use of a linear approximation for drone energy leads to differences in energy consumption of about 9% on average compared to the nonlinear energy model.}
+                  and develop a branch-and-cut algorithm for the formulation. Benchmark instances are first generated for this problem. Numerical tests indicate that even though the original model is nonlinear, the proposed approach can solve large problems to optimality. In addition, in multiple instances, the linear approximation model yields routes that under the nonlinear energy model would be energy infeasible. Use of a linear approximation for drone energy leads to differences in energy consumption of about 9\% on average compared to the nonlinear energy model.}
 }
 
 @Article{Cheng:1992:AAA,
@@ -7733,6 +7772,7 @@
     doi         = {10.1007/s00158-007-0200-9},
     journal     = {Structures and Multidisciplinary Optimization},
     month       = {December},
+    number      = {1},
     pages       = {59--70},
     volume      = {36},
     year        = {2008}
@@ -8293,7 +8333,7 @@
     volume      = {63},
     year        = {2021},
     abstract    = {The classical aeroelastic scaling theory used to design scaled models is based on the assumption that complete flow similarity exists between the full aircraft and the scaled model. When this condition is satisfied, the scaling problem of the model can be treated as a structural design problem only, where the scaled aerodynamic shape is preserved. If, on the other hand, this hypothesis no longer holds---if the scaled model is constrained to fly at low speed and low altitude, for example---and both the aerodynamic shape and the flexibility of the structure are exactly scaled, then the static response exhibits significant discrepancies in the aerodynamic loads and structural displacement. To design a flying demonstrator with scaled static response when flow similarity cannot be fulfilled, we present a multidisciplinary optimization-based method that allows some freedom in the design of the wing shape (while keeping the scaled wingspan) to update the wing geometry and
-                  structural properties to ensure equivalent scaled loads and overall wing displacement. To illustrate this method, we apply it to a 1:5 version of the uCRM wing at subsonic flight condition. While the errors in air loads using the classical theory are around 16%, the presented method achieves errors lower than 1%, with a good agreement for the wingtip displacement.}
+                  structural properties to ensure equivalent scaled loads and overall wing displacement. To illustrate this method, we apply it to a 1:5 version of the uCRM wing at subsonic flight condition. While the errors in air loads using the classical theory are around 16\%, the presented method achieves errors lower than 1\%, with a good agreement for the wingtip displacement.}
 }
 
 @Article{Colomer2021b,
@@ -8306,7 +8346,7 @@
     volume      = {22},
     year        = {2021},
     abstract    = {The traditional approach for the design of aeroelastically scaled models assumes that either there exists flow similarity between the full-size aircraft and the model, or that flow non-similarities have a negligible effect. However, when trying to reproduce the behavior of an airliner that flies at transonic conditions using a scaled model that flies at nearly-incompressible flow conditions, this assumption is no longer valid and both flutter speed and static aerodynamic loading are subject to large discrepancies. To address this issue, we present an optimization-based approach for wing planform design that matches the scaled flutter speeds and modes of the reference aircraft when the Mach number cannot be matched. This is achieved by minimizing the squared error between the full-size and scaled aerodynamic models. This method is validated using the Common Research Model wing at the reference aircraft Mach number. The error in flutter speed is computed using the same
-                  wing at model conditions, which are in the nearly-incompressible regime. Starting from the baseline wing, its planform is optimized to match the reference response despite different conditions, achieving a reduction of the error in the predicted flutter speed from 7.79% to 2.13%.}
+                  wing at model conditions, which are in the nearly-incompressible regime. Starting from the baseline wing, its planform is optimized to match the reference response despite different conditions, achieving a reduction of the error in the predicted flutter speed from 7.79\% to 2.13\%.}
 }
 
 @Misc{COMSOL2012,
@@ -9385,6 +9425,15 @@
     year        = {2001}
 }
 
+@Article{DeBuck2022,
+    author      = {Pieter De Buck and Joaquim R. R. A. Martins},
+    title       = {Minimum lap time trajectory optimization of performance vehicles with four-wheel drive and active aerodynamic control},
+    doi         = {10.1080/00423114.2022.2101930},
+    journal     = {Vehicle System Dynamics},
+    note        = {(In press)},
+    year        = {2022}
+}
+
 @TechReport{DeCamp1987,
     author      = {DeCamp, R. and Hardy, R. and Gould, D.},
     title       = {Mission-Adaptive Wing},
@@ -9709,7 +9758,7 @@
     author      = {Devillers, Ren{\'e}},
     title       = {La dynamique de l'avion},
     publisher   = {Librarie a{\'e}ronautique},
-    year        = {1918}
+    year        = {1920}
 }
 
 @Article{deVries2019b,
@@ -9796,7 +9845,7 @@
     volume      = {20},
     year        = {2017},
     abstract    = {Computational fluid dynamics (CFD) is increasingly used to analyze wind turbines, and the next logical step is to develop CFD-based optimization to enable further gains in performance and reduce model uncertainties. We present an aerodynamic shape optimization framework consisting of a Reynolds-averaged Navier Stokes solver coupled to a numerical optimization algorithm, a geometry modeler, and a mesh perturbation algorithm. To efficiently handle the large number of design variables, we use a gradient-based optimization technique together with an adjoint method for computing the gradients of the torque coefficient with respect to the design variables. To demonstrate the effectiveness of the proposed approach, we maximize the torque of the NREL VI wind turbine blade with respect to pitch, twist, and airfoil shape design variables while constraining the blade thickness. We present a series of optimization cases with increasing number of variables, both for a single wind
-                  speed and for multiple wind speeds. For the optimization at a single wind speed performed with respect to all the design variables (1 pitch, 11 twist, and 240 airfoil shape variables), the torque coefficient increased by 22.4% relative to the NREL VI design. For the multiple-speed optimization, the torque increased by an average of 22.1%. Depending on the CFD mesh size and number of design variables, the optimization time ranges from 2 to 24h when using 256 cores, which means that wind turbine designers can use this process routinely.}
+                  speed and for multiple wind speeds. For the optimization at a single wind speed performed with respect to all the design variables (1 pitch, 11 twist, and 240 airfoil shape variables), the torque coefficient increased by 22.4\% relative to the NREL VI design. For the multiple-speed optimization, the torque increased by an average of 22.1\%. Depending on the CFD mesh size and number of design variables, the optimization time ranges from 2 to 24h when using 256 cores, which means that wind turbine designers can use this process routinely.}
 }
 
 @Article{Di-Pillo1982,
@@ -10205,6 +10254,7 @@
 @InBook{Drela1998a,
     author      = {Mark Drela},
     title       = {Frontiers of Computational Fluid Dynamics},
+    address     = {Singapore},
     chapter     = {Pros and Cons of Airfoil Optimization},
     doi         = {10.1142/9789812815774_0019},
     editor      = {D. A. Caughey and M. M. Hafez},
@@ -12325,6 +12375,16 @@
     year        = {2015}
 }
 
+@InProceedings{Fouda2022,
+    author      = {Mahmoud Fouda and Eytan J. Adler and Jasper H. Bussemaker and Joaquim R. R. A. Martins and D. F. Kurtulus and Luca Boggero and Bj\"orn Nagel},
+    title       = {Automated Hybrid Propulsion Model Construction for Conceptual Aircraft Design and Optimization},
+    booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    month       = {September},
+    year        = {2022},
+    abstract    = {Electric and hybrid-electric propulsion systems are key technologies for sustainable aviation. Electric propulsion systems introduce many design possibilities, which must be considered in the conceptual design stage to take full advantage of electrification. This makes for a challenging conceptual design problem. Architecture optimization can be applied to explore large design spaces and au tomatically find the best architectures for a set of requirements. Electric propulsion architecture optimization requires automated and flexible propulsion system modeling. It also requires the analysis of the propulsion architecture at an aircraft level to compute a meaningful objective function for the optimization. In this study, we present an approach for defining the propulsion system architectures and evaluating their aircraft-level performance. A propulsion architecture is defined using a modular interface, allowing architectures to be automatically evaluated on the
+                  aircraft-level for a predefined mission. OpenConcept, an open source conceptual design and optimization toolkit, is used to implement the multidisciplinary problem. We present a case study of the electrification of a regional transport aircraft Beechcraft King Air C90GT with automated definition, integration and evaluation of five different propulsion systems. We perform multidisciplinary design optimization to minimize fuel burn and maximum takeoff weight for a sweep of design ranges and battery specific energies. Our approach opens the door to electric propulsion architecture optimization.}
+}
+
 @Article{Fourie:2002,
     author      = {Fourie, P.C. and Groenwold, A.A.},
     title       = {The Particle Swarm Optimization Algorithm in Size and Shape Optimization},
@@ -12439,7 +12499,7 @@
     author      = {Frazer},
     title       = {Elementary Matrices},
     doi         = {10.1017/cbo9780511629211},
-    month       = january,
+    month       = {January},
     publisher   = {Cambridge University Press},
     year        = {1938}
 }
@@ -12535,6 +12595,15 @@
     pages       = {105--121},
     volume      = {36},
     year        = {1999}
+}
+
+@InProceedings{Frigoletto2023,
+    author      = {B. E. Frigoletto and V. Ojha, K. J. Fidkowski and C. E. S. Cesnik},
+    title       = {Development of a High-Order Fluid-Structure Interaction Solver for Flexible Wings},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {CCAVD},
+    note        = {(to appear)},
+    year        = {2023}
 }
 
 @TechReport{Frisch1955a,
@@ -12956,7 +13025,7 @@
     volume      = {71},
     year        = {2017},
     abstract    = {The design optimization of flexible hydrofoils and propellers requires coupled hydrodynamic and structural analysis to achieve truly optimal, physically realizable, and structurally sound designs. To address this need, we develop an efficient high-fidelity hydrostructural design optimization approach that can handle large numbers of design variables, multiple design points, as well as design constraints on cavitation, maximum von Mises stress, and manufacturing tolerances. The hydrostructural solver couples a 3-D nearly incompressible Reynolds-averaged Navier--Stokes solver with a 3-D structural finite-element solver. We validate the solver by comparing the hydrodynamic load coefficients and tip bending deformations of a cantilevered aluminum alloy hydrofoil with a NACA 0009 cross section and a trapezoidal planform. We use a coupled adjoint approach for efficient computation of the performance and constraint function derivatives with respect to 210 shape design
-                  variables. A single-point hydrostructural optimization of the NACA 0009 baseline hydrofoil yields a 12.4% increase in lift-to-drag ratio, a 2.5% reduction in mass, and a 45% increase in the cavitation inception speed. However, the performance of the single-point optimized hydrofoil is found to be worse than the baseline at off-design conditions. On the other hand, a multipoint optimization yields improved performance over the entire range of expected operating conditions with a weighted average increase in lift-to-drag ratio of 8.5%, and an increased cavitation inception speed of 38%. We compare the hydrostructural optimal result to an equivalent hydrodynamic-only optimization, and we show that only the hydrostructural optimized design satisfies the stress constraint up to the highest expected loading condition, highlighting the need for coupled hydrostructural optimization. The proposed approach enables multipoint optimization of hydrodynamic performance for
+                  variables. A single-point hydrostructural optimization of the NACA 0009 baseline hydrofoil yields a 12.4\% increase in lift-to-drag ratio, a 2.5\% reduction in mass, and a 45\% increase in the cavitation inception speed. However, the performance of the single-point optimized hydrofoil is found to be worse than the baseline at off-design conditions. On the other hand, a multipoint optimization yields improved performance over the entire range of expected operating conditions with a weighted average increase in lift-to-drag ratio of 8.5\%, and an increased cavitation inception speed of 38\%. We compare the hydrostructural optimal result to an equivalent hydrodynamic-only optimization, and we show that only the hydrostructural optimized design satisfies the stress constraint up to the highest expected loading condition, highlighting the need for coupled hydrostructural optimization. The proposed approach enables multipoint optimization of hydrodynamic performance for
                   hydrofoils and marine propulsors with respect to detailed shape while enforcing design constraints. This constitutes a powerful new tool for improving existing designs, and exploring new concepts.}
 }
 
@@ -12978,7 +13047,7 @@
     volume      = {84},
     year        = {2019},
     abstract    = {In the last decade, there has been an increased interest in the use of multidisciplinary optimization techniques for the design of aerospace, maritime, and wind engineering systems. However, validation of numerically optimized results using experimental measurements has been scarce. In this paper, numerical predictions are compared with experimental measurements of the hydrodynamic forces, deformations, and cavitation performance for a baseline NACA 0009 hydrofoil and an optimized hydrofoil. Both hydrofoils are made of solid aluminum, and are cantilevered at the root. One of the hydrofoils is optimized using a high-fidelity hydrostructural solver combined with a gradient-based optimizer, as detailed by Garg et al. (2017). The numerical predictions agree well with experimental measurements for both the baseline NACA 0009 and the optimized hydrofoils. For the optimized hydrofoil, the mean differences between the predicted and measured values for mean lift, drag
-                  coefficient, and moment coefficients, are 2.9%, 5.1%, and 3.0%, respectively. For the non-dimensional tip bending deflection, the mean difference is 3.4%. Although the optimized hydrofoil is significantly thicker to withstand higher loads than the baseline, it yields an overall measured increase in the lift-to-drag ratio of 29% for lift coefficients ranging from to 0.75 and exhibits significantly delayed cavitation inception compared to the baseline. The improvement in hydroelastic and cavitation performance is attributed to the changes in the distribution of camber, twist, thickness, and the leading edge radius of the optimized hydrofoil. The results validate the analysis and optimization of the high-fidelity hydrostructural design optimization approach, and opens up new possibilities for the design of high-performance hydrofoils, marine propellers, and turbines.}
+                  coefficient, and moment coefficients, are 2.9\%, 5.1\%, and 3.0\%, respectively. For the non-dimensional tip bending deflection, the mean difference is 3.4\%. Although the optimized hydrofoil is significantly thicker to withstand higher loads than the baseline, it yields an overall measured increase in the lift-to-drag ratio of 29\% for lift coefficients ranging from to 0.75 and exhibits significantly delayed cavitation inception compared to the baseline. The improvement in hydroelastic and cavitation performance is attributed to the changes in the distribution of camber, twist, thickness, and the leading edge radius of the optimized hydrofoil. The results validate the analysis and optimization of the high-fidelity hydrostructural design optimization approach, and opens up new possibilities for the design of high-performance hydrofoils, marine propellers, and turbines.}
 }
 
 @InProceedings{Gariepy2015,
@@ -13306,6 +13375,14 @@
     month       = {April},
     note        = {AIAA 2012-1924},
     year        = {2012}
+}
+
+@Conference{Ghee2018,
+    author      = {Terence A. Ghee and Surya Raghu and Alexander N. Morgan},
+    title       = {Sweeping Jet Active Flow Control on a Representative High Performance Military Wing},
+    doi         = {10.2514/6.2018-1800},
+    number      = {AIAA 2018-1800},
+    year        = {2018}
 }
 
 @Article{Ghiasi2010,
@@ -14621,7 +14698,7 @@
     pages       = {1191--1199},
     volume      = {55},
     year        = {2018},
-    abstract    = {The single-aisle turboelectric aircraft with an aft boundary layer propulsor aircraft concept is estimated to reduce fuel burn by 12% through a turboelectric propulsion system with an electrically driven boundary layer ingestion propulsor mounted on the fuselage tail cone. This motivates a more detailed study of the boundary layer ingestion propulsor design, which requires considering the fully coupled airframe propulsion integration problem. However, boundary layer ingestion studies thus far have accounted only for the aerodynamic effects on the propulsion system, or vice versa, but have not considered the two-way coupling. This work presents a new approach for building fully coupled aeropropulsive models of boundary layer ingestion propulsion systems. A one-dimensional thermodynamic cycle analysis is coupled to a Reynolds-averaged Navier--Stokes simulation. This aeropropulsive model is used to assess how the propulsor design affects the overall performance for a
+    abstract    = {The single-aisle turboelectric aircraft with an aft boundary layer propulsor aircraft concept is estimated to reduce fuel burn by 12\% through a turboelectric propulsion system with an electrically driven boundary layer ingestion propulsor mounted on the fuselage tail cone. This motivates a more detailed study of the boundary layer ingestion propulsor design, which requires considering the fully coupled airframe propulsion integration problem. However, boundary layer ingestion studies thus far have accounted only for the aerodynamic effects on the propulsion system, or vice versa, but have not considered the two-way coupling. This work presents a new approach for building fully coupled aeropropulsive models of boundary layer ingestion propulsion systems. A one-dimensional thermodynamic cycle analysis is coupled to a Reynolds-averaged Navier--Stokes simulation. This aeropropulsive model is used to assess how the propulsor design affects the overall performance for a
                   simplified model of the single-aisle turboelectric aircraft with an aft boundary-layer propulsor. The results indicate that both propulsion and aerodynamic effects contribute equally toward the overall performance and that the fully coupled model yields substantially different results compared to the uncoupled model. Although boundary layer ingestion offers substantial fuel burn savings, it introduces propulsion-dependent aerodynamic effects that need to be accounted for.
                   
                   }
@@ -14686,7 +14763,7 @@
     volume      = {123},
     year        = {2019},
     abstract    = {Airframe--propulsion integration concepts that use boundary-layer ingestion (BLI) have the potential to reduce aircraft fuel burn. One concept that has been recently explored is NASA's STARC-ABL aircraft configuration, which offers the potential for fuel burn reduction by using a turboelectric propulsion system with an aft-mounted electrically driven BLI propulsor. So far, attempts to quantify this potential fuel burn reduction have not considered the full coupling between the aerodynamic and propulsive performance. To address the need for a more careful quantification of the aeropropulsive benefit of the STARC-ABL concept, we run a series of design optimisations based on a fully coupled aeropropulsive model. A 1D thermodynamic cycle analysis is coupled to a Reynolds-averaged Navier--Stokes simulation to model the aft propulsor at a cruise condition and the effects variation in propulsor design on overall performance. A series of design optimisation studies are
-                  performed to minimise the required cruise power, assuming different relative sizes of the BLI propulsor. The design variables consist of the fan pressure ratio, static pressure at the fan face, and 311 variables that control the shape of both the nacelle and the fuselage. The power required by the BLI propulsor is compared with a podded configuration. The results show that the BLI configuration offers 6--9% reduction in required power at cruise, depending on assumptions made about the efficiency of power transmission system between the under-wing engines and the aft propulsor. Additionally, the results indicate that the power transmission efficiency directly affects the relative size of the under-wing engines and the aft propulsor. This design optimisation, based on computational fluid dynamics, is shown to be essential to evaluate current BLI concepts and provides a powerful tool for the design of future concepts.}
+                  performed to minimise the required cruise power, assuming different relative sizes of the BLI propulsor. The design variables consist of the fan pressure ratio, static pressure at the fan face, and 311 variables that control the shape of both the nacelle and the fuselage. The power required by the BLI propulsor is compared with a podded configuration. The results show that the BLI configuration offers 6--9\% reduction in required power at cruise, depending on assumptions made about the efficiency of power transmission system between the under-wing engines and the aft propulsor. Additionally, the results indicate that the power transmission efficiency directly affects the relative size of the under-wing engines and the aft propulsor. This design optimisation, based on computational fluid dynamics, is shown to be essential to evaluate current BLI concepts and provides a powerful tool for the design of future concepts.}
 }
 
 @Article{Gray2020a,
@@ -14701,7 +14778,7 @@
     volume      = {57},
     year        = {2020},
     abstract    = {Boundary-layer ingestion (BLI) promises increased aircraft efficiency, but excessive inlet distortion must be avoided to prevent fans that are too heavy or structurally infeasible. We propose a new approach to study the effect of distortion on BLI propulsors via an aeropropulsive design optimization with a constraint on inlet distortion using highly efficient gradient-based methods with analytic derivatives. The fully coupled aeropropulsive model includes a three-dimensional Reynolds-averaged Navier--Stokes aerodynamic analysis of the flow and a thermodynamic cycle model of the propulsor fan. We minimize the shaft power required at cruise for the aft BLI thruster by varying the propulsor size and the shape of the propulsor nacelle and aft fuselage. Optimizations are performed with and without the inlet distortion constraint for different aft-propulsor sizes to study the impact of the constraint on overall BLI performance. The results show that imposing a distortion
-                  constraint increased the required propulsor shaft power by up to 1.2% relative to the unconstrained case, and that smaller propulsors suffer lower performance degradation than larger ones. The results underline the importance of using a fully coupled aeropropulsive model to predict BLI performance and demonstrate the power of aeropropulsive optimization in the design of BLI configurations.}
+                  constraint increased the required propulsor shaft power by up to 1.2\% relative to the unconstrained case, and that smaller propulsors suffer lower performance degradation than larger ones. The results underline the importance of using a fully coupled aeropropulsive model to predict BLI performance and demonstrate the power of aeropropulsive optimization in the design of BLI configurations.}
 }
 
 @Article{Grbic2013,
@@ -17015,8 +17092,8 @@
     volume      = {168},
     year        = {2018},
     abstract    = {Advances in computing power have enabled computational fluid dynamics (CFD) to become a crucial tool in aerodynamic design. To facilitate CFD-based design, the combination of gradient-based optimization and the adjoint method for computing derivatives can be used to optimize designs with respect to a large number of design variables. Open field operation and manipulation (OpenFOAM) is an open source CFD package that is becoming increasingly popular, but it currently lacks an efficient infrastructure for constrained design optimization. To address this problem, we develop an optimization framework that consists of an efficient discrete adjoint implementation for computing derivatives and a Python interface to multiple numerical optimization packages. Our adjoint optimization framework has the following salient features: (1) The adjoint computation is efficient, with a computational cost that is similar to that of the primal flow solver and scales up to 10 million
-                  cells and 1024 CPU cores. (2) The adjoint derivatives are fully consistent with those generated by the flow solver with an average error of less than 0.1%. (3) The adjoint framework can handle optimization problems with more than 100 design variables and various geometric and physical constraints such as volume, thickness, curvature, and lift constraints. (4) The framework includes additional modules that are essential for successful design optimization: a geometry-parametrization module, a mesh-deformation algorithm, and an interface to numerical optimizations. To demonstrate our design-optimization framework, we optimize the ramp shape of a simple bluff geometry and analyze the flow in detail. We achieve 9.4% drag reduction, which is validated by wind tunnel experiments. Furthermore, we apply the framework to solve two more complex aerodynamic-shape-optimization applications: an unmanned aerial vehicle, and a car. For these two cases, the drag is reduced by 5.6% and
-                  12.1%, respectively, which demonstrates that the proposed optimization framework functions as desired. Given these validated improvements, the developed techniques have the potential to be a useful tool in a wide range of engineering design applications, such as aircraft, cars, ships, and turbomachinery.}
+                  cells and 1024 CPU cores. (2) The adjoint derivatives are fully consistent with those generated by the flow solver with an average error of less than 0.1\%. (3) The adjoint framework can handle optimization problems with more than 100 design variables and various geometric and physical constraints such as volume, thickness, curvature, and lift constraints. (4) The framework includes additional modules that are essential for successful design optimization: a geometry-parametrization module, a mesh-deformation algorithm, and an interface to numerical optimizations. To demonstrate our design-optimization framework, we optimize the ramp shape of a simple bluff geometry and analyze the flow in detail. We achieve 9.4\% drag reduction, which is validated by wind tunnel experiments. Furthermore, we apply the framework to solve two more complex aerodynamic-shape-optimization applications: an unmanned aerial vehicle, and a car. For these two cases, the drag is reduced by 5.6\%
+                  and 12.1\%, respectively, which demonstrates that the proposed optimization framework functions as desired. Given these validated improvements, the developed techniques have the potential to be a useful tool in a wide range of engineering design applications, such as aircraft, cars, ships, and turbomachinery.}
 }
 
 @InProceedings{He2018c,
@@ -17145,7 +17222,7 @@
     volume      = {58},
     year        = {2020},
     abstract    = {The adjoint method is an efficient approach for computing derivatives that allow gradient-based optimization to handle systems parameterized with a large number of design variables. Despite this advantage, implementing the adjoint method for a partial-differential-equation-based primal solver is a time-consuming task. To lower the barrier for adjoint implementations, an object-oriented framework (DAFoam) is proposed to rapidly implement the discrete adjoint method for any steady-state OpenFOAM primal solver by adding or modifying only a few hundred lines of source code. In this paper, the DAFoam framework is introduced and the proposed object-oriented adjoint development processis illustrated.Usingthisstrategy,the adjointmethodis implementedfor eightprimal solvers,five turbulence models, and one radiation model in OpenFOAM. Excellent adjoint speed and scalability, with up to 10 million cells and 1536 CPU cores, and an average error in the adjoint derivatives of less
-                  than 0.1% are achieved. Finally, the implemented adjoint solvers and models are integrated into a gradient-based optimization framework, and four distinct design optimizations (multipoint aerodynamic optimization of a low-speed unmanned-aerial-vehicle wing, aerodynamic optimization of a transonic aircraft configuration, aerothermal optimization of a turbine internal cooling passage, and aerostructural optimization of a compressor rotor) are shown. DAFoam is available under an open-source license and is a powerful tool for the high-fidelity multidisciplinary design optimization of engineering systems, such as aircraft, ground vehicles, marine vessels, and turbomachinery.}
+                  than 0.1\% are achieved. Finally, the implemented adjoint solvers and models are integrated into a gradient-based optimization framework, and four distinct design optimizations (multipoint aerodynamic optimization of a low-speed unmanned-aerial-vehicle wing, aerodynamic optimization of a transonic aircraft configuration, aerothermal optimization of a turbine internal cooling passage, and aerostructural optimization of a compressor rotor) are shown. DAFoam is available under an open-source license and is a powerful tool for the high-fidelity multidisciplinary design optimization of engineering systems, such as aircraft, ground vehicles, marine vessels, and turbomachinery.}
 }
 
 @Article{He2020c,
@@ -17201,6 +17278,13 @@
                   simulations. And the LCO velocities and frequencies predicted by the proposed method and the time-accurate method are within 1\% of relative difference when the same mesh is used. This method can be potentially used in aircraft design.}
 }
 
+@Article{He2022,
+    author      = {Sicheng He and Yayun Shi and Eirikur Jonsson and Joaquim R. R. A. Martins},
+    title       = {Eigenvalue problem derivatives computation for a complex matrix using the adjoint method},
+    journal     = {Mechanical Systems and Signal Processing},
+    year        = {2022}
+}
+
 @Article{He2022a,
     author      = {Sicheng He and Eirikur Jonsson and Joaquim R. R. A. Martins},
     title       = {Derivatives for Eigenvalues and Eigenvectors via Analytic Reverse Algorithmic Differentiation},
@@ -17219,6 +17303,17 @@
     year        = {2022},
     abstract    = {Aerodynamic shape optimization has become a well-established process, with designers routinely performing wing and full aircraft optimizations with hundreds of geometric design variables. However, with increased geometric design freedom comes increased optimization difficulty. These optimizations tend to converge very slowly, often taking many hundreds of design iterations. In addition, designers have to manually obtain suitable design variable scaling through trial and error in order to have a well-behaved optimization problem, which is a tedious and time-consuming task. In this work, we propose a sensitivity-based geometric parameterization approach that, while keeping the same optimization problem, maps the design space onto one which is better suited for gradient-based optimization. At the same time, we can automatically determine appropriate design variable scaling such that the new optimization problem can be solved more rapidly. We demonstrate the approach on
                   aerodynamic optimizations, and show improved convergence behaviour compared to the traditional approach.}
+}
+
+@Article{He2022c,
+    author      = {Sicheng He and Eirikur Jonsson and Joaquim R. R. A. Martins},
+    title       = {Adjoint-based Limit Cycle Oscillation Instability Sensitivity and Suppression},
+    doi         = {10.1007/s11071-022-07989-0},
+    journal     = {Nonlinear Dynamics},
+    note        = {(In press)},
+    year        = {2022},
+    abstract    = {Dynamical systems often exhibit limit cycle oscillations (LCOs), self-sustaining oscillations of limited amplitude. LCOs can be supercritical or subcritical. The supercritical response is benign, while the subcritical response can be bi-stable and exhibit a hysteretic response. Subcritical responses can be avoided in design optimization by enforcing LCO stability. However, many high-fidelity system models are computationally expensive to evaluate. Thus, there is a need for an efficient computational approach that can model instability and handle hundreds or thousands of design variables. To address this need, we propose a simple metric to determine the LCO stability using a fitted bifurcation diagram slope. We develop an adjoint-based formula to efficiently compute the stability derivative with respect to many design variables. To evaluate the stability derivative, we only need to compute the time-spectral adjoint equation three times, regardless of the number of
+                  design variables. The proposed adjoint method is verified with finite differences, achieving a five-digit agreement between the two approaches. We consider a stability-constrained LCO parameter optimization problem using an analytic model to demonstrate that the optimizer can suppress the instability. We also consider a more realistic LCO speed and stability-constrained airfoil problem that minimizes the normalized mass and stiffness. The proposed method could be extended to optimization problems with a partial differential equation (PDE) based model, opening the door to other applications where high-fidelity models are needed.}
 }
 
 @InProceedings{Hearn2016a,
@@ -18759,7 +18854,7 @@
     volume      = {75},
     year        = {2018},
     abstract    = {Surrogate models approximate a function based on a set of training points and can then predict the function at new points. In engineering, kriging is widely used because it is fast to train and is generally more accurate than other types of surrogate models. However, the prediction time of kriging increases with the size of the dataset, and the training can fail if the dataset is too large or poorly spaced, which limits the accuracy that is attainable. We develop a new surrogate modeling technique---regularized minimal-energy tensor-product splines (RMTS)---that is not susceptible to training failure, and whose prediction time does not increase with the number of training points. The improved scalability with the number of training points is due to the use of tensor-product splines, where energy minimization is used to handle under-constrained problems in which there are more spline coefficients than training points. RMTS scales up to four dimensions with 10--15
-                  spline coefficients per dimension, but scaling beyond that requires coarsening of the spline in some of the dimensions because of the computational cost of the energy minimization step. Benchmarking using a suite of one- to four-dimensional problems shows that while kriging is the most accurate option for a small number of training points, RMTS is the best alternative when a large set of data points is available or a low prediction time is desired. The best-case average root-mean-square error for the 4-D problems is close to 1% for RMTS and just under 10% for kriging.}
+                  spline coefficients per dimension, but scaling beyond that requires coarsening of the spline in some of the dimensions because of the computational cost of the energy minimization step. Benchmarking using a suite of one- to four-dimensional problems shows that while kriging is the most accurate option for a small number of training points, RMTS is the best alternative when a large set of data points is available or a low prediction time is desired. The best-case average root-mean-square error for the 4-D problems is close to 1\% for RMTS and just under 10\% for kriging.}
 }
 
 @InProceedings{Hwang2018c,
@@ -18801,7 +18896,7 @@
     volume      = {56},
     year        = {2019},
     abstract    = {Traditionally, computational design optimization of commercial aircraft is performed by considering a small number of representative operating conditions. These conditions are based on the design Mach number, altitude, payload, and range for which the aircraft will be flown. However, the design also influences which routes and mission parameters are optimal, and so there is coupling that is ignored when using the traditional approach. Here, the aircraft design, mission profiles, and the allocation of aircraft to routes in an airline network are simultaneously optimized. This is a mixed-integer nonlinear programming problem that is reformulated as a nonlinear programming problem because of the large number of design variables. The reformulated problem is solved using a gradient-based optimization approach with a parallel computational framework that facilitates the multidisciplinary analysis and the derivative computation. A surrogate model is used for the
-                  computational fluid dynamics analysis that is retrained in each optimization iteration given the new set of shape design variables. The resulting optimization problem contains over 4,000 design variables and close to 14,000 constraints. The optimization results show a 2% increase in airline profit compared with the traditional multipoint optimization approach. The wing area increases to the upper bound, enabling a higher cruise altitude that improves propulsive efficiency. This study finds that simultaneously optimizing the allocation, mission, and design to maximize airline profit results in a different optimized wing design from that resulting from the multipoint optimization approach.}
+                  computational fluid dynamics analysis that is retrained in each optimization iteration given the new set of shape design variables. The resulting optimization problem contains over 4,000 design variables and close to 14,000 constraints. The optimization results show a 2\% increase in airline profit compared with the traditional multipoint optimization approach. The wing area increases to the upper bound, enabling a higher cruise altitude that improves propulsive efficiency. This study finds that simultaneously optimizing the allocation, mission, and design to maximize airline profit results in a different optimized wing design from that resulting from the multipoint optimization approach.}
 }
 
 @Article{Hyer1991,
@@ -18987,9 +19082,9 @@
 }
 
 @Misc{imca_2017,
+    author      = {{International Sailing Federation}},
     title       = {{IMCA} {Rules} ({ISAF} approved) -- 1st {May} 2017},
     month       = {May},
-    publisher   = {International Sailing Federation},
     url         = {http://www.moth-sailing.org/wp-content/uploads/2017/05/MTH2017CR010517.pdf},
     year        = {2017}
 }
@@ -19893,7 +19988,7 @@
     address     = {Orlando, FL},
     booktitle   = {2018 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference; AIAA SciTech Forum},
     doi         = {10.2514/6.2018-1382},
-    keywords    = {OpenMDAO, OpenAeroStruct},
+    keywords    = {CCAVD, OpenMDAO, OpenAeroStruct},
     month       = {January},
     year        = {2018}
 }
@@ -19904,7 +19999,7 @@
     address     = {Atlanta, GA},
     booktitle   = {AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference},
     doi         = {10.2514/6.2018-3884},
-    keywords    = {OpenMDAO, ank},
+    keywords    = {CCAVD, OpenMDAO, ank},
     month       = {June},
     year        = {2018}
 }
@@ -19948,7 +20043,7 @@
     address     = {San Diego, CA},
     booktitle   = {57th AIAA Aerospace Sciences Meeting, AIAA SciTech Forum, 2019},
     doi         = {10.2514/6.2019-0172},
-    keywords    = {OpenMDAO},
+    keywords    = {CCAVD, OpenMDAO},
     month       = {January},
     year        = {2019}
 }
@@ -20720,7 +20815,7 @@
     month       = {January},
     year        = {2022},
     abstract    = {Higher-aspect-ratio lightweight wings can make aircraft more energy efficient thanks to induced drag reduction. Because such wings exhibit large deflections, affecting the flutter onset, design optimization using linear flutter analysis is inadequate. To address this issue, we develop a framework for including a geometrically nonlinear flutter constraint into high-fidelity, gradient-based wing structural optimization. The framework evaluates the objective function (mass) and the stress and adjacency constraints in a built-up finite element model to capture the structural details of realistic wings. This built-up finite element model is reduced to a low-order beam representation to make geometrically nonlinear flutter analysis tractable for optimization. The geometrically nonlinear flutter analysis considers the wing deformed shape at each flight condition and aggregates the associated damping values into a scalar flutter constraint. The flutter constraint is
-                  differentiated with respect to the built-up structural sizing variables using the adjoint method to enable large-scale optimizations. The framework is demonstrated by minimizing the mass of a high-aspect-ratio wingbox subject to the geometrically nonlinear flutter constraint along with stress and adjacency constraints. The geometrically nonlinear flutter constraint introduces a mass penalty up to about 60% of the baseline mass compared with the 10\% mass penalty by a linear flutter constraint based on the wing undeformed shape. This methodology can help design new-generation energy-efficient aircraft with high-aspect-ratio wings that require considering geometrically nonlinear effects early in the design cycle to prevent flutter.}
+                  differentiated with respect to the built-up structural sizing variables using the adjoint method to enable large-scale optimizations. The framework is demonstrated by minimizing the mass of a high-aspect-ratio wingbox subject to the geometrically nonlinear flutter constraint along with stress and adjacency constraints. The geometrically nonlinear flutter constraint introduces a mass penalty up to about 60\% of the baseline mass compared with the 10\% mass penalty by a linear flutter constraint based on the wing undeformed shape. This methodology can help design new-generation energy-efficient aircraft with high-aspect-ratio wings that require considering geometrically nonlinear effects early in the design cycle to prevent flutter.}
 }
 
 @InProceedings{Joo2015,
@@ -21295,6 +21390,39 @@
     year        = {2020}
 }
 
+@InProceedings{Kedward2020a,
+    author      = {Kedward, Laurence and Allen, Christian B. and Rendall, T.},
+    title       = {Towards Generic Modal Design Variables for Aerodynamic Shape Optimisation},
+    booktitle   = {AIAA Scitech 2020 Forum},
+    doi         = {10.2514/6.2020-0543},
+    month       = jan,
+    pages       = {0543},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2020}
+}
+
+@InProceedings{Kedward2020b,
+    author      = {Kedward, Laurence and Allen, Christian B. and Rendall, T.},
+    title       = {Generic Modal Design Variables for Aerodynamic Shape Optimisation},
+    booktitle   = {AIAA AVIATION 2020 Forum},
+    doi         = {10.2514/6.2020-2707},
+    month       = jun,
+    pages       = {2707},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2020}
+}
+
+@Article{Kedward2022a,
+    author      = {Kedward, Laurence J. and Allen, Christian B. and Poole, Daniel J. and Rendall, Thomas C. S.},
+    title       = {Generic Modal Design Variables for Efficient Aerodynamic Optimization},
+    doi         = {10.2514/1.j061727},
+    journal     = {AIAA Journal},
+    month       = nov,
+    pages       = {1--17},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2022}
+}
+
 @Article{Keller2000,
     author      = {Carsten Keller and Nicholas I. M. Gould and Andrew J. Wathen},
     title       = {Constraint Preconditioning for Indefinite Linear Systems},
@@ -21394,8 +21522,9 @@
 @InProceedings{Kennedy2010,
     author      = {Graeme J. Kennedy and Joaquim R. R. A. Martins},
     title       = {Parallel Solution Methods for Aerostructural Analysis and Design Optimization},
-    address     = {{F}orth {W}orth,~{TX}},
+    address     = {Forth Worth,~TX},
     booktitle   = {Proceedings of the 13$^th$ AIAA/ISSMO Multidisciplinary Analysis Optimization Conference},
+    doi         = {10.2514/6.2010-9308},
     month       = {September},
     year        = {2010}
 }
@@ -21471,7 +21600,7 @@
     year        = {2012},
     abstract    = {High-performance composite materials exhibit both anisotropic strength and stiffness properties. These anisotropic properties can be used to produce highly-tailored aircraft structures that meet stringent performance requirements, but these properties also present unique challenges for analysis and design. New tools and techniques are developed to address some of these important challenges. A homogenization-based theory for beams is developed to accurately predict the through-thickness stress and strain distribution in thick composite beams. Numerical comparisons demonstrate that the proposed beam theory can be used to obtain highly accurate results in up to three orders of magnitude less computational time than three-dimensional calculations. Due to the large finite-element model requirements for thin composite structures used in aerospace applications, parallel solution methods are explored. A parallel direct Schur factorization method is developed. The parallel
                   scalability of the direct Schur approach is demonstrated for a large finite-element problem with over 5 million unknowns. In order to address manufacturing design requirements, a novel laminate parametrization technique is presented that takes into account the discrete nature of the ply-angle variables, and ply-contiguity constraints. This parametrization technique is demonstrated on a series of structural optimization problems including compliance minimization of a plate, buckling design of a stiffened panel and layup design of a full aircraft wing. The design and analysis of composite structures for aircraft is not a stand-alone problem and cannot be performed without multidisciplinary considerations. A gradient-based aerostructural design optimization framework is presented that partitions the disciplines into distinct process groups. An approximate Newton--Krylov method is shown to be an efficient aerostructural solution algorithm and excellent parallel
-                  scalability of the algorithm is demonstrated. An induced drag optimization study is performed to compare the trade-off between wing weight and induced drag for wing tip extensions, raked wing tips and winglets. The results demonstrate that it is possible to achieve a 43% induced drag reduction with no weight penalty, a 28% induced drag reduction with a 10% wing weight reduction, or a 20% wing weight reduction with a 5% induced drag penalty from a baseline wing obtained from a structural mass-minimization problem with fixed aerodynamic loads. }
+                  scalability of the algorithm is demonstrated. An induced drag optimization study is performed to compare the trade-off between wing weight and induced drag for wing tip extensions, raked wing tips and winglets. The results demonstrate that it is possible to achieve a 43\% induced drag reduction with no weight penalty, a 28\% induced drag reduction with a 10\% wing weight reduction, or a 20\% wing weight reduction with a 5\% induced drag penalty from a baseline wing obtained from a structural mass-minimization problem with fixed aerodynamic loads. }
 }
 
 @InProceedings{Kennedy2012c,
@@ -23059,7 +23188,7 @@
 
 @InProceedings{Kota2018a,
     author      = {Sridhar Kota and Joaquim R. R. A. Martins},
-    title       = {FlexFoil Shape Adaptive Control Surfaces---Flight Test and Numerical Results},
+    title       = {{FlexFoil} Shape Adaptive Control Surfaces---Flight Test and Numerical Results},
     address     = {Belo Horizonte, Brazil},
     booktitle   = {Proceedings of the 31st Congress of the International Council of Aeronautical Sciences},
     month       = {September},
@@ -23914,6 +24043,7 @@
     doi         = {10.1007/s00158-012-0763-y},
     journal     = {Structural and Multidisciplinary Optimization},
     month       = {August},
+    number      = {2},
     pages       = {273--284},
     volume      = {46},
     year        = {2012},
@@ -23969,7 +24099,18 @@
     pages       = {257--277},
     volume      = {55},
     year        = {2017},
-    abstract    = {Constraint aggregation makes it feasible to solve large-scale stress-constrained mass minimization problems efficiently using gradient-based optimization where the gradients are computed using adjoint methods. However, it is not always clear which constraint aggregation method is more effective, and which values to use for the aggregation parameters. In this work, the accuracy and efficiency of several aggregation methods are compared for an aircraft wing design problem. The effect of the type of aggregation function, the number of constraints, and the value of the aggregation parameter are studied. Recommendations are provided for selecting a constraint aggregation scheme that balances computational effort with the accuracy of the computed optimal design. Using the recommended aggregation method and associated parameters, a mass of within 0.5 % of the true optimal design was obtained. }
+    abstract    = {Constraint aggregation makes it feasible to solve large-scale stress-constrained mass minimization problems efficiently using gradient-based optimization where the gradients are computed using adjoint methods. However, it is not always clear which constraint aggregation method is more effective, and which values to use for the aggregation parameters. In this work, the accuracy and efficiency of several aggregation methods are compared for an aircraft wing design problem. The effect of the type of aggregation function, the number of constraints, and the value of the aggregation parameter are studied. Recommendations are provided for selecting a constraint aggregation scheme that balances computational effort with the accuracy of the computed optimal design. Using the recommended aggregation method and associated parameters, a mass of within 0.5\% of the true optimal design was obtained. }
+}
+
+@InProceedings{Lamkin2022,
+    author      = {Andrew H.R. Lamkin and Anil Yildirim and Joaquim R. R. A. Martins},
+    title       = {Coupled aeropropulsive analysis and optimization of a high bypass turbofan engine},
+    booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    keywords    = {CCAVD},
+    month       = {September},
+    year        = {2022},
+    abstract    = {Advances in aeropropulsive design optimization provide new capabilities for the study of tightly integrated propulsion systems. New techniques that couple CFD solvers to thermodynamic cycle analyses showed increased robustness and proved the viability of a fully coupled approach using gradient-based optimization. However, existing work in this area has been limited to simple benchmark cases and does not contain complete engine models. In this study, we extend these methodologies beyond an electrically driven propulsor to consider a complete high-bypass turbofan engine. The high-bypass turbofan model incorporates CFD and thermodynamic cycle sub-systems into a unified model for aeropropulsive design optimization by utilizing multiple coupling techniques from prior benchmark aeropropulsive cases. We present a high-bypass turbofan design optimized for thrust specific fuel consumption with respect to coupling, geometric, and practical design constraints using this coupled
+                  approach. The integration of high-fidelity aerodynamic shape optimization with one-dimensional cycle modeling on a large scale is a major milestone for coupled propulsion system design. These developments advance the use of coupled aeropropulsive optimization earlier in the design cycle for propulsion systems.}
 }
 
 @Article{lamousin1994nurbs,
@@ -24006,7 +24147,7 @@
     title       = {An iteration method for the solution of the eigenvalue problem of linear differential and integral operators},
     doi         = {10.6028/jres.045.026},
     journal     = {Journal of Research of the National Bureau of Standards},
-    month       = october,
+    month       = {October},
     number      = {4},
     pages       = {255},
     publisher   = {National Institute of Standards and Technology ({NIST})},
@@ -24971,8 +25112,8 @@
     volume      = {25},
     year        = {2013},
     abstract    = {The idea of using distributed propulsion has been suggested with the objective of reducing aircraft noise. This paper investigates the effects of such a system on aircraft performance and weight. The distributed propulsion concept considered here involves replacing a small number of large engines with a moderate number of small engines and ducting part of the engine exhaust to exit out along the trailing edge of the wing. Models to describe the effects of this distributed propulsion concept were formulated and integrated into a multidisciplinary design optimization formulation. The most important effect modeled is the impact on the propulsive efficiency when there is blowing out of the trailing edge of a wing. An increase in propulsive efficiency is attainable with this arrangement as the trailing edge jet `fills in' the wake behind the body, improving the overall aerodynamic/propulsion system, resulting in an increased propulsive efficiency. Other models formulated
-                  include the effect of the trailing edge jet on the induced drag, longitudinal control through thrust vectoring of the trailing edge jet, increased weight due to the ducts, and thrust losses within the ducts. The Blended-Wing-Body (BWB) aircraft was used as a testbed in this study. Two different BWB configurations were optimized, a conventional propulsion BWB with four pylon mounted engines and a distributed propulsion BWB with eight boundary layer ingestion inlet engines, for a mission of 7750 nm at Mach 0.85 carrying 478 passengers. The results show that the optimum BWB designs have comparable planform shapes and TOGW of approximately 860,000 lb, but have different weight distributions. The distributed propulsion BWB has a heavier propulsion system (+17.5%) and a lighter wing (−11.5%) than the conventional propulsion BWB. Although the distributed propulsion BWB has a 1.6% higher lift-to-drag ratio than the conventional propulsion BWB, the fuel weight is still 1.2%
-                  higher, mainly due to 3.8% higher specific fuel consumption associated with smaller turbofan engines. The results furthermore show that more than two-thirds of the possible savings due to filling in the wake will be required to obtain this optimum design. Achieving such high savings by filling in the wake will be challenging. However, by developing more efficient small turbofan engines and reducing the distributed propulsion system weight, the necessary savings by filling in the wake will be achieved.}
+                  include the effect of the trailing edge jet on the induced drag, longitudinal control through thrust vectoring of the trailing edge jet, increased weight due to the ducts, and thrust losses within the ducts. The Blended-Wing-Body (BWB) aircraft was used as a testbed in this study. Two different BWB configurations were optimized, a conventional propulsion BWB with four pylon mounted engines and a distributed propulsion BWB with eight boundary layer ingestion inlet engines, for a mission of 7750 nm at Mach 0.85 carrying 478 passengers. The results show that the optimum BWB designs have comparable planform shapes and TOGW of approximately 860,000 lb, but have different weight distributions. The distributed propulsion BWB has a heavier propulsion system (+17.5\%) and a lighter wing (−11.5\%) than the conventional propulsion BWB. Although the distributed propulsion BWB has a 1.6\% higher lift-to-drag ratio than the conventional propulsion BWB, the fuel weight is still
+                  1.2\% higher, mainly due to 3.8\% higher specific fuel consumption associated with smaller turbofan engines. The results furthermore show that more than two-thirds of the possible savings due to filling in the wake will be required to obtain this optimum design. Achieving such high savings by filling in the wake will be challenging. However, by developing more efficient small turbofan engines and reducing the distributed propulsion system weight, the necessary savings by filling in the wake will be achieved.}
 }
 
 @Book{Leifsson2013surrogate,
@@ -25582,6 +25723,19 @@
     year        = {2021}
 }
 
+@Article{Li2022,
+    author      = {Jichao Li and Xiaosong Du and Joaquim R. R. A. Martins},
+    title       = {Machine Learning in Aerodynamic Shape Optimization},
+    doi         = {10.1016/j.paerosci.2022.100849},
+    journal     = {Progress in Aerospace Sciences},
+    month       = {October},
+    pages       = {100849},
+    volume      = {134},
+    year        = {2022},
+    abstract    = {Machine learning (ML) has been increasingly used to aid aerodynamic shape optimization (ASO), thanks to theavailability of aerodynamic data and continued developments in deep learning. We review the applications ofML in ASO to date and provide a perspective on the state-of-the-art and future directions. We first introduceconventional ASO and current challenges. Next, we introduce ML fundamentals and detail ML algorithms thathave been successful in ASO. Then, we review ML applications to ASO addressing three aspects: compactgeometric design space, fast aerodynamic analysis, and efficient optimization architecture. In addition toproviding a comprehensive summary of the research, we comment on the practicality and effectiveness ofthe developed methods. We show how cutting-edge ML approaches can benefit ASO and address challengingdemands, such as interactive design optimization. Practical large-scale design optimizations remain a challengebecause of the high cost of ML
+                  training. Further research on coupling ML model construction with priorexperience and knowledge, such as physics-informed ML, is recommended to solve large-scale ASO problems. }
+}
+
 @Article{Li2022a,
     author      = {Jichao Li and Mengqi Zhang and Chien Ming Jonathan Tay and Ningyu Liu and Yongdong Cui and Siou Chye Chew and Boo Cheong Khoo},
     title       = {Low-Reynolds-number airfoil design optimization using deep-learning-based tailored airfoil modes},
@@ -25603,6 +25757,18 @@
     publisher   = {Cambridge University Press ({CUP})},
     volume      = {932},
     year        = {2021}
+}
+
+@Article{Li2022c,
+    author      = {Jichao Li and Sicheng He and Mengqi Zhang and Joaquim R. R. A. Martins and Boo Cheong Khoo},
+    title       = {Physics-Based Data-Driven Buffet-Onset Constraint for Aerodynamic Shape Optimization},
+    doi         = {10.2514/1.J061519},
+    journal     = {AIAA Journal},
+    month       = {August},
+    number      = {8},
+    pages       = {4775--4788},
+    volume      = {60},
+    year        = {2022}
 }
 
 @Article{Li:2003:SuperLU_DIST,
@@ -25757,8 +25923,18 @@
     pages       = {113937},
     volume      = {268},
     year        = {2021},
-    abstract    = {Design and manufacturing technologies have promoted the use of composites in hydrodynamic lifting surfaces. Composites, even with state-of-the-art coatings, are susceptible to cavitation erosion damage. This work aims to design a cavitation-free composite lifting surface to maximize efficiency while ensuring structural integrity. We optimize a canonical hydrofoil using a gradient-based optimization framework that couples a Reynolds-averaged Navier--Stokes solver with a finite-element structural solver. The optimization reduces the weighted drag coefficient by 1.2% over lift coefficients between 0.2 and 0.6, and increases the cavitation inception speed by 82% at the nominal condition compared to the baseline. The optimized design shows higher cavitation inception speeds than an Eppler hydrofoil (E1127, known for cavitation-free operation at moderate lift conditions) with the same baseline planform at CL >= 0.2. The improvement from the E1127 hydrofoil was due mostly
+    abstract    = {Design and manufacturing technologies have promoted the use of composites in hydrodynamic lifting surfaces. Composites, even with state-of-the-art coatings, are susceptible to cavitation erosion damage. This work aims to design a cavitation-free composite lifting surface to maximize efficiency while ensuring structural integrity. We optimize a canonical hydrofoil using a gradient-based optimization framework that couples a Reynolds-averaged Navier--Stokes solver with a finite-element structural solver. The optimization reduces the weighted drag coefficient by 1.2\% over lift coefficients between 0.2 and 0.6, and increases the cavitation inception speed by 82\% at the nominal condition compared to the baseline. The optimized design shows higher cavitation inception speeds than an Eppler hydrofoil (E1127, known for cavitation-free operation at moderate lift conditions) with the same baseline planform at CL >= 0.2. The improvement from the E1127 hydrofoil was due mostly
                   to delaying tip vortex cavitation induced by 3-D effects. The optimization finds the fiber angle to balance the bend-twist coupling and modifies the directional strength to reduce the susceptibility to excessive deformation and material failure when sweep presents.}
+}
+
+@Article{Liao2022,
+    author      = {Yingqian Liao and Anil Yildirim and Joaquim R. R. A. Martins and Yin Lu Young},
+    title       = {{RANS}-based Optimization of a {T}-shaped Hydrofoil Considering Junction Design},
+    journal     = {Ocean Engineering},
+    note        = {(In press)},
+    year        = {2022},
+    abstract    = {Hydrodynamic lifting surfaces usually include junctions. High-fidelity simulations are necessary to capture critical physics near these regions, such as separation, junction vortices, and cavitation. We present RANS-based hydrodynamic optimizations of a T-shaped hydrofoil, including changes in the junction geometry. The optimized hydrofoils avoid separation and delay cavitation compared to the baseline. The full optimization design with planform, cross-section, and junction geometry variables yields a total drag reduction of 6.4\%. The optimized results show that the relative locations of the maximum foil thickness and the maximum strut thickness significantly impact the junction cavitation. Including the translation between the strut and the foil and more strut geometric variables as design variables will provide further improvement. The comparison between optimized designs demonstrates that optimizing planform and detailed junction geometry provides further
+                  improvement in addition to designing the cross-sectional geometry. The Hydrostructural analyses show that the optimized T-foils have lower stress at the junction than the baseline because of the resultant junction fairing. However, these hydrodynamic-optimized T-foils have higher deformation and maximum stress, which could result in accelerated fatigue, highlighting the need for hydrostructural responses in design optimization. The results demonstrate that the developed methodology is useful for designing next-generation complex hydrodynamic lifting surfaces.}
 }
 
 @Article{Librescu:1992,
@@ -26008,6 +26184,14 @@
     publisher   = {Elsevier},
     volume      = {63},
     year        = {2004}
+}
+
+@Conference{Lin2016,
+    author      = {John C. Lin and Marlyn Y. Andino and Michael G. Alexander},
+    title       = {An Overview of Active Flow Control Enhanced Vertical Tail Technology Development},
+    doi         = {10.2514/6.2016-0056},
+    number      = {AIAA 2016-0056},
+    year        = {2016}
 }
 
 @Article{Lin2019,
@@ -26991,6 +27175,7 @@
     title       = {An Efficient Algorithm for Determining Flutter of Geometrically Nonlinearly Deformed Aircraft},
     address     = {Bristol, UK},
     booktitle   = {RAeS 6th Aircraft Structural Design Conference},
+    keywords    = {CCAVD},
     publisher   = {RAeS},
     year        = {2018}
 }
@@ -27000,6 +27185,7 @@
     title       = {A Gradient-Based Flutter Constraint Including Geometrically Nonlinear Deformations},
     address     = {San Diego, California},
     booktitle   = {2019 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference},
+    keywords    = {CCAVD},
     publisher   = {AIAA},
     year        = {2019}
 }
@@ -27009,6 +27195,33 @@
     title       = {Including Geometrically Nonlinear Flutter Constraints in High Fidelity Aircraft Optimization},
     booktitle   = {International Forum on Aeroelasticity and Structural Dynamics ({IFASD} 2019)},
     year        = {2019}
+}
+
+@PhDThesis{Lupp2020,
+    author      = {Christopher A. Lupp},
+    title       = {Inclusion of Geometrically Nonlinear Aeroelastic Effects into Gradient-Based Aircraft Optimization},
+    address     = {Ann Arbor, MI},
+    keywords    = {CCAVD},
+    school      = {University of Michigan},
+    year        = {2020}
+}
+
+@Article{Lupp2022,
+    author      = {Lupp, Christopher A. and Cesnik, Carlos E. S.},
+    title       = {A Gradient-Based Flutter Constraint Including Geometrically Nonlinear Deformations},
+    journal     = {AIAA Journal},
+    keywords    = {CCAVD},
+    note        = {(under preparation)},
+    year        = {2022}
+}
+
+@Article{Lupp2022a,
+    author      = {C. A. Lupp and C. E. S. Cesnik},
+    title       = {Methods for Robustly Determining and Interpreting Flutter of Geometrically Nonlinearly Deformed Aircraft},
+    journal     = {Aeronautical Journal},
+    keywords    = {CCAVD},
+    note        = {(under preparation)},
+    year        = {2022}
 }
 
 @Book{Lutz:1996:PP,
@@ -27211,7 +27424,7 @@
     volume      = {52},
     year        = {2015},
     abstract    = {Adaptive morphing trailing edge wings have the potential to reduce the fuel burn of transport aircraft. However, to take full advantage of this technology and to quantify its benefits, design studies are required. To address this need, we quantify the aerodynamic performance benefits of a morphing trailing edge wing using aerodynamic design optimization. The aerodynamic model solves the Reynolds-averaged Navier--Stokes equations with a Spalart--Allmaras turbulence model. A gradient-based optimization algorithm is used in conjunction with an adjoint method that computes the required derivatives. The baseline geometry is optimized using a multipoint formulation and 192 shape design variables. The average drag coefficient is minimized subject to lift, pitching moment, geometric constraints, and a 2.5 g maneuver bending moment constraint. The trailing edge of the wing is optimized based on the multipoint optimized wing. The trailing edge morphing is parameterized using
-                  90 design variables that are optimized independently for each flight condition. A total of 407 trailing edge optimizations are performed at different flight conditions to span the entire flight envelope. We observed 1% drag reduction at on-design conditions, and 5% drag reduction near off-design conditions. The effectiveness of the trailing edge morphing is demonstrated by comparing it with the optimized results of a hypothetical fully morphing wing. In addition, we compute the fuel-burn reductions for a number of flights using the optimization results. A 1% cruise fuel-burn reduction is achieved using an adaptive morphing trailing edge for a typical long-haul twin-aisle mission.}
+                  90 design variables that are optimized independently for each flight condition. A total of 407 trailing edge optimizations are performed at different flight conditions to span the entire flight envelope. We observed 1\% drag reduction at on-design conditions, and 5\% drag reduction near off-design conditions. The effectiveness of the trailing edge morphing is demonstrated by comparing it with the optimized results of a hypothetical fully morphing wing. In addition, we compute the fuel-burn reductions for a number of flights using the optimization results. A 1\% cruise fuel-burn reduction is achieved using an adaptive morphing trailing edge for a typical long-haul twin-aisle mission.}
 }
 
 @Article{Lyu2015b,
@@ -27224,8 +27437,8 @@
     pages       = {968--985},
     volume      = {53},
     year        = {2015},
-    abstract    = {Despite considerable research on aerodynamic shape optimization, there is no standard benchmark problem allowing researchers to compare results. This work addresses this issue by solving a series of aerodynamic shape optimization problems based on the Common Research Model wing benchmark case defined by the Aerodynamic Design Optimization Discussion Group. The aerodynamic model solves the Reynolds-averaged Navier--Stokes equations with a Spalart--Allmaras turbulence model. A gradient-based optimization algorithm is used in conjunction with an adjoint method that computes the required derivatives. The drag coefficient is minimized subject to lift, pitching moment, and geometric constraints. A multilevel technique is used to reduce the computational cost of the optimization. A single-point optimization is solved with 720 shape variables using a 28.8-million-cell mesh, reducing the drag by 8.5%. A more realistic design is achieved through a multipoint optimization.
-                  Multiple local minima are found when starting from multiple randomly generated geometries, but the minimum drag values are within 0.1 drag counts of each other, and the geometries differ by only 0.4% of the mean aerodynamic chord. The effect of varying the number of shape design variables is examined. The Common Research Model wing benchmark problem proved to be useful for evaluating our design optimization framework, and the geometries and meshes for both the baseline and optimized wings are available as supplemental materials in this paper.
+    abstract    = {Despite considerable research on aerodynamic shape optimization, there is no standard benchmark problem allowing researchers to compare results. This work addresses this issue by solving a series of aerodynamic shape optimization problems based on the Common Research Model wing benchmark case defined by the Aerodynamic Design Optimization Discussion Group. The aerodynamic model solves the Reynolds-averaged Navier--Stokes equations with a Spalart--Allmaras turbulence model. A gradient-based optimization algorithm is used in conjunction with an adjoint method that computes the required derivatives. The drag coefficient is minimized subject to lift, pitching moment, and geometric constraints. A multilevel technique is used to reduce the computational cost of the optimization. A single-point optimization is solved with 720 shape variables using a 28.8-million-cell mesh, reducing the drag by 8.5\%. A more realistic design is achieved through a multipoint optimization.
+                  Multiple local minima are found when starting from multiple randomly generated geometries, but the minimum drag values are within 0.1 drag counts of each other, and the geometries differ by only 0.4\% of the mean aerodynamic chord. The effect of varying the number of shape design variables is examined. The Common Research Model wing benchmark problem proved to be useful for evaluating our design optimization framework, and the geometries and meshes for both the baseline and optimized wings are available as supplemental materials in this paper.
                   
                   }
 }
@@ -27471,10 +27684,11 @@
 @InProceedings{Mader2017a,
     author      = {Charles A. Mader and Gaetan K. Kenway and Joaquim R. R. A. Martins and Alejandra Uranga},
     title       = {Aerostructural Optimization of the {D8} Wing with Varying Cruise {Mach} Numbers},
+    address     = {Denver, CO},
     booktitle   = {18th {AIAA}/{ISSMO} Multidisciplinary Analysis and Optimization Conference},
     doi         = {10.2514/6.2017-4436},
     month       = {June},
-    publisher   = {American Institute of Aeronautics and Astronautics},
+    publisher   = {AIAA},
     year        = 2017,
     abstract    = {The D8 ``double-bubble'' is a new transport aircraft configuration proposed by MIT that has the potential to provide large improvements in fuel efficiency. It has been studied at the conceptual level and in low-speed wind tunnel tests, but there was, up to now, no higher fidelity transonic design. In this study, we use the conceptual design definition as a starting point and develop a high-fidelity aerostructural optimization problem for the D8 configuration using the MACH framework. Via gradient-based optimization techniques with coupled RANS and shell FEA, the D8 is optimized at three different cruise Mach numbers (0.72, 0.78, 0.84). The preliminary results presented confirm that the planforms designed with the conceptual level tools perform well and as predicted, and that some small improvements can be gained from further optimization. In spite of its limitations, this work confirms the viability of the D8 wing-body in the transonic regime and provides preliminary
                   transonic geometries for future work.}
@@ -27785,8 +27999,8 @@
     pages       = {650--662},
     volume      = {58},
     year        = {2021},
-    abstract    = {The second-generation of supersonic civil transport has to match ambitious targets in terms of efficiency to be economically and environmentally viable. CFD-based design optimization offers a powerful approach to address the complex tradeoffs intrinsic to this novel configuration. We apply this approach to the design of airfoils and wings at both supersonic cruise conditions and lower-speed, off-design conditions. We perform single and multipoint optimization to minimize the drag over an ideal supersonic aircraft flight envelope and assess the influence of physical and numerical parameters on optimization accuracy and robustness. To obtain more favorable design tradeoffs between different flight regimes, we introduce morphing leading and trailing edge capabilities, and quantify their benefits against fixed-wing shapes. The optimized layouts outperform baseline supersonic reference designs over a range of flight conditions, with drag reductions from 4% up to 86% for
-                  airfoils, and between 24% and 74% reductions relative to a reference wing. The results demonstrate that the proposed approach enables the fast and effective design of highly-efficient wings, capturing non-intuitive tradeoffs, and offering more in-depth physical insight into the optimal layouts.}
+    abstract    = {The second-generation of supersonic civil transport has to match ambitious targets in terms of efficiency to be economically and environmentally viable. CFD-based design optimization offers a powerful approach to address the complex tradeoffs intrinsic to this novel configuration. We apply this approach to the design of airfoils and wings at both supersonic cruise conditions and lower-speed, off-design conditions. We perform single and multipoint optimization to minimize the drag over an ideal supersonic aircraft flight envelope and assess the influence of physical and numerical parameters on optimization accuracy and robustness. To obtain more favorable design tradeoffs between different flight regimes, we introduce morphing leading and trailing edge capabilities, and quantify their benefits against fixed-wing shapes. The optimized layouts outperform baseline supersonic reference designs over a range of flight conditions, with drag reductions from 4\% up to 86\% for
+                  airfoils, and between 24\% and 74\% reductions relative to a reference wing. The results demonstrate that the proposed approach enables the fast and effective design of highly-efficient wings, capturing non-intuitive tradeoffs, and offering more in-depth physical insight into the optimal layouts.}
 }
 
 @InProceedings{Mangano2022a,
@@ -28178,6 +28392,14 @@
     year        = {2020}
 }
 
+@TechReport{Martins1994,
+    author      = {Joaquim R. R. A. Martins},
+    title       = {Front Fuselage Structure of an Advanced Air Superiority Fighter},
+    institution = {Department of Aeronautics, Imperial College, London, UK},
+    month       = {May},
+    year        = {1994}
+}
+
 @TechReport{Martins1995a,
     author      = {Joaquim R. R. A. Martins},
     title       = {Self-Similar Solutions for the Plane Turbulent Jet},
@@ -28185,6 +28407,14 @@
     month       = {June},
     type        = {{TAE} no. 750},
     year        = {1995}
+}
+
+@TechReport{Martins1997a,
+    author      = {Joaquim R. R. A. Martins},
+    title       = {Drag Reduction of Staggered Supersonic Wings},
+    institution = {Stanford University},
+    month       = {June},
+    year        = {1997}
 }
 
 @InProceedings{Martins2000,
@@ -28585,6 +28815,7 @@
 @Book{Martins2021,
     author      = {Joaquim R. R. A. Martins and Andrew Ning},
     title       = {Engineering Design Optimization},
+    address     = {Cambridge, UK},
     doi         = {10.1017/9781108980647},
     isbn        = {9781108833417},
     publisher   = {Cambridge University Press},
@@ -28605,7 +28836,7 @@
     title       = {Enabling Large-scale Multidisciplinary Design Optimization through Adjoint Sensitivity Analysis},
     doi         = {10.1007/s00158-021-03067-y},
     journal     = {Structural and Multidisciplinary Optimization},
-    month       = october,
+    month       = {October},
     pages       = {2959--2974},
     volume      = {64},
     year        = {2021},
@@ -28615,8 +28846,11 @@
 @Article{Martins2021b,
     author      = {Joaquim R. R. A. Martins and Graeme Kennedy},
     title       = {Enabling Large-scale Multidisciplinary Design Optimization through Adjoint Sensitivity Analysis},
+    doi         = {10.1007/s00158-021-03067-y},
     journal     = {Structural and Multidisciplinary Optimization},
-    note        = {(In press)},
+    month       = {October},
+    pages       = {2959--2974},
+    volume      = {64},
     year        = {2021}
 }
 
@@ -28640,22 +28874,6 @@
     year        = {2022},
     abstract    = {Antony Jameson pioneered CFD-based aerodynamic design optimization in the late 1980s. In addition to developing the fundamental theory, Jameson implemented that theory in codes that were practical enough to be used in industry. As a result of Jameson's seminal efforts, a research community has been established in aerodynamic design optimization. This research area has experienced sustained improvements in CFD solvers, mesh deformation, sensitivity computation, and optimization tools. We review recent developments for each of these components and present open-source tools available for aerodynamic shape optimization. A variety of applications is presented, including the optimization of a supercritical airfoil starting from a circle, a web application that optimizes airfoils within a few seconds, aircraft aerodynamic and aerostructural optimization, and aeropropulsive optimization. We also review the Aerodynamic Design Optimization Discussion Group (ADODG) benchmarks
                   and other aerodynamic shape optimization problems. Among the ADODG benchmarks, we focus on the RANS-based problems and discuss some of the issues encountered, including comparing Euler and RANS results and design-space multimodality. The availability of these benchmarks and the open-source tools is expected to enable further studies and benchmarks in CFD-based aerodynamic design optimization and MDO.}
-}
-
-@TechReport{Martins:1994:FFS,
-    author      = {Joaquim R. R. A. Martins},
-    title       = {Front Fuselage Structure of an Advanced Air Superiority Fighter},
-    institution = {Department of Aeronautics, Imperial College, London, UK},
-    month       = {May},
-    year        = {1994}
-}
-
-@TechReport{Martins:1997:A,
-    author      = {Joaquim R. R. A. Martins},
-    title       = {Drag Reduction of Staggered Supersonic Wings},
-    institution = {Stanford University},
-    month       = {June},
-    year        = {1997}
 }
 
 @Article{Martins:2004:HFA,
@@ -28785,6 +29003,19 @@
     year        = {2017},
     abstract    = { A comprehensive review of aerofoil shape parameterization methods that can be used for aerodynamic shape optimization is presented. Seven parameterization methods are considered for a range of design variables: class--shape transformations; B-splines; Hicks--Henne bump functions; a radial basis function domain element approach; B{\`e}zier surfaces; a singular-value decomposition modal extraction method; and the parameterized sections method. Because of the large range of variables involved, the most effective way to implement each method is first investigated. Their performances are then analyzed by considering the geometric shape recovery of over 2000 aerofoils using a range of design variables, testing the efficiency of design space coverage with respect to a given tolerance. It is shown that, for all the methods, between 20 and 25 design variables are needed to cover the full design space to within a geometric tolerance, with the singular-value decomposition
                   method doing this most efficiently. A set of transonic aerofoil case studies are also presented, with geometric error and convergence of the resulting aerodynamic properties explored. These results show a strong relationship between geometric error and aerodynamic convergence and demonstrate that between 38 and 66 design variables may be needed to ensure aerodynamic convergence to within one drag and one lift count. }
+}
+
+@Article{Masters2017b,
+    author      = {Masters, D. A. and Taylor, N. J. and Rendall, T. C. S. and Allen, C. B.},
+    title       = {Multilevel Subdivision Parameterization Scheme for Aerodynamic Shape Optimization},
+    doi         = {10.2514/1.j055785},
+    journal     = {AIAA Journal},
+    month       = oct,
+    number      = {10},
+    pages       = {3288--3303},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    volume      = {55},
+    year        = {2017}
 }
 
 @Article{masters2017multilevel,
@@ -31454,6 +31685,18 @@
                   similarities. Using the same material for both the prototype and reduced length-scale models results in imperfect scaling; the steady-state and dynamic hydroelastic responses are not scaled, and smaller length-scale models exhibit delayed hydroelastic instabilities. The conclusion is that using appropriate materials for model scale tests to satisfy Cauchy number similarity is necessary for similar steady-state response, but dynamic similarity additionally requires similar solid-to-fluid added mass ratio. Proper scaling allows one to accurately interpret and assess the performance and stability of full-scale flexible composite lifting surfaces such as foils, propulsors, turbines, fins, rudders, energy saving devices, and energy harvesters.}
 }
 
+@Article{Ng2022b,
+    author      = {Ng, Galen W and Martins, Joaquim R R A and Young, Yin L},
+    title       = {Optimizing steady and dynamic hydroelastic performance of composite foils with low-order models},
+    doi         = {j.compstruct.2022.116101},
+    issn        = {0263-8223},
+    journal     = {Composite Structures},
+    keywords    = {Anisotropy, Design optimization, Fluid--structure interaction, Hydroelasticity, Marine dynamics, Reduced-order modeling, Marine composite},
+    pages       = {116101},
+    volume      = {301},
+    year        = {2022}
+}
+
 @Article{Ng:2010:A,
     author      = {Ng, W. H. and Salvi, A. G. and Waas, A. M.},
     title       = {Characterization of the in-situ non-linear shear response of laminated fiber reinforcedcomposites},
@@ -31839,6 +32082,16 @@
     year        = {2003}
 }
 
+@PhDThesis{Norheim2022,
+    author      = {Johannes J. Norheim},
+    title       = {Mathematical Formulations in Conceptual Design, Analysis, and Optimization},
+    address     = {Cambridge, MA},
+    keywords    = {MDO},
+    month       = {September},
+    school      = {Massachusetts Institute of Technology},
+    year        = {2022}
+}
+
 @TechReport{Norman:2003,
     author      = {Norman, P.D. and Lister, D.H. and Lecht, M. and Madden, P. and Park, K. and Penanhoat, O. and Plaisance, C. and Renger, K.},
     title       = {Development of the Technical Basis for a New Emissions Parameter Covering the Whole Aircraft Operation: NEPAIR, Final Technical Report},
@@ -31998,6 +32251,60 @@
     month       = {June},
     publisher   = {American Institute of Aeronautics and Astronautics},
     year        = {2019}
+}
+
+@PhDThesis{Ojha2022,
+    author      = {Ojha, V.},
+    title       = {Goal-Oriented Mesh Adaptation for High-Fidelity Aeroelastic Simulations},
+    address     = {Ann Arbor, MI},
+    keywords    = {CCAVD},
+    school      = {University of Michigan},
+    year        = {2022}
+}
+
+@TechReport{Ojha_etal_2020_SciTech,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. Cesnik and Philip S. Beran and Nathan A. Wukie},
+    title       = {Assessment of Mesh Resolution Requirements for Adaptive High-Order Fluid Structure Interaction Simulations},
+    doi         = {10.2514/6.2020-1051},
+    keywords    = {CCAVD},
+    number      = {2020--1051},
+    type        = {AIAA Paper},
+    year        = {2020}
+}
+
+@TechReport{Ojha_Fidkowski_Cesnik_2019_Aviation,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. Cesnik},
+    title       = {High-Fidelity Coupled Fluid-Structure Interaction Simulations with Adaptive Meshing},
+    doi         = {10.2514/6.2019-3056},
+    keywords    = {CCAVD},
+    number      = {2019--3056},
+    pdf         = {Ojha_Fidkowski_Cesnik_2019_Aviation.pdf},
+    tags        = {MYPUBS FSI},
+    type        = {AIAA Paper},
+    year        = {2019}
+}
+
+@TechReport{Ojha_Fidkowski_Cesnik_2021,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. S. Cesnik},
+    title       = {Adaptive Mesh Refinement for Fluid-Structure Interaction Simulations},
+    doi         = {10.2514/6.2021-0731},
+    keywords    = {CCAVD},
+    number      = {2021--0731},
+    pdf         = {Ojha_Fidkowski_Cesnik_2021.pdf},
+    tags        = {MYPUBS FSI ADAPTATION},
+    type        = {AIAA Paper},
+    year        = {2021}
+}
+
+@Article{Ojha_Fidkowski_Cesnik_2021_AIAAJ,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. S. Cesnik},
+    title       = {Adaptive High-Order Fluid-Structure Interaction Simulations with Reduced Mesh-Motion Errors},
+    doi         = {10.2514/1.J059730},
+    journal     = {AIAA Journal},
+    keywords    = {CCAVD},
+    number      = {6},
+    volume      = {59},
+    year        = {2021}
 }
 
 @Article{OLeary-Roseberry2021,
@@ -32539,7 +32846,7 @@
     title       = {Analysis and Comparison of Transonic Buffet Phenomenon over Several Three-Dimensional Wings},
     doi         = {10.2514/1.j056473},
     journal     = {{AIAA} Journal},
-    month       = jan,
+    month       = {January},
     number      = {1},
     pages       = {379--396},
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
@@ -32602,16 +32909,26 @@
 }
 
 @InProceedings{Panda2018hessian,
-    author      = {Panda, Kinshuk and Hicken, Jason E},
-    title       = {Hessian-based Dimension Reduction for Optimization Under Uncertainty},
+    author      = {Panda, Kinshuk and Hicken, Jason E.},
+    title       = {Hessian-based dimension reduction for optimization under uncertainty},
     booktitle   = {2018 Multidisciplinary Analysis and Optimization Conference},
-    day         = {24},
+    day         = {25},
     doi         = {10.2514/6.2018-3102},
-    month       = {Jun},
-    pages       = {3102},
+    keywords    = {CCAVD},
+    location    = {Atlanta, Georgia},
+    month       = jun,
+    note        = {AIAA 2018-3102},
     publisher   = {American Institute of Aeronautics and Astronautics},
-    url         = {https://doi.org/10.2514/6.2018-3102},
     year        = {2018}
+}
+
+@PhDThesis{Panda2019thesis,
+    author      = {Panda, Kinshuk},
+    title       = {Hessian-based dimension reduction for uncertainty propagation and robust design optimization},
+    address     = {Troy, New York},
+    keywords    = {CCAVD},
+    school      = {Rensselaer Polytechnic Institute},
+    year        = {2019}
 }
 
 @Article{Pang2021,
@@ -32863,6 +33180,17 @@
     pages       = {253--266},
     volume      = 37,
     year        = 2005
+}
+
+@Article{Parkin1956,
+    author      = {Parkin, Blaine R. and Perry, Byrne and Wu, T. Yao‐tsu},
+    title       = {Pressure Distribution on a Hydrofoil Running near the Water Surface},
+    doi         = {10.1063/1.1722350},
+    journal     = {Journal of Applied Physics},
+    number      = {3},
+    pages       = {232--240},
+    volume      = {27},
+    year        = {1956}
 }
 
 @Misc{Parkinson1959,
@@ -33670,8 +33998,8 @@
     month       = {January},
     year        = {2017},
     abstract    = {Vertical Takeoff and Landing (VTOL) capable air vehicles such as quadcopters are being considered for a vast array of missions requiring longer endurance in hover, faster travel times, and higher payload capacities. For this reason, hybrid air vehicles that incorporate the design features of rotorcraft and fixed wing vehicles appear to be promising candidates for these missions. One such hybrid vehicle, the quadrotor biplane, has been explored for package delivery capability. This vehicle configuration has two wings placed perpendicular and below four proprotors in a biplane configuration. The vehicle uses conventional quadrotor control methodology for flight control in both hover and froward flight mode. It enters hover in tail-sitter configuration and utilizes differential thrust vectors to pitch forward into forward flight configuration. Using differential RPM in place of conventional control surfaces greatly reduces mechanical complexity. The vehicle design and
-                  package delivery functionality have been validated experimentally, in both hover and forward flight, with a test vehicle that has a gross takeoff weight (GTOW) of 3.76 kg and a 0.45 kg payload capacity. To characterize the flight performance of this vehicle design during its transition between the two flight modes, a comprehensive sensor suite paired with a flight data recorder system were designed and incorporated into the vehicle. Motor RPM was measured with hall effect sensors, while a combined voltage and current sensor measures the power consumption from the main battery. A barometric pressure, temperature, and altitude sensor was integrated to determine the atmospheric conditions. Lastly, a custom 2-D flow probe designed in-house has been implemented to measure airspeed and angle of attack of the fuselage body relative to the oncoming wind. In forward flight, the vehicle was flown with no payload and was shown to require 138 W, 68% less power than the 430 W
-                  needed in hover. This efficiency gain occurred when the vehicle pitched to 55.8 * from vertical, with no payload, while flying at 7.31 m/s with respect to the wind. Another observation made from flight data in hover indicates that increasing the size of the payload from 0 to 1lb (empty to full) increases the amount of power required by 18%.}
+                  package delivery functionality have been validated experimentally, in both hover and forward flight, with a test vehicle that has a gross takeoff weight (GTOW) of 3.76 kg and a 0.45 kg payload capacity. To characterize the flight performance of this vehicle design during its transition between the two flight modes, a comprehensive sensor suite paired with a flight data recorder system were designed and incorporated into the vehicle. Motor RPM was measured with hall effect sensors, while a combined voltage and current sensor measures the power consumption from the main battery. A barometric pressure, temperature, and altitude sensor was integrated to determine the atmospheric conditions. Lastly, a custom 2-D flow probe designed in-house has been implemented to measure airspeed and angle of attack of the fuselage body relative to the oncoming wind. In forward flight, the vehicle was flown with no payload and was shown to require 138 W, 68\% less power than the 430 W
+                  needed in hover. This efficiency gain occurred when the vehicle pitched to 55.8 * from vertical, with no payload, while flying at 7.31 m/s with respect to the wind. Another observation made from flight data in hover indicates that increasing the size of the payload from 0 to 1lb (empty to full) increases the amount of power required by 18\%.}
 }
 
 @InProceedings{Phuoc2007,
@@ -34915,6 +35243,7 @@
 @Book{Raymer2012,
     author      = {Daniel P. Raymer},
     title       = {Aircraft Design: A Conceptual Approach},
+    address     = {Reston, VA},
     edition     = {5th},
     publisher   = {{AIAA}},
     year        = {2012}
@@ -34944,7 +35273,7 @@
     title       = {Evaluation of the sensitivity coefficient of an eigenvalue},
     doi         = {10.1109/tac.1967.1098773},
     journal     = {{IEEE} Transactions on Automatic Control},
-    month       = december,
+    month       = {December},
     number      = {6},
     pages       = {792--792},
     publisher   = {Institute of Electrical and Electronics Engineers ({IEEE})},
@@ -35503,6 +35832,15 @@
     year        = {1997}
 }
 
+@InProceedings{Righi2022,
+    author      = {Marcello Righi and David Anderegg and Leonardo Manfriani and Michael Ammann and Christian Oram and Oier Coretti and Anil Yildirim and Joaquim R. R. A. Martins},
+    title       = {Optimisation of symmetrical aerofoils for a vertical axis wind turbine},
+    booktitle   = {Proceedings of the Aviation Forum},
+    doi         = {10.2514/6.2022-3384},
+    month       = {June},
+    year        = {2022}
+}
+
 @InProceedings{Righi2022a,
     author      = {Marcello Righi and David Anderegg and Leonardo Manfriani and Michael Ammann and Christian Oram and Anil Yildirim and Joaquim R. R. A. Martins and Oier Coretti},
     title       = {Optimisation of Symmetrical Aerofoils for a Vertical Axis Wind Turbine},
@@ -35825,7 +36163,7 @@
     volume      = {46},
     year        = {2015},
     abstract    = {This paper examines the design of adaptive laminar airfoils in the transonic flow regime using the γ-Re˜θt model as a transition prediction method. A robust solution procedure for the transition model is described and a grid convergence study is presented. Predictions from the model are then compared to an extensive set of experimental results containing transition measurements on a morphing airfoil. It is shown that the sensitivity of the γ-Re˜θt transition model with respect to shape variations allows its use in a design framework. Using a multi-point optimization strategy, the model is then used to design transonic airfoils suitable for a range of flow conditions. The potential improvement in drag associated with the implementation of adaptive airfoil technology is then carefully quantified using single-point optimization with the multi-point designed airfoil as a reference. Structural design constraints are taken into account to obtain a realistic estimate
-                  of possible drag reduction through airfoil morphing using current wing construction technology. Airfoil drag improvements of up to 4.6% are obtained through morphing of the section of upper surface located between the wing spars with respect to the baseline multi-point design in flow conditions typical of large business jet operation.}
+                  of possible drag reduction through airfoil morphing using current wing construction technology. Airfoil drag improvements of up to 4.6\% are obtained through morphing of the section of upper surface located between the wing spars with respect to the baseline multi-point design in flow conditions typical of large business jet operation.}
 }
 
 @Article{robust,
@@ -35994,7 +36332,7 @@
     title       = {Derivatives of eigenvalues and eigenvectors},
     doi         = {10.2514/3.5795},
     journal     = {{AIAA} Journal},
-    month       = may,
+    month       = {May},
     number      = {5},
     pages       = {943--944},
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
@@ -36084,6 +36422,15 @@
     pages       = {284--291},
     volume      = {47},
     year        = {2010}
+}
+
+@InProceedings{Rosatelli2023,
+    author      = {P. Rosatelli and C. E. S. Cesnik and C. A. Lupp},
+    title       = {Fuel Burn Minimization Including Dynamic Aeroelastic Constraint for Free-Flying Vehicles Under Geometrically Nonlinear Deformations},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {CCAVD},
+    note        = {(to appear)},
+    year        = {2023}
 }
 
 @Article{Rosenbrock1960,
@@ -36807,18 +37154,6 @@
     title       = {Aerodynamic Optimization of an Over-the-Wing-Nacelle-Mount Configuration},
     doi         = {10.1155/2011/293078},
     journal     = {Modelling and Simulation in Engineering},
-    volume      = {2011},
-    year        = {2011}
-}
-
-@Article{Sasaki2011a,
-    author      = {Sasaki, Daisuke and Nakahashi, Kazuhiro},
-    title       = {Aerodynamic Optimization of an Over-the-Wing-Nacelle-Mount Configuration},
-    doi         = {10.1155/2011/293078},
-    issn        = {1687-5591, 1687-5605},
-    journal     = {Modelling and Simulation in Engineering},
-    pages       = {1--13},
-    volume      = {2011},
     year        = {2011}
 }
 
@@ -37467,7 +37802,7 @@
     volume      = {56},
     year        = {2018},
     abstract    = {Mesh generation for high-fidelity computational fluid dynamics simulations and aerodynamic shape optimization is a time-consuming task. Complex geometries can be accurately modeled using overset meshes, whereby multiple high-quality structured meshes corresponding to different aircraft components overlap to model the full aircraft configuration. However, from the standpoint of geometry manipulation, most methods operate on the entire geometry rather than on separate components, which diminishes the advantages of overset meshes. To address this issue, a geometry module is introduced that operates on individual components and automatically computes their intersections to update overset meshes during optimization. Reverse-mode automatic differentiation is applied to compute partial derivatives across this geometry module so that it fits into an optimization framework that uses a hybrid adjoint method (known as ADjoint) to efficiently compute gradients for a large number
-                  of design variables. By using these automatically updated meshes and the corresponding derivatives, the aerodynamic shape of the DLR-F6 geometry is optimized while allowing changes in the wing--fuselage intersection. Sixteen design variables control the fuselage shape, and 128 design variables determine the wing surface. Under transonic flight conditions, the optimization reduces drag by 15 counts (5%) as compared with the baseline design.}
+                  of design variables. By using these automatically updated meshes and the corresponding derivatives, the aerodynamic shape of the DLR-F6 geometry is optimized while allowing changes in the wing--fuselage intersection. Sixteen design variables control the fuselage shape, and 128 design variables determine the wing surface. Under transonic flight conditions, the optimization reduces drag by 15 counts (5\%) as compared with the baseline design.}
 }
 
 @PhDThesis{Secco2018c,
@@ -37492,7 +37827,7 @@
     volume      = {56},
     year        = {2019},
     abstract    = {The strut-braced wing aircraft configuration promises to reduce fuel burn by enabling higher spans that reduce lift-induced drag. A successful design for this configuration depends on a careful trade-off between the various sources of drag and structural weight. When using computational fluid dynamic tools for aerodynamic shape optimization, generating high-quality structured meshes for the strut-braced wing configuration becomes challenging, especially near junctions. Furthermore, mesh deformation procedures frequently generate negative volume cells when applied to these structured meshes during optimization. This paper addresses this issue by using overset meshes and a component-based parametrization technique to achieve a flexible design optimization cycle capable of handling changing junctions. This study uses this approach to minimize drag of the PADRI 2017 strut-braced wing benchmark for a fixed lift constraint at transonic flight conditions. The drag of the
-                  optimized configuration is 15% lower than the baseline due to the reduction of shocks and separation in the wing-strut junction region. This result represents an example in which high-fidelity modeling is required to quantify the benefits of a new aircraft configuration and address potential issues during the conceptual design.
+                  optimized configuration is 15\% lower than the baseline due to the reduction of shocks and separation in the wing-strut junction region. This result represents an example in which high-fidelity modeling is required to quantify the benefits of a new aircraft configuration and address potential issues during the conceptual design.
                   
                   }
 }
@@ -37633,6 +37968,14 @@
     pages       = {057103(1)--057103(14)},
     volume      = {31},
     year        = {2019}
+}
+
+@Book{Selig1996,
+    author      = {Selig, Michael S.},
+    title       = {{UIUC} airfoil data site},
+    publisher   = {Department of Aeronautical and Astronautical Engineering University of Illinois at Urbana-Champaign},
+    url         = {https://m-selig.ae.illinois.edu/ads/coord_database.html},
+    year        = {1996}
 }
 
 @Book{selig1997,
@@ -37782,7 +38125,7 @@
     keywords    = {ank, scalos},
     month       = {January},
     year        = {2022},
-    abstract    = {Designing supersonic transport aircraft requires accounting for performance and stability and high-speed and low-speed conditions. Previous work demonstrated that there is a trade-off between high-speed performance and low-speed stability. Numerical optimization presents the opportunity to obtain the best high-speed performance while enforcing stability at low speeds. We perform RANS-based aerodynamic shape optimization with a component-based geometry parameterization approach that enables the optimization of a complex three-surface supersonic transport configuration. We minimize drag at a supersonic cruise condition both with and without a constraint on subsonic pitch stability. The stability constraint enforces a 5% static margin at a subsonic takeoff condition. We show that shape optimization increases the wing thickness and leading edge radius to design a cranked arrow wing that is stable at subsonic speeds at the cost of a 5.8\% increase in supersonic drag.}
+    abstract    = {Designing supersonic transport aircraft requires accounting for performance and stability and high-speed and low-speed conditions. Previous work demonstrated that there is a trade-off between high-speed performance and low-speed stability. Numerical optimization presents the opportunity to obtain the best high-speed performance while enforcing stability at low speeds. We perform RANS-based aerodynamic shape optimization with a component-based geometry parameterization approach that enables the optimization of a complex three-surface supersonic transport configuration. We minimize drag at a supersonic cruise condition both with and without a constraint on subsonic pitch stability. The stability constraint enforces a 5\% static margin at a subsonic takeoff condition. We show that shape optimization increases the wing thickness and leading edge radius to design a cranked arrow wing that is stable at subsonic speeds at the cost of a 5.8\% increase in supersonic drag.}
 }
 
 @Article{Seraj2022b,
@@ -37792,6 +38135,17 @@
     journal     = {Journal of Aircraft},
     note        = {(In press)},
     year        = {2022}
+}
+
+@InProceedings{Seraj2022c,
+    author      = {Sabet Seraj and Anil Yildirim and Joshua L. Anibal and Joaquim R. R. A. Martins},
+    title       = {Improving the Performance of a Compressible {RANS} Solver for Low and High {Mach} Number Flows},
+    booktitle   = {Eleventh International Conference on Computational Fluid Dynamics},
+    keywords    = {scalos},
+    month       = {July},
+    year        = {2022},
+    abstract    = {The aerodynamic design of aircraft often involves evaluating flow conditions that span low subsonic to transonic, or even supersonic Mach numbers. Compressible flow solvers are a natural choice for such design problems, but these solvers encounter reduced accuracy and efficiency at low Mach numbers. In addition, simulations with supersonic conditions can be challenging to converge because of large gradients in the flow field. This paper presents three contributions to address these issues in the context of an approximate Newton--Krylov solver for the Reynolds-averaged Navier--Stokes equations. First, we propose a method for scaling artificial dissipation that improves accuracy at low Mach numbers while retaining the simplicity of the original scalar dissipation scheme. Second, we show that characteristic time-stepping combined with an approximate Newton method can accelerate convergence for low Mach number flows by reducing the stiffness in the linear system for each
+                  Newton iteration. Third, we introduce a dissipation-based continuation method for flows with shocks that improves robustness and accelerates convergence without sacrificing accuracy. These methods can be used to make compressible flow solvers more accurate and efficient across low and high Mach number regimes.}
 }
 
 @Article{Serani2016,
@@ -38405,7 +38759,7 @@
     volume      = {64},
     year        = {2021},
     abstract    = {Natural laminar flow is one of the most promising ways to reduce the drag of future aircraft configurations. However, there is a lack of efficient tools for performing shape optimization considering laminar-to-turbulent transition. This is in part because including crossflow instabilities in the optimization is challenging. This paper addresses this need by developing a discrete, adjoint-based optimization framework where transition is modeled considering both Tollmien and Schlichting waves and crossflow instabilities. The framework is based on a Reynolds-averaged Navier--Stokes computational fluid dynamics solver coupled with a transition simulation module externally by incorporating into the Spalart--Allmaras turbulence model through a smooth intermittency function. The transition simulation module consists of a laminar boundary-layer equations solver and a simplified stability analysis method based on the Drela--Giles method and the C1 criterion. A Jacobian-free
-                  coupled-adjoint method is used to compute the gradients of the transition prediction. Lift-constrained drag minimization of a transonic infinite span wing with 25∘ of sweep is performed. The optimizer successfully reduces the drag coefficient by 43.34%, owing to an extended laminar region on the wing surface, and finds a pressure distribution that strikes a balance between the Tollmien--Schlichting wave and crossflow instability transition mechanisms.}
+                  coupled-adjoint method is used to compute the gradients of the transition prediction. Lift-constrained drag minimization of a transonic infinite span wing with 25 deg of sweep is performed. The optimizer successfully reduces the drag coefficient by 43.34\%, owing to an extended laminar region on the wing surface, and finds a pressure distribution that strikes a balance between the Tollmien--Schlichting wave and crossflow instability transition mechanisms.}
 }
 
 @InProceedings{Shi:1998,
@@ -39025,17 +39379,6 @@
     year        = {2020}
 }
 
-@TechReport{Smith2020c,
-    author      = {Benjamin Smith and Timothy R. Brooks and Mark Leader and Ting Wei Chin and Graeme J. Kennedy and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
-    title       = {Passive Aeroelastic Tailoring},
-    address     = {Hampton, VA},
-    institution = {NASA},
-    month       = {February},
-    number      = {CR--2020-220425},
-    type        = {Technical report},
-    year        = {2020}
-}
-
 @TechReport{Smith:1996:A,
     author      = {Stephen C. Smith},
     title       = {A Computational and Experimental Study of Nonlinear Aspects of Induced Drag},
@@ -39638,6 +39981,21 @@
     year        = {2020},
     abstract    = {This paper presents a methodology for preliminary sizing of unconventional rotorcraft using a physics-based approach to estimate the weight of primary load-carrying members and rotor efficiencies. The methodology is demonstrated for a quadrotor biplane tailsitter, a tilt-body configuration that can operate in both helicopter and airplane mode. A beam lattice framework for the airframe structure is iteratively adjusted in the sizing loop to accommodate the limit loads. A similar semianalytical approach is followed to size and estimate weight of the rotor blades. Using this analysis, a consistent combination of vehicle macrodimensions (rotor radius, wing span) and tip speed as well as detailed design parameters (spar height, skin thickness, and cross-section weight) are obtained simultaneously. To compare the effectiveness of various power plants within a weight class, the sizing methodology was modified to identify the payload for three different vehicle takeoff
                   weights: 20, 50, and 1000 lb. To enable operation within constrained urban canyons, the effect of restricting maximum vehicle dimensions to 10 ftfor the 1000-lb designs is also examined. An electric transmission model is used in these designs owing to its relative insensitivity of transmission efficiency to the operating RPM. A variable-pitch and variable-RPM rotor design allows for control redundancy within each rotor.}
+}
+
+@Article{Sridharan2022a,
+    author      = {Sridharan, Ananth and Govindarajan, Bharath},
+    title       = {A Multidisciplinary Optimization Approach for Sizing Vertical Lift Aircraft},
+    doi         = {10.4050/JAHS.67.022004},
+    journal     = {Journal of the American Helicopter Society},
+    month       = {April},
+    number      = {2},
+    pages       = {1--15},
+    volume      = {67},
+    year        = {2022},
+    abstract    = {This paper presents an approach to reframe the sizing problem for vertical-lift unmanned aerial vehicles (UAVs) as an optimization problem and obtains a weight-optimal solution with up to two orders of magnitude of savings in wall clock time. Because sizing is performed with higher fidelity models and design variables from several disciplines, the Simultaneous Analysis aNd Design (SAND) approach from fixed-wing multidisciplinary optimization literature is adapted for the UAV sizing task. Governing equations and disciplinary design variables that are usually self-contained within disciplines (airframe tube sizes, trim variables, and trim equations) are migrated to the sizing optimizer and added as design variables and (in)equality constraints. For sizing consistency, the iterative weight convergence loop is replaced by a coupling variable and associated equality consistency constraint for the sizing optimizer. Cruise airspeed is also added as a design variable and
+                  driven by the sizing optimizer. The methodology is demonstrated for sizing a package delivery vehicle (a lift-augment quadrotor biplane tailsitter) with up to 39 design variables and 201 constraints. Gradient-based optimizations were initiated from different starting points; without blade shape design in sizing, all processes converged to the same minimum, indicating that the design space is convex for the chosen bounds, constraints, and objective function. Several optimization schemes were investigated by moving combinations of relevant disciplines (airframe sizing with finite element analysis, vehicle trim, and blade aerodynamic shape design) to the sizing optimizer. The biggest advantage of the SAND strategy is its scope for parallelization, and the inherent ability to drive the design away from regions where disciplinary analyses (e.g., trim) cannot find a solution, obviating the need for ad hoc penalty functions. Even in serial mode, the SAND optimization
+                  strategy yields results in the shortest wall clock time compared to all other approaches.}
 }
 
 @InProceedings{Stalewski2012,
@@ -40837,7 +41195,7 @@
     month       = {Sep.},
     pages       = {1-8},
     year        = {2011},
-    abstract    = {It is a great challenge to obtain an efficient algorithm for global optimisation of nonlinear, nonconvex and high dimensional objective functions. This paper shows how the combination of DIRECT and Nelder-Mead algorithms can improve the efficiency in the parameter tuning of a sheet-metal press line. A combined optimisation algorithm is proposed that determines and utilises all local optimal points from DIRECT algorithm as Nelder-Mead starting points. To reduce the total optimisation time, all Nelder-Mead optimisations can be executed in parallel. Additionally, a Collision Inspection Method is implemented in the simulation model to reduce the evaluation time. Altogether, this results in an industrially useful parameter tuning method. Improvements of an increased production rate of 7% and 40% smoother robot motions have been achieved.}
+    abstract    = {It is a great challenge to obtain an efficient algorithm for global optimisation of nonlinear, nonconvex and high dimensional objective functions. This paper shows how the combination of DIRECT and Nelder-Mead algorithms can improve the efficiency in the parameter tuning of a sheet-metal press line. A combined optimisation algorithm is proposed that determines and utilises all local optimal points from DIRECT algorithm as Nelder-Mead starting points. To reduce the total optimisation time, all Nelder-Mead optimisations can be executed in parallel. Additionally, a Collision Inspection Method is implemented in the simulation model to reduce the evaluation time. Altogether, this results in an industrially useful parameter tuning method. Improvements of an increased production rate of 7\% and 40\% smoother robot motions have been achieved.}
 }
 
 @Article{Swanson1992,
@@ -40936,7 +41294,7 @@
     publisher   = {Springer Japan},
     volume      = {10},
     year        = {2005},
-    abstract    = {A new method for designing propeller blade sections is presented. A vortex lattice method is used to evaluate the performance and the time-dependent pressure distribution on the blade surface in a non-uniform flow, while efficient optimization algorithms are used to modify the blade sections. Two different designs were carried out in this study. The first was a design to realize a target pressure distribution in a rotating three-dimensional flow. A two-dimensional wing theory was used to obtain the target pressure distribution. The predicted increase in efficiency and the reduction in the cavity volume were confirmed by model experiments. The second was a design to maximize the propeller efficiency. By this method, the propeller efficiency was improved by 1.2% under the constrains of constant thrust and a prescribed margin for face cavitation.}
+    abstract    = {A new method for designing propeller blade sections is presented. A vortex lattice method is used to evaluate the performance and the time-dependent pressure distribution on the blade surface in a non-uniform flow, while efficient optimization algorithms are used to modify the blade sections. Two different designs were carried out in this study. The first was a design to realize a target pressure distribution in a rotating three-dimensional flow. A two-dimensional wing theory was used to obtain the target pressure distribution. The predicted increase in efficiency and the reduction in the cavity volume were confirmed by model experiments. The second was a design to maximize the propeller efficiency. By this method, the propeller efficiency was improved by 1.2\% under the constrains of constant thrust and a prescribed margin for face cavitation.}
 }
 
 @Article{Talbert1990,
@@ -41174,7 +41532,7 @@
     volume      = {44},
     year        = {2007},
     abstract    = {Traditionally, the design of a transportation system has focused on either vehicle design or the network flow, assuming the other as given. However, to define a system-level architecture for a transportation system, it is advantageous to expand the system boundary during the design process to include the network routing, the vehicle specifications, and the operations that couple the vehicle(s) and the network. In this paper, the transportation architecture is decomposed into these fundamental subsystems by classifying the decisions required to define each subsystem. Using an integrated transportation system formulation, the design of the transportation architecture can be obtained by concurrently optimizing the vehicle design and network flow. This is accomplished by embedding a linear programming solver in the perturbation step of simulated annealing to solve for the large number of linear constraints imposed by the capacity and demand requirements of the network.
-                  The benefits of this new formulation are illustrated through an example of an air transportation system for an overnight package delivery network in which a 10% improvement in cost is obtained over traditional network flow optimization. The improvement in system cost obtained can be attributed to the reduction in operational inefficiencies for the transportation system.}
+                  The benefits of this new formulation are illustrated through an example of an air transportation system for an overnight package delivery network in which a 10\% improvement in cost is obtained over traditional network flow optimization. The improvement in system cost obtained can be attributed to the reduction in operational inefficiencies for the transportation system.}
 }
 
 @InProceedings{Taylor2015a,
@@ -41354,7 +41712,7 @@
     volume      = {51},
     year        = {2015},
     abstract    = {This paper presents a space mapping algorithm for airfoil shape optimization enhanced with adjoint sensitivities. The surrogate-based algorithm utilizes low-cost derivative information obtained through adjoint sensitivities to improve the space mapping matching between a high-fidelity airfoil model, evaluated through expensive CFD simulations, and its fast surrogate. Here, the airfoil surrogate model is constructed though low-fidelity CFD simulations. As a result, the design process can be performed at a low computational cost in terms of the number of high-fidelity CFD simulations. The adjoint sensitivities are also exploited to speed up the surrogate optimization process. Our method is applied to a constrained drag minimization problem in two-dimensional inviscid transonic flow. The problem is solved for several low-fidelity model termination criteria. The results show that when compared with direct gradient-based optimization with adjoint sensitivities, the
-                  proposed approach requires 49-78% less computational cost while still obtaining a comparable airfoil design.}
+                  proposed approach requires 49--78\% less computational cost while still obtaining a comparable airfoil design.}
 }
 
 @InProceedings{Thareja1986,
@@ -44049,7 +44407,7 @@
     month       = {August},
     year        = {2021},
     abstract    = {The proper orthogonal decomposition (POD) based reduced-order model (ROM) has been an effective tool for flow field prediction in the engineering industry. The sample selection in the design space for POD basis construction affects the ROM performance sensitively. Adaptive sampling can significantly reduce the number of samples to achieve the required model accuracy. In this work, we propose a novel adaptive sampling algorithm, called conjunction sampling strategy, which is based on proven strategies. The conjunction sampling strategy is demonstrated on airfoil flow field prediction within the transonic regime. We demonstrate the performance of the proposed strategy by running 10 trials for each strategy for the robustness tests. Results show that the conjunction sampling strategy consistently achieves higher predictive accuracy compared with Latin hypercube sampling (LHS) and existing strategies. Specifically, under the same computational budget (40 training samples
-                  in total), the conjunction strategy reduced the L2 error by 56.7% compared with LHS. In addition, the conjunction strategy reduced the standard deviation of L2 errors by 62.1% with a 2.6% increase on the mean error compared with the best existing strategy.}
+                  in total), the conjunction strategy reduced the L2 error by 56.7\% compared with LHS. In addition, the conjunction strategy reduced the standard deviation of L2 errors by 62.1\% with a 2.6\% increase on the mean error compared with the best existing strategy.}
 }
 
 @Article{Wang2021vae,
@@ -44695,7 +45053,7 @@
     volume      = {55},
     year        = {2018},
     abstract    = {The increasing usage of low-Reynolds-number (10,000--100,000 tip Reynolds number) scale quadrotors for civilian and military applications provides the impetus for the development of reliable design methodologies. At present, there is limited understanding of how to accurately size quadrotor components for a specific mission. These components include the rotors, motors, speed controllers, batteries, and airframe. However, empirical relationships may be derived for these components based on manufacturer data. The present research identifies the key factors driving vehicle weight and provides a framework for implementing these factors in a micro air vehicle design tool. Starting from basic rotor parameters (such as radius, solidity, and airfoil section) and an initial gross takeoff weight estimate, a blade element momentum theory framework coupled with computational-fluid-dynamics-generated sectional airfoil tables provides an acceptable estimate of low-Reynolds-number
-                  rotor power and torque for required thrust. The aerodynamic power and torque along with desired flight time and speed drive the weights of the quadrotor components. The proposed sizing tool has been validated against a series of existing quadrotors with 30--1000 g gross takeoff weights. Current results show that individual weight groups can be predicted generally within a $\pm$10% deviation and the gross takeoff weight of each vehicle is predicted within a $\pm$4% variation.}
+                  rotor power and torque for required thrust. The aerodynamic power and torque along with desired flight time and speed drive the weights of the quadrotor components. The proposed sizing tool has been validated against a series of existing quadrotors with 30--1000 g gross takeoff weights. Current results show that individual weight groups can be predicted generally within a $\pm$10\% deviation and the gross takeoff weight of each vehicle is predicted within a $\pm$4\% variation.}
 }
 
 @Article{Wintzer:2010:A,
@@ -44996,7 +45354,7 @@
     volume      = {65},
     year        = {2022},
     abstract    = {Multifidelity design optimization is a strategy that can reduce the high computational cost in cases where the high-fidelity model is too expensive to use directly in optimization. However, current multifidelity approaches cannot handle the high-dimensional problems commonly encountered in industrial settings. Furthermore, they cannot accommodate arbitrary analysis fidelities, directly handle multidisciplinary problems, or provably converge to the high-fidelity optimum. In this paper, we present a practical multifidelity approach that leverages the advantages of conventional gradient-based approaches. Rather than constructing a multifidelity surrogate, we perform a sequence of single-fidelity gradient-based optimizations. The framework determines the appropriate fidelity and updates it during the optimization process. Finally, we demonstrate the proposed approach on a multipoint aerostructural wing optimization problem with over a hundred design variables. The
-                  multifidelity approach reduces the computational cost by 59% compared to the high-fidelity approach while obtaining the same numerical optimum.}
+                  multifidelity approach reduces the computational cost by 59\% compared to the high-fidelity approach while obtaining the same numerical optimum.}
 }
 
 @InProceedings{Wu2022b,
@@ -45008,6 +45366,15 @@
     year        = {2022},
     abstract    = {Aerodynamic shape optimization has become a well-established process, with designers routinely performing wing and full aircraft optimizations with hundreds of geometric design variables. However, with increased geometric design freedom comes increased optimization difficulty. These optimizations tend to converge very slowly, often taking many hundreds of design iterations. In addition, designers have to manually obtain suitable design variable scaling through trial and error in order to have a well-behaved optimization problem, which is a tedious and time-consuming task. In this work, we propose a sensitivity-based geometric parameterization approach that, while keeping the same optimization problem, maps the design space onto one which is better suited for gradient-based optimization. At the same time, we can automatically determine appropriate design variable scaling such that the new optimization problem can be solved more rapidly. We demonstrate the approach on
                   aerodynamic optimizations, and show improved convergence behaviour compared to the traditional approach.}
+}
+
+@InProceedings{Wu2022c,
+    author      = {Neil Wu and Charles Mader and Joaquim R. R. A. Martins},
+    title       = {Large-scale Multifidelity Aerostructural Optimization of a Transport Aircraft},
+    booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    month       = {September},
+    year        = {2022},
+    abstract    = {High-fidelity aerostructural aircraft optimizations have become more widespread in recent years, especially when combined with the efficiencies offered by the adjoint method and gradient-based optimizers. However, it is still computationally expensive to perform such optimizations with hundreds of design variables and multiple flight conditions. In this work, we address some practical issues with large-scale aerostructural optimizations using a multifidelity approach. We perform an optimization of a notional transport aircraft analyzed over ten flight conditions, including close to 1000 design variables and 1000 constraints. We compare the result against a reference single-fidelity optimization, and show that by leveraging multiple lower-fidelity models, we can reduce the computational cost by 14\%.}
 }
 
 @Article{Wuebbles2007a,
@@ -45307,7 +45674,7 @@
     title       = {Derivatives of complex eigenvectors with distinct and repeated eigenvalues},
     doi         = {10.1002/nme.2280},
     journal     = {International Journal for Numerical Methods in Engineering},
-    month       = august,
+    month       = {August},
     number      = {8},
     pages       = {945--963},
     publisher   = {Wiley},
@@ -45833,7 +46200,9 @@
     doi         = {10.2514/1.C036103},
     journal     = {Journal of Aircraft},
     keywords    = {aeroprop, ank, openmdao, xsede},
-    note        = {(In Press)},
+    number      = {4},
+    pages       = {896--911},
+    volume      = {59},
     year        = {2022},
     abstract    = {Boundary-layer ingestion (BLI) offers the potential for significant fuel burn reduction by exploiting tightly coupled aeropropulsive effects. NASA's Single-aisle Turboelectric Aircraft with Aft Boundary-Layer propulsion (STARC-ABL) concept employs BLI on an electrically powered tail cone thruster to take advantage of the technology on what is otherwise a conventional airframe. Despite the traditional airframe of this concept, aeropropulsive integration is critical to the BLI propulsor's performance. Therefore, it is vital to employ tightly coupled aeropropulsive models to design BLI systems. In this work, 3-D RANS simulations are used to model the aerodynamics, and 1-D thermodynamic cycle analyses are used to model the propulsion system. The two models are tightly coupled using NASA's OpenMDAO framework, enabling efficient design optimization through gradient-based optimization with analytic derivatives. Using this coupled aeropropulsive framework, 18 computational
                   fluid dynamics (CFD)-based aeropropulsive design optimizations are performed to study the power requirements of the BLI configuration and a reference podded configuration where the electric fan ingests freestream air. This study provides the first set of CFD-based performance data for the STARC-ABL concept across the design space of BLI fan size and pressure ratio. The results quantify the power savings through BLI compared to a traditional propulsion system.}
@@ -46108,7 +46477,7 @@
     volume      = {75},
     year        = {2018},
     abstract    = {Aerodynamic shape optimization is a useful tool in wing design, but the impact of the choice of optimization algorithm and the multimodality of the design space in wing design optimization is still poorly understood. To address this, we benchmark both gradient-based and gradient-free optimization algorithms for computational fluid dynamics based aerodynamic shape optimization problems based on the Common Research Model wing geometry. The aerodynamic model solves the Reynolds-averaged Navier--Stokes equations with a Spalart--Allmaras turbulence model. The drag coefficient is minimized subject to lift, pitching moment, and geometry constraints, with up to 720 shape variables and 11 twist variables for two mesh sizes. We benchmark six gradient-based and three gradient-free algorithms by comparing both the accuracy of the optima and the computational cost. Most of the optimizers reach similar optima, but the gradient-based methods converge to more accurate solutions at a
-                  much lower computational cost. Since multimodality and nonsmoothness of the design space are common arguments for the use of gradient-free methods, we investigate these issues by solving the same optimization problem starting from a series of randomly generated initial geometries, as well as a wing based on the NACA 0012 airfoil with zero twist and constant thickness-to-chord ratio. All the optimizations consistently converge to practically identical results, where the differences in drag are within 0.05%, and the shapes and pressure distributions are very similar. Our overall conclusion is that the design space for wing design optimization with a fixed planform is largely convex, with a very small flat region that is multimodal because of numerical errors. However, this region is so small, and the differences in drag so minor, that the design space can be considered unimodal for all practical purposes.}
+                  much lower computational cost. Since multimodality and nonsmoothness of the design space are common arguments for the use of gradient-free methods, we investigate these issues by solving the same optimization problem starting from a series of randomly generated initial geometries, as well as a wing based on the NACA 0012 airfoil with zero twist and constant thickness-to-chord ratio. All the optimizations consistently converge to practically identical results, where the differences in drag are within 0.05\%, and the shapes and pressure distributions are very similar. Our overall conclusion is that the design space for wing design optimization with a fixed planform is largely convex, with a very small flat region that is multimodal because of numerical errors. However, this region is so small, and the differences in drag so minor, that the design space can be considered unimodal for all practical purposes.}
 }
 
 @Article{Yu2019,
@@ -46171,7 +46540,7 @@
     pages       = {062008},
     volume      = {753},
     year        = {2016},
-    abstract    = {This work presents an integrated multidisciplinary wind turbine optimization framework utilizing state-of-the-art aeroelastic and strutural tools, capable of simultaneous design of the outer geometry and internal structure of the blade. The framework is utilized to design a 10 MW rotor constrained not to exceed the design loads of an existing reference wind turbine. The results show that through combined geometric tailoring of the internal structure and aerodynamic shape of the blade it is possible to achieve significant passive load alleviation that allows for a 9% longer blade with an increase in AEP of 8.7%, without increasing blade mass and without significant increases in ultimate and fatigue loads on the hub and tower.}
+    abstract    = {This work presents an integrated multidisciplinary wind turbine optimization framework utilizing state-of-the-art aeroelastic and strutural tools, capable of simultaneous design of the outer geometry and internal structure of the blade. The framework is utilized to design a 10 MW rotor constrained not to exceed the design loads of an existing reference wind turbine. The results show that through combined geometric tailoring of the internal structure and aerodynamic shape of the blade it is possible to achieve significant passive load alleviation that allows for a 9\% longer blade with an increase in AEP of 8.7\%, without increasing blade mass and without significant increases in ultimate and fatigue loads on the hub and tower.}
 }
 
 @InProceedings{Zahle2018a,
@@ -46235,7 +46604,7 @@
     title       = {Highly accurate modal method for calculating eigenvector derivatives in viscous damping systems},
     doi         = {10.2514/3.12453},
     journal     = {{AIAA} Journal},
-    month       = april,
+    month       = {April},
     number      = {4},
     pages       = {746--751},
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
@@ -46550,7 +46919,7 @@
     title       = {Novel Modal Method for Efficient Calculation of Complex Eigenvector Derivatives},
     doi         = {10.2514/1.28035},
     journal     = {{AIAA} Journal},
-    month       = june,
+    month       = {June},
     number      = {6},
     pages       = {1406--1414},
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
@@ -46720,6 +47089,21 @@
     volume      = {218},
     year        = {2012},
     abstract    = {The implementation of global optimization algorithms, using the arithmetic of infinity, is considered. A relatively simple version of implementation is proposed for the algorithms that possess the introduced property of strong homogeneity. It is shown that the P-algorithm and the one-step Bayesian algorithm are strongly homogeneous.}
+}
+
+@TechReport{Zimm2013,
+    author      = {Peter Zimm and Glenn McDonald and Kevin Michaels and Mike Dill and Joaquim R. R. A. Martins},
+    title       = {Aircraft {CO}$_2$ Cost Analysis},
+    institution = {Environmental Protection Agency},
+    year        = {2013}
+}
+
+@TechReport{Zimm2017,
+    author      = {Peter Zimm and Kent Harli and Joaquim R. R. A. Martins},
+    title       = {Aircraft {CO}$_2$ Cost and Technology Refresh},
+    institution = {Environmental Protection Agency},
+    month       = {September},
+    year        = {2017}
 }
 
 @Article{zimmermann2019asymmetric,
