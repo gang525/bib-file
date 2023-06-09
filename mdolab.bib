@@ -118,6 +118,20 @@
                   system is extremely important. Especially in OWN configurations, the propulsion system is highly influenced by the aerodynamic performance of the wing. In this paper, we address the design problem of coupling between the aerodynamic and the propulsion system. We also explore wide range of design space to achieve the best practical design. The changes in wing shape are insignificant when the OWN configuration is optimized for different FPR. Wing in OWN performs better when the propulsor is close to the wing's root; however, the overall drag increases when the propulsor is close to the root. This increases the shaft power need. In addition, nacelle placement at the aft of the trailing edge shows better performance than forward of the trailing edge of the wing. These advancements in design optimization capabilities will be critical in the future design of OWN configurations to achieve more environmentally sustainable aircraft designs.}
 }
 
+@InProceedings{AbdulKaiyoom2023b,
+    author      = {M. A. Saja Abdul-Kaiyoom and Anil Yildirim and Joaquim R. R. A. Martins},
+    title       = {{RANS}-Based Multipoint Aeropropulsive Design Optimization of an Over-Wing Nacelle Configuration},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3588},
+    keywords    = {xsede, pleiades, ank, OpenMDAO, MPhys, ADflow, pyCycle},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Over-wing nacelle (OWN) configurations have two advantages over the traditional under-wing nacelle (UWN) configurations: 1. they make it easier to integrate high bypass ratio (BPR) and ultra-high BPR engines by removing ground clearance concerns, and 2. they significantly reduce noise because the wing blocks the noise of the fan and the jet. Despite their benefits, OWN technology is not widely used in real aircraft designs because of the challenges and lack of research in aeropropulsive integration of the propulsion system. In this work, we present multipoint aeropropulsive design optimizations of an OWN configuration to address several scenarios. To effectively design the propulsor in OWN, we consider on-design and off-design formulations of engine design concepts. In this work, we present one single-point optimization and three multipoint optimizations. In the multipoint optimizations, the objective is to minimize the shaft power at cruise conditions subject to
+                  constraints. To compare the performance degradation of single-point optimization, we performed several sub-optimizations to reflect the multipoint cases. The single-point optimal design required additional 0.4\% shaft power across the cruise conditions when compared to the multipoint optimization with 3 cruise points. In addition, distortion-constrained and distortion-unconstrained optimizations were performed at the take-off scenario. By modifying the inlet shape of the nacelle, the distortion-constrained optimization effectively reduces the distortion in the take-off scenario at the outermost radial ring over the fan by penalizing the cruise performance. The multipoint optimizations in this work highlight a number of significant design effects. An effective design is produced by including the required flight conditions and specifying the proper objective and constraints in the OWN multipoint problem. These design optimization capabilities will be crucial in
+                  determining the viability of novel propulsion concepts for next-generation OWN aircraft.}
+}
+
 @Article{abel,
     author      = {Mukhopadhyay, V. and Newsom, J. R. and Abel, I.},
     title       = {Nonlinear Control of a Prototypical Wing Section with a Torsional Nonlinearity},
@@ -353,6 +367,18 @@
     year        = {2023}
 }
 
+@InProceedings{Adler2023a,
+    author      = {Eytan J. Adler and Joaquim R. R. A. Martins},
+    title       = {Blended wing body configuration for hydrogen-powered aviation},
+    booktitle   = {AIAA Aviation 2023 Forum},
+    doi         = {10.2514/6.2023-4020},
+    keywords    = {OpenMDAO, OpenAeroStruct, OpenConcept},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Hydrogen aircraft have the potential to achieve greater climate impact reductions at a lower cost than aircraft powered by biofuels or other drop-in sustainable aviation fuels. But even as a liquid, hydrogen requires four times more volume than kerosene to store the same energy. Companies and researchers have suggested that the blended wing body configuration is well-suited to hydrogen because it can efficiently store the large fuel tanks. However, nobody has quantified this claim, at least publicly. We address this gap by comparing optimized kerosene and hydrogen versions of blended wing body and tube and wing aircraft. We find that the blended wing body configuration has only a small advantage for onboard hydrogen storage compared to a conventional tube and wing aircraft. Our models predict that with ambitious hydrogen tank technology assumptions, a hydrogen blended wing body uses 3.1\% more energy than a kerosene blended wing body, while the energy increase for a
+                  tube and wing is 5.1\%. An advantage of the blended wing body is that the energy consumption increase when adapting from kerosene to hydrogen fuel appears to be far less sensitive than the tube and wing's to empty weight and drag changes. Because we only compare hydrogen and kerosene usage within the same configuration, a hydrogen blended wing body may still consume substantially less energy than a hydrogen tube and wing. However, these results do call into question the assumed tank storage benefit of a hydrogen-powered blended wing body aircraft.}
+}
+
 @webpage{ADtools,
     title       = {Tools for Automatic Differentiation},
     keywords    = {AD},
@@ -455,9 +481,24 @@
     title       = {High-fidelity Aerostructural Optimization with a Geometrically Nonlinear Flutter Constraint},
     doi         = {10.2514/1.J062127},
     journal     = {AIAA Journal},
+    month       = {April},
+    number      = {6},
+    pages       = {2430--2443},
+    volume      = {61},
     year        = {2023},
     abstract    = {When designing aircraft, avoiding dynamic aeroelastic instabilities such as flutter is a key requirement. One way to meet this requirement is to use a multidisciplinary design optimization subject to a flutter constraint. Flutter-constrained design optimizations have used geometrically linear detailed models, which do not accurately predict flutter for very flexible aircraft, or geometrically nonlinear low-order models, which do not accurately trade off cruise range and structural mass. This paper presents a framework for integrating a geometrically nonlinear, subsonic flutter constraint that captures the large in-flight deflections of very flexible aircraft into high-fidelity gradient-based aerostructural optimization. The cruise range and stress constraints are computed accurately with detailed aerostructural analyses, which use a built-up finite element model coupled to RANS CFD. The detailed model is condensed to a low-order aeroelastic model to compute the
                   geometrically nonlinear flutter constraint and its adjoint derivatives with computational cost and robustness suitable for optimization. The framework is demonstrated by maximizing the cruise range of a subsonic high-aspect-ratio wing with respect to panel thicknesses, sweep, and span. The impact of the geometrically nonlinear flutter constraint highly depends on the in-flight deformation level. At low deflection levels, sweeping the wing backward is the most effective flutter prevention method, and the flutter constraint has little impact on the achievable cruise range. At high deflection levels, shortening the wing span is necessary to suppress flutter, reducing the achievable cruise range by up to 5.9\%. This work is a step toward making multidisciplinary design optimization a practical tool for designing the energy-efficient, very flexible aircraft of the future, which require geometrically nonlinear flutter analyses early in the design cycle to prevent flutter. }
+}
+
+@InProceedings{AGray2023b,
+    author      = {Alasdair C. Gray and Graeme J. Kennedy and Joaquim R. R. A. Martins},
+    title       = {Geometrically Nonlinear High-fidelity Aerostructural Optimization Including Geometric Design Variables},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3316},
+    keywords    = {xsede, ank, OpenMDAO, MPhys},
+    month       = {June},
+    year        = {2023}
 }
 
 @Article{Agte2010,
@@ -1643,7 +1684,7 @@
 
 @InProceedings{Anibal2023a,
     author      = {Joshua L. Anibal and Sabet Seraj and Anil Yildirim and Joaquim R. R. A. Martins},
-    title       = {Combined continuation methods for robust {CFD} {Newton} solvers},
+    title       = {Mixed continuation methods for robust {CFD} {Newton} solvers},
     booktitle   = {AIAA SciTech Forum},
     doi         = {10.2514/6.2023-2296},
     keywords    = {CFD, solver, continuation},
@@ -2200,6 +2241,19 @@
     year        = {2009}
 }
 
+@InProceedings{Atma2023,
+    author      = {Peter N. Atma and Andrew H. R. Lamkin and Joaquim R. R. A. Martins},
+    title       = {Comparing Hydrogen and Jet-A for an {N}+3 Turbofan with Water Recirculation using Gradient-Based Optimizaiton},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-4018},
+    keywords    = {openmdao},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Advances in commercial propulsion technology led to the development of efficient high bypass ratio turbofan engines with larger overall pressure ratios and internal temperatures. Current trends suggest that geared ultra high bypass ratio turbofans are the next generation of commercial propulsion systems. Furthermore, the emphasis on decreasing emissions has driven the exploration of hydrogen-powered aircraft, adding to the already challenging design space. Carrying and burning hydrogen introduces complexity and weight penalties that we must offset using the fuel's thermodynamic and chemical properties. In this study, we model a closedloop water recirculation system with a zero-dimensional thermodynamic model and compare the benefits between Jet-A and hydrogen fuels. We perform a gradient-based optimization parameter sweep to explore the trade-offs between performance and emissions using both fuels with water recirculation. The results quantify the design space for
+                  next-generation propulsion concepts that can take advantage of hydrogen fuel's thermodynamic properties to reduce emissions and improve performance.}
+}
+
 @TechReport{atmosphere1976,
     title       = {{U.S.} Standard Atmosphere, 1976},
     address     = {Washington DC, USA},
@@ -2403,6 +2457,19 @@
     url         = {https://doi.org/10.2514/2.200},
     volume      = {35},
     year        = {1997}
+}
+
+@InProceedings{Backhaus2023a,
+    author      = {Thomas Backhaus and M. A. Saja Abdul-Kaiyoom and Anil Yildirim and Arthur Stueck and Joaquim R. R. A. Martins},
+    title       = {Advancing Modularity and Framework Integration Level for Scalable High-Fidelity {MDO}},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA AVIATION Forum},
+    doi         = {10.2514/6.2023-3315},
+    keywords    = {OpenMDAO, Schur},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Multidisciplinary design optimization (MDO) plays a vital role in designing aircraft. Thus, the modularization of various disciplines is necessary to efficiently couple them in MDO or multidisciplinary design analysis (MDA). In this paper, we demonstrate how recent library extensions \cite{Backhaus_2021} lead to combining both the HPC ecosystem FlowSimulator, developed by DLR and partners, and the MDA/MDO framework, OpenMDAO, for a gradient-based MDO scenario of a generic static aeroelastic problem for a transport aircraft. In the MDO problem, the software architecture enables the optimal integration of high-fidelity workflows with central data management for high performance computing (HPC). To this end, we demonstrate how the FlowSimulator Data Manager (FSDM) enables the associated HPC simulation components to exchange massively parallel data in memory. Here, the algorithms provided by OpenMDAO---linear and nonlinear solution methods, and forward and backward
+                  processing of sensitivity derivatives---operate on the infrastructure of the FlowSimulator HPC ecosystem. Based on the defined scenario, different solution strategies can be applied. In this work we define a nested aeroelastic coupling setup within a trim equilibrium constraint definition. In particular, we highlight how an efficient modularization of the individual disciplines supports an effective gradient assembly and thus makes them available to the individual solution hierarchies and strategies. With this approach, we show how it is possible to transform a baseline constrained optimization problem into an unconstrained optimization definition, while still ensuring the trim equilibrium through an implicit solution based on the Schur complement method.}
 }
 
 @Book{Bacon2000,
@@ -10464,7 +10531,7 @@
 
 @InProceedings{Drela1989,
     author      = {Mark Drela},
-    title       = {{XFOIL}: An Analysis and Design System for Low Reynolds Number Airfoils},
+    title       = {{XFOIL}: An Analysis and Design System for Low {Reynolds} Number Airfoils},
     address     = {Berlin, Heidelberg},
     booktitle   = {Low Reynolds Number Aerodynamics},
     doi         = {10.1007/978-3-642-84010-4_1},
@@ -16373,6 +16440,18 @@
                   Results for aerodynamic shape optimization are discussed. We show that FFD-based optimizations and CAD-based optimizations for airfoil cases and a wing case starting from the same baseline designs can achieve the same optimized design, validating both the surface mesh tracking algorithm and the derivatives for the CAD method. The presented method is a critical prerequisite for integrating CAD-based geometric parameterizations in simulation based MDO frameworks.}
 }
 
+@InProceedings{Hajdik2023b,
+    author      = {Hannah M. Hajdik and Bernardo Pacini and Anil Yildirim and Benjamin J. Brelje and Joaquim R. R. A. Martins},
+    title       = {Combined systems packaging and aerodynamic shape optimization of a full aircraft configuration},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3589},
+    keywords    = {OpenMDAO, MPhys, packaging},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Aerodynamic shape optimization is a valuable tool for aircraft design, but geometric constraints have had limited design freedom or have failed to capture spatial integration requirements in sufficient detail. Using a detailed representation of an aircraft's systems and payload geometries in a packaging constraint allows for more accurate and higher-performance spatial integration. We use a previously developed general and differentible packaging constraint formulated for gradient-based optimization for aerodynamic shape optimization of a full aircraft configuration. We explore the design of the NASA tiltwing concept vehicle with aerodynamic shape optimization using packaging constraints to examine the tradeoffs between aerodynamics and mission performance. The resulting design can be more targeted to our design requirements than one that can be achieved with conventional geometric constraints.}
+}
+
 @Article{Hajela1983,
     author      = {Hajela, P.},
     title       = {A root locus-based flutter synthesis procedure},
@@ -21230,6 +21309,17 @@
                   differentiated with respect to the built-up structural sizing variables using the adjoint method to enable large-scale optimizations. The framework is demonstrated by minimizing the mass of a high-aspect-ratio wingbox subject to the geometrically nonlinear flutter constraint along with stress and adjacency constraints. The geometrically nonlinear flutter constraint introduces a mass penalty up to about 60\% of the baseline mass compared with the 10\% mass penalty by a linear flutter constraint based on the wing undeformed shape. This methodology can help design new-generation energy-efficient aircraft with high-aspect-ratio wings that require considering geometrically nonlinear effects early in the design cycle to prevent flutter.}
 }
 
+@Article{Jonsson2023a,
+    author      = {Eirikur Jonsson and Cristina Riso and Bernardo Bahia Monteiro and Alasdair C. Gray and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
+    title       = {High-Fidelity Gradient-Based Wing Structural Optimization Including Geometrically Nonlinear Flutter Constraint},
+    doi         = {10.2514/1.J061575},
+    journal     = {AIAA Journal},
+    note        = {(In press)},
+    year        = {2023},
+    abstract    = {Lightweight, high-aspect-ratio wings make aircraft more energy efficient thanks to their lower induced drag. Because such wings exhibit large deflections, design optimization based on linear flutter analysis of the wing undeformed shape is inadequate. To address this issue, we develop a framework for integrating a geometrically nonlinear flutter constraint, which considers in-flight deflections, into a high-fidelity gradient-based structural optimization. The wing mass and stress constraints are evaluated on a linear, built-up (detailed) finite element model to capture realistic structural features. The geometrically nonlinear flutter constraint is based on a condensed low-order beam representation of the built-up finite element model, which captures the impact of in-flight deflections with tractable computational effort for optimization. The flutter constraint is differentiated with respect to the detailed structural model sizing variables using the adjoint method
+                  to enable large-scale optimizations. The framework is demonstrated by minimizing the mass of a wingbox model subject to the geometrically nonlinear flutter constraint along with stress and adjacency constraints. The geometrically nonlinear flutter constraint adds a penalty up to 60\% of the baseline mass due to the impact of in-flight deflections on the flutter onset speed and its mechanism. In contrast, a linear flutter constraint evaluated on the undeformed wing adds a mass penalty of only 10\%. This methodology can help design energy-efficient aircraft with high-aspect-ratio wings, which require geometrically nonlinear flutter analyses early in the design cycle.}
+}
+
 @InProceedings{Joo2015,
     author      = {James J. Joo and Christopher R. Marks and Lauren Zientarski and Adam J. Culler},
     title       = {Variable Camber Compliant Wing - Design},
@@ -23197,6 +23287,19 @@
                   mesh generator and the flow solver.}
 }
 
+@InProceedings{Kleb2023b,
+    author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
+    title       = {Extension of a Viscous Cartesian Cut-cell Solver to the Compressible {RANS} Equations},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3978},
+    keywords    = {VACC},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Generating a computational mesh often consumes considerable time for the user during the analysis process. This can be circumvented by using cut-cell mesh generation techniques to automatically generate meshes. Previously, we developed Viscous Aerodynamic Cartesian Cut-cells (VACC), a toolbox for solving the laminar Navier--Stokes equations. In this work, we extend VACC to include the Reynolds-Averaged Navier--Stokes (RANS) equations with the Spalart--Allmaras (SA) turbulence model. We present a novel Eikonal solver that utilizes 2D unconstrained optimizations with variable bounds at every step of a fast marching method to improve accuracy on non-uniform meshes. We implemented a constant forcing distance wall function to reduce the need for anisotropic elements near the body with high Reynolds numbers. The generality of the Eikonal solver is demonstrated on several configurations with deep concavities and sharp convexities. The SA formulation is demonstrated with
+                  preliminary investigations of rotated flat plates and 2D bump-in-channel case from the NASA Turbulence Modeling Resource website with skin friction and eddy viscosity that compares well with CFL3D.}
+}
+
 @Article{Kleijnen2009,
     author      = {Kleijnen, Jack P. C.},
     title       = {Kriging metamodeling in simulation: A review.},
@@ -24048,6 +24151,18 @@
     year        = {1998}
 }
 
+@Article{Kroo2001,
+    author      = {Ilan M. Kroo},
+    title       = {Drag due to Lift: Concepts for Prediction and Reduction},
+    doi         = {10.1146/annurev.fluid.33.1.587},
+    journal     = {Annual Review of Fluid Mechanics},
+    keywords    = {aerodynamics},
+    month       = {November},
+    pages       = {587--617},
+    volume      = {33},
+    year        = {2001}
+}
+
 @InProceedings{Kroo2003,
     author      = {I. Kroo and P. Sturdza},
     title       = {Laminar Flow Control---A Systems Approach},
@@ -24110,18 +24225,6 @@
     pages       = {22--44},
     publisher   = {{SIAM}},
     year        = {1997}
-}
-
-@Article{Kroo:2000:AAA,
-    author      = {Ilan M. Kroo},
-    title       = {Drag due to Lift: Concepts for Prediction and Reduction},
-    doi         = {10.1146/annurev.fluid.33.1.587},
-    journal     = {Annual Review of Fluid Mechanics},
-    keywords    = {aerodynamics},
-    month       = {November},
-    pages       = {587--617},
-    volume      = {33},
-    year        = {2000}
 }
 
 @TechReport{Kroo:2002,
@@ -24624,6 +24727,19 @@
     year        = {2022},
     abstract    = {Advances in aeropropulsive design optimization provide new capabilities for the study of tightly integrated propulsion systems. New techniques that couple CFD solvers to thermodynamic cycle analyses showed increased robustness and proved the viability of a fully coupled approach using gradient-based optimization. However, existing work in this area has been limited to simple benchmark cases and does not contain complete engine models. In this study, we extend these methodologies beyond an electrically driven propulsor to consider a complete high-bypass turbofan engine. The high-bypass turbofan model incorporates CFD and thermodynamic cycle sub-systems into a unified model for aeropropulsive design optimization by utilizing multiple coupling techniques from prior benchmark aeropropulsive cases. We present a high-bypass turbofan design optimized for thrust specific fuel consumption with respect to coupling, geometric, and practical design constraints using this coupled
                   approach. The integration of high-fidelity aerodynamic shape optimization with one-dimensional cycle modeling on a large scale is a major milestone for coupled propulsion system design. These developments advance the use of coupled aeropropulsive optimization earlier in the design cycle for propulsion systems.}
+}
+
+@InProceedings{Lamkin2023,
+    author      = {Andrew H. R. Lamkin and Anil Yildirim and Joaquim R. R. A. Martins and Nathan A. Wukie},
+    title       = {Advancements in Coupled Aeropropulsive Design Optimization for High-Bypass Turbofan Engines},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3591},
+    keywords    = {openmdao, mphys, ank, aeroprop, pleiades},
+    month       = {June},
+    year        = {2023},
+    abstract    = {To improve performance and reduce fuel consumption, we must address tightly connected aeropropulsive effects in the development of new and existing propulsion technologies. Aeropropulsive design optimization considers the multidisciplinary coupled interactions between aerodynamics, thermodynamics, and geometry. Mixed-fidelity aeropropulsive methods integrate high-fidelity aerodynamic solvers with zero-dimensional thermodynamic cycle modeling. Combined with gradient-based optimization, this approach is a computationally efficient design tool that can accommodate large design spaces with many design variables and constraints. Previously, we developed a novel hybrid aeropropulsive coupling method for turbofan engines and demonstrated its feasibility using a single-design-point problem. In this work, we improve upon the prior approach and perform the first successful coupled aeropropulsive optimization of a high-bypass turbofan. We analyze the optimized turbofan design
+                  and validate the corrections to the hybrid coupling scheme. The updated coupling methods are a significant advancement in aeropropulsive optimization that enable the design of tightly integrated propulsion systems considering thermodynamic and aerodynamic performance.}
 }
 
 @Article{lamousin1994nurbs,
@@ -30005,6 +30121,16 @@
     year        = {2015}
 }
 
+@InProceedings{McDonald2022,
+    author      = {Robert A. McDonald and James R. Gloudemans},
+    title       = {Open Vehicle Sketch Pad: An Open Source Parametric Geometry and Analysis Tool for Conceptual Aircraft Design},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Scitech},
+    doi         = {10.2514/6.2022-0004},
+    month       = {January},
+    year        = {2022}
+}
+
 @Article{McGeer:1983:AAA,
     author      = {T. McGeer and Ilan M. Kroo},
     title       = {A fundamental comparison of canard and conventional configurations},
@@ -33499,6 +33625,18 @@
     year        = {2023},
     abstract    = {Many urban air mobility vehicle designs include several rotors and propellers integrated with complex fuselage, wing, and appendage geometries. These designs feature advanced technologies that demand further modeling and understanding of optimization tradeoffs. Given the complexity of the vehicle geometries being developed as well as the advanced materials used for integral components, aerostructural analysis and optimization can provide insight into the performance of urban air mobility vehicles, and how the structure and lifting surfaces can be designed to further improve vehicle efficiency. This work details an aerostructural optimization toolchain built with the MACH and OpenMDAO tools, embedded within the high-fidelity modeling and optimization framework called MPhys. This multiphysics analysis and optimization framework is used to perform aerostructural optimization of advanced vehicles, using DAFoam, a discrete adjoint implementation for OpenFOAM, as well as
                   TACS, a finite element solver developed for gradient-based optimization of composite structures. These tools are applied to the NASA tiltwing concept vehicle to optimize the design of the wing considering structural deflection.}
+}
+
+@InProceedings{Pacini2023c,
+    author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
+    title       = {Towards Mixed-Fidelity Aero-Structural-Acoustic Optimization for Urban Air Mobility Vehicle Design},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3905},
+    keywords    = {MPhys},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Many urban air mobility vehicle designs feature propellers integrated with fuselage, wings, and other appendages. These vehicle designs are based on complex configurations with novel propulsion systems and flight technology. The tightly coupled nature of the systems in these vehicles and the novel technologies within them create opportunities for vehicle analysis and optimization. Furthermore, the geometries being developed are unique, utilizing advanced materials for integral components. Aerodynamic, structural, and acoustic analysis and optimization can provide insight into their performance, and how the propellers, structures, and lifting surfaces can be designed to further improve vehicle efficiency considering operational constraints. This work details an aero-structural-acoustic optimization toolchain built with the MACH and OpenMDAO tools, embedded within the modeling and optimization framework called MPhys. This analysis and optimization framework utilizes
+                  multiple model fidelities, including hybrid blade element momentum theory, computational fluid dynamics, finite-element modeling, and an aeroacoustic analogy. With this toolchain, this work presents gradient-based aero-structural-acoustic optimization, minimizing required flight power while ensuring structural integrity and respecting acoustic considerations. The toolchain is applied to the NASA tiltwing concept vehicle to optimize the wing and propeller designs, yielding a 17.8% reduction in required power for cruise flight while considering aerodynamic, structural, and acoustic constraints. This aero-structural-acoustic optimization framework can help make vehicle designs more efficient, lighter, and quieter.}
 }
 
 @Article{Padron2019,
@@ -38982,6 +39120,18 @@
                   Newton iteration. Third, we introduce a dissipation-based continuation method for flows with shocks that improves robustness and accelerates convergence without sacrificing accuracy. These methods can be used to make compressible flow solvers more accurate and efficient across low and high Mach number regimes.}
 }
 
+@InProceedings{Seraj2023a,
+    author      = {Sabet Seraj and Joaquim R. R. A. Martins},
+    title       = {Minimum Trim Drag for a Three-Surface Supersonic Transport Aircraft},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3472},
+    keywords    = {ank, scalos, OpenMDAO},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Three-surface configurations offer theoretical drag benefits over two-surface configurations, but the literature is unclear on what is the best configuration for a supersonic aircraft. This work uses trim-constrained drag minimization to compare the trim drag for three-surface, canard, and conventional variants of a supersonic transport aircraft. We first use RANS-based optimization to determine the minimum trim drag for a fixed planform geometry at a subsonic takeoff condition and a supersonic cruise condition. The three-surface configuration has the lowest trim drag at the supersonic condition. The canard and three-surface configurations have comparable trim drag at the subsonic condition. We then construct a supersonic buildup model to study the effects of variable trim surface sizing. When the trim surface spans are included as design variables, the design for minimum supersonic drag has practically no tail and a canard sized at 36% of the wing half-span. These
+                  results suggest that a canard configuration is best for supersonic trim drag.}
+}
+
 @Article{Serani2016,
     author      = {Serani, Andrea and Fasano, Giovanni and Liuzzi, Giampaolo and Lucidi, Stefano and Iemma, Umberto and Campana, Emilio F and Stern, Frederick and Diez, Matteo},
     title       = {Ship hydrodynamic optimization by local hybridization of deterministic derivative-free global algorithms},
@@ -40264,16 +40414,6 @@
     pages       = {1042--1045},
     volume      = {148},
     year        = {1963}
-}
-
-@Article{SMT2019,
-    author      = {Mohamed Amine Bouhlel and John T. Hwang and Nathalie Bartoli and R{\'e}mi Lafage and Joseph Morlier and Joaquim R. R. A. Martins},
-    title       = {A Python surrogate modeling framework with derivatives},
-    doi         = {https://doi.org/10.1016/j.advengsoft.2019.03.005},
-    issn        = {0965-9978},
-    journal     = {Advances in Engineering Software},
-    pages       = {102662},
-    year        = {2019}
 }
 
 @InCollection{SnoekEtAl2012,
@@ -43691,6 +43831,17 @@
     year        = {1999}
 }
 
+@Article{Turkel2005a,
+    author      = {Eli Turkel and Veer N. Vatsa},
+    title       = {Local preconditioners for steady and unsteady flow applications},
+    doi         = {10.1051/m2an:2005021},
+    journal     = {ESAIM: Mathematical Modelling and Numerical Analysis},
+    number      = {3},
+    pages       = {515--535},
+    volume      = {39},
+    year        = {2005}
+}
+
 @Article{Turner1956a,
     author      = {M. J. Turner and R. W. Clough and H. C. Martin and L. J. Topp},
     title       = {Stiffness and Deflection Analysis of Complex Structures},
@@ -43935,6 +44086,15 @@
     year        = {2014}
 }
 
+@InProceedings{van-Leer1991,
+    author      = {Bram {van Leer} and Wen-Tzong Lee and Philip Roe},
+    title       = {Characteristic time-stepping or local preconditioning of the {Euler} equations},
+    booktitle   = {10th Computational Fluid Dynamics Conference},
+    doi         = {10.2514/6.1991-1552},
+    month       = {June},
+    year        = {1991}
+}
+
 @Article{Van1984,
     author      = {Van Doormaal, JP and Raithby, GD},
     title       = {Enhancements of the SIMPLE method for predicting incompressible fluid flows},
@@ -44177,15 +44337,6 @@
     year        = {1985}
 }
 
-@InProceedings{vanLeer1991a,
-    author      = {Bram {van Leer} and Wen-Tzong Lee and Philip Roe},
-    title       = {Characteristic time-stepping or local preconditioning of the {Euler} equations},
-    booktitle   = {10th Computational Fluid Dynamics Conference},
-    doi         = {10.2514/6.1991-1552},
-    month       = {June},
-    year        = {1979}
-}
-
 @InProceedings{vanRijn2018,
     author      = {van Rijn, Sander and Schmitt, Sebastian and Olhofer, Markus and van Leeuwen, Matthijs and B\"{a}ck, Thomas},
     title       = {Multi-fidelity Surrogate Model Approach to Optimization},
@@ -44262,6 +44413,17 @@
     title       = {Development of a {C}ommon {R}esearch {M}odel for Applied {CFD} Validation Studies},
     booktitle   = {26th AIAA Applied Aerodynamics Conference, Guidance, Navigation, and Control and Co-located Conferences},
     doi         = {10.2514/6.2008-6919},
+    year        = {2008}
+}
+
+@Article{Vassberg2008c,
+    author      = {John C. Vassberg and Edward N. Tinoco and Mori Mani and Olaf P. Brodersen and Bernard Eisfeld and Richard A. Wahls and Joseph H. Morrison and Tom Zickuhr and Kelly R. Laflin and Dimitri J. Mavriplis},
+    title       = {Abridged Summary of the Third {AIAA} Computational Fluid Dynamics Drag Prediction Workshop},
+    doi         = {10.2514/1.30572},
+    journal     = {Journal of Aircraft},
+    number      = {3},
+    pages       = {781--798},
+    volume      = {45},
     year        = {2008}
 }
 
@@ -46347,15 +46509,6 @@
     pages       = {189--208},
     publisher   = {{SIAM}},
     year        = {1997}
-}
-
-@Conference{XFOIL,
-    author      = {Mark Drela},
-    title       = {{XFOIL} --- {A}n analysis and design system for low {R}eynolds number airfoils},
-    address     = {Notre Dame,Germany, Federal Republic of},
-    booktitle   = {Low {R}eynolds number aerodynamics},
-    month       = {5-7 jun},
-    year        = {1989}
 }
 
 @Manual{xfoilManual,
