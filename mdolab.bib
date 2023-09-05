@@ -16498,18 +16498,6 @@
     year        = {2016}
 }
 
-@Article{Hajdik2023,
-    author      = {Hannah M. Hajdik and Anil Yildirim and Neil Wu and Benjamin J. Brelje and Sabet Seraj and Marco Mangano and Joshua L. Anibal and Eirikur Jonsson and Eytan J. Adler and Charles A. Mader and Gaetan K. W. Kenway and Joaquim R. R. A. Martins},
-    title       = {pyGeo: A geometry package for multidisciplinary design optimization},
-    doi         = {10.21105/joss.05319},
-    journal     = {Journal of Open Source Software},
-    number      = {87},
-    pages       = {5319},
-    publisher   = {The Open Journal},
-    volume      = {8},
-    year        = {2023}
-}
-
 @InProceedings{Hajdik2023a,
     author      = {Hannah M. Hajdik and Anil Yildirim and Joaquim R. R. A. Martins},
     title       = {Aerodynamic Shape Optimization with {CAD}-Based Geometric Parameterization},
@@ -16537,7 +16525,7 @@
 
 @Article{Hajdik2023c,
     author      = {Hannah M. Hajdik and Anil Yildirim and Neil Wu and Benjamin J. Brelje and Sabet Seraj and Marco Mangano and Joshua L. Anibal and Eirikur Jonsson and Eytan J. Adler and Charles A. Mader and Gaetan K. W. Kenway and Joaquim R. R. A. Martins},
-    title       = {pyGeo: A geometry package for multidisciplinary design optimization},
+    title       = {{pyGeo}: A geometry package for multidisciplinary design optimization},
     doi         = {10.21105/joss.05319},
     journal     = {Journal of Open Source Software},
     number      = {87},
@@ -39240,6 +39228,21 @@
     year        = {2023},
     abstract    = {Three-surface configurations offer theoretical drag benefits over two-surface configurations, but the literature is unclear on what is the best configuration for a supersonic aircraft. This work uses trim-constrained drag minimization to compare the trim drag for three-surface, canard, and conventional variants of a supersonic transport aircraft. We first use RANS-based optimization to determine the minimum trim drag for a fixed planform geometry at a subsonic takeoff condition and a supersonic cruise condition. The three-surface configuration has the lowest trim drag at the supersonic condition. The canard and three-surface configurations have comparable trim drag at the subsonic condition. We then construct a supersonic buildup model to study the effects of variable trim surface sizing. When the trim surface spans are included as design variables, the design for minimum supersonic drag has practically no tail and a canard sized at 36% of the wing half-span. These
                   results suggest that a canard configuration is best for supersonic trim drag.}
+}
+
+@Article{Seraj2023b,
+    author      = {Sabet Seraj and Anil Yildirim and Joshua L. Anibal and Joaquim R. R. A. Martins},
+    title       = {Dissipation and time step scaling strategies for low and high {Mach} number flows},
+    doi         = {10.1016/j.jcp.2023.112358},
+    journal     = {Journal of Computational Physics},
+    keywords    = {scalos, ank},
+    month       = {October},
+    number      = {4},
+    pages       = {112358},
+    volume      = {491},
+    year        = {2023},
+    abstract    = {Aircraft aerodynamic design often involves evaluating flow conditions that span low subsonic to transonic or even supersonic Mach numbers. Compressible flow solvers are a natural choice for such design problems, but these solvers suffer from reduced accuracy and efficiency at low Mach numbers. In addition, simulations with supersonic conditions can be challenging to converge because of large gradients in the flow field. This paper presents three contributions to address these issues in the context of an approximate Newton--Krylov solver for the Reynolds-averaged Navier--Stokes equations. First, we propose a method for scaling the artificial dissipation terms in the Jameson--Schmidt--Turkel scheme to improve its accuracy at low Mach numbers while retaining the simplicity of the original scalar dissipation formulation. Second, we show that characteristic time-stepping combined with an approximate Newton method can accelerate convergence for low Mach number flows by
+                  reducing the stiffness in the linear system for each Newton iteration. Third, we introduce a dissipation-based continuation method for flows with shocks that improves robustness and accelerates convergence without sacrificing accuracy. These methods can make compressible flow solvers more accurate and efficient across low and high Mach number regimes.}
 }
 
 @Article{Serani2016,
