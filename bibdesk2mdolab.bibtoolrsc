@@ -12,6 +12,8 @@ new.entry.type = {patent}
 new.entry.type = {electronic}
 new.entry.type = {periodical}
 
+# % [ ] TODO JM-: "bdsk-url-1" below not working?
+
 # delete BibDesk fields
 delete.field = {annote}
 delete.field = {local-url}
