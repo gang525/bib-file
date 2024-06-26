@@ -1830,6 +1830,16 @@
                   dissipation-based continuation to be the most robust for our test problems.}
 }
 
+@Article{Anibal2024,
+    author      = {Joshua L. Anibal and Joaquim R. R. A. Martins},
+    title       = {Adjoint-based shape optimization of a plate-fin heat exchanger using {CFD}},
+    doi         = {10.1016/j.applthermaleng.2024.123570},
+    journal     = {Applied Thermal Engineering},
+    year        = {2024},
+    abstract    = {Plate-fin heat exchangers are common in aerospace applications because of their compact size and lightweight. These heat exchangers are critical for aircraft applications such as engine-oil cooling, environmental control systems, and thermal management of electric components. With the rise in aircraft electrification, the cooling of electric components has become increasingly crucial. Additionally, hydrogen-powered propulsion introduces several thermal management issues that require heat exchangers. By minimizing the weight and drag added by plate-fin heat exchangers, we can increase the overall efficiency of current and future aircraft. However, the analytic equations used currently to size plate-fin heat exchangers lack the fidelity required to design novel shape configurations. To address this issue, we apply CFD-based adjoint-based shape optimization to plate-fin heat exchangers to minimize drag and mass. The designs optimized for minimum drag have fin geometries
+                  stretched in either the height or width direction. We found two local minima in the design space for drag-minimization corresponding to these two stretching directions. In contrast, the mass-minimizing designs are short and use waves along the length of the channel to induce separation and promote mixing. These results highlight the potential of gradient-based shape optimization methods to generate improved heat exchangers for drag- or weight-critical aerospace applications. Furthermore, by implementing additional constraints and objective functions, this approach could be adapted to other application areas, such as power generation, automotive, air-conditioning, and industrial cryogenics.}
+}
+
 @TechReport{Anon1978,
     author      = {Anon.},
     title       = {{CTOL} Transport Technology},
@@ -2669,9 +2679,7 @@
     doi         = {10.1016/j.asoc.2017.07.060},
     issn        = {1568-4946},
     journal     = {Applied Soft Computing},
-    keywords    = {Optimization, Constrained optimization, Expensive black-box optimization, Radial basis function, Self-adjustment},
-    pages       = {377 - 393},
-    url         = {http://www.sciencedirect.com/science/article/pii/S1568494617304805},
+    pages       = {377--393},
     volume      = {61},
     year        = {2017},
     abstract    = {Constrained optimization of high-dimensional numerical problems plays an important role in many scientific and industrial applications. Function evaluations in many industrial applications are severely limited and often only little analytical information about objective function and constraint functions is available. For such expensive black-box optimization tasks, the constraint optimization algorithm COBRA (Constrained Optimization By Radial Basis Function Approximation) was proposed, making use of RBF (radial basis function) surrogate modeling for both objective and constraint functions. COBRA has shown remarkable success in solving reliably complex benchmark problems in less than 500 function evaluations. Unfortunately, COBRA requires careful adjustment of parameters in order to do so. In this work we present a new algorithm SACOBRA (Self-Adjusting COBRA), which is based on COBRA and capable of achieving high-quality results with very few function evaluations and
@@ -7789,7 +7797,7 @@
 }
 
 @Article{Chauhan2021a,
-    author      = {Shamsheer Chauhan and Joaquim R. R. A. Martins},
+    author      = {Shamsheer S. Chauhan and Joaquim R. R. A. Martins},
     title       = {{RANS}-Based Aerodynamic Shape Optimization of a Wing Considering Propeller-Wing Interaction},
     doi         = {10.2514/1.C035991},
     journal     = {Journal of Aircraft},
@@ -7801,6 +7809,26 @@
     year        = {2021},
     abstract    = {The recent growth of interest in hybrid-electric and fully electric aircraft has led to a renewed focus on the design and optimization of propeller aircraft. Considering propeller--wing interaction provides the opportunity to design aircraft that take advantage of aerodynamic benefits through propulsion integration. In this paper, the cruise drag of a wing with an inboard-mounted tractor propeller is minimized using aerodynamic shape optimization. Reynolds-averaged Navier--Stokes computational fluid dynamics with an actuator-disk approach is used for the simulations, and a gradient-based algorithm is used for the optimization. Changing the rotation direction of the propeller and optimizing the twist and airfoil shapes of the wing impact the aerodynamic performance significantly. However, optimizing the wing while considering the propeller slipstream provides little additional benefit compared to optimizing it without considering the propeller slipstream (the
                   difference is less than one drag count). The wings optimized without considering the propeller slipstream are naturally able to recover swirl almost as effectively as the wings optimized while considering the propeller slipstream, and the propeller-induced velocities for the cruise condition are not high enough to lead to significant airfoil-shape design changes.}
+}
+
+@InProceedings{Chauhan2024,
+    author      = {Shamsheer S. Chauhan and Gustavo Padovany da Silva and Gustavo L. O. Halila and Joaquim R. R. A. Martins andJo{\~a}o Luiz F. Azevedo},
+    title       = {Investigating the Influence of an Inboard Propeller's Vertical Offset on a Trailing Wing's Lift and Drag Distributions},
+    booktitle   = {Proceedings of the 34th International Council of the Aerospace Sciences},
+    month       = {September},
+    year        = {2024},
+    abstract    = {Propeller-wing interaction has been a topic of investigation since the dawn of aviation. Surprisingly, however, there are few published studies showing how changing a tractor propeller's vertical offset affects a trailing wing's lift and drag distributions. In this work, we investigate this for a rectangular wing with an inboard propeller using steady Reynolds-averaged Navier--Stokes computational fluid dynamics and an actuator-disk approach. We present results for two angles of attack and a range of propeller-wing vertical offsets for both inboard-up and outboard-up propeller rotation. We include plots for spanwise sectional lift and drag coefficient distributions, integrated lift and drag coefficients, lift-to-drag ratios, and chordwise sectional pressure-coefficient distributions. The results show that changing the propeller-wing vertical offset can significantly change a trailing wing's lift and drag distributions, which strongly depend on the direction of the
+                  vertical offset.}
+}
+
+@Article{Chauhan2024a,
+    author      = {Shamsheer S. Chauhan and and Joaquim R. R. A. Martins},
+    title       = {{RANS}-Based Aerodynamic Shape Optimization of a Wing with a Propeller in Front of the Wingtip},
+    doi         = {10.3390/aerospace11070512},
+    journal     = {Aerospace},
+    number      = {512},
+    volume      = {11},
+    year        = {2024}
 }
 
 @Article{Chehouri2015kq,
@@ -15174,6 +15202,17 @@
     year        = {2003}
 }
 
+@Article{Gould2015,
+    author      = {Nicholas I. M. Gould and Dominique Orban and Philippe L. Toint},
+    title       = {{CUTEst}: a Constrained and Unconstrained Testing Environment with safe threads for mathematical optimization},
+    doi         = {10.1007/s10589-014-9687-3},
+    journal     = {Computational Optimiza},
+    month       = {August},
+    pages       = {545--557},
+    volume      = {60},
+    year        = {2015}
+}
+
 @TechReport{Gould:2004:CAS,
     author      = {Nicholas I. M. Gould and Dominique Orban and Philippe L. Toint},
     title       = {{CUTEr} (and {SifDec}), a Constrained and Unconstrained Testing Environment, revisited},
@@ -21266,6 +21305,14 @@
     year        = {2022}
 }
 
+@Article{Jiang2024,
+    author      = {Boxi Jiang and Mohammad Reza Amini and Yingqian Liao and Kartik Praful Naik and Joaquim R. R. A. Martins and Jing Sun},
+    title       = {Control Co-design of Hydrokinetic Turbines Considering Dynamic-hydrodynamic Coupling},
+    journal     = {IEEE Transactions on Control Systems Technology},
+    note        = {(In press)},
+    year        = {2024}
+}
+
 @InProceedings{Jiao2003,
     author      = {Jiao, Xiangmin and Campbell, Michael T. and Heath, Michael T.},
     title       = {Roccom: An Object-oriented, Data-centric Software Integration Framework for Multiphysics Simulations},
@@ -21552,7 +21599,7 @@
 }
 
 @Article{Jones1993a,
-    author      = {Jones, D.R and Perttunen, C.D. and Stuckman, B.E.},
+    author      = {Jones, D. R and Perttunen, C. D. and Stuckman, B. E.},
     title       = {{Lipschitzian} optimization without the {Lipschitz} constant},
     doi         = {10.1007/BF00941892},
     journal     = {Journal of Optimization Theory and Application},
@@ -21593,7 +21640,7 @@
     title       = {A Taxonomy of Global Optimization Methods Based on Response Surfaces},
     doi         = {10.1023/A:1012771025575},
     journal     = {Journal of Global Optimization},
-    month       = {dec},
+    month       = {December},
     number      = {4},
     pages       = {345--383},
     volume      = {21},
@@ -21617,7 +21664,6 @@
     isbn        = {978-0-306-48332-5},
     pages       = {431--440},
     publisher   = {Springer US},
-    url         = {https://doi.org/10.1007/0-306-48332-7_93},
     year        = {2001}
 }
 
@@ -21631,7 +21677,6 @@
     isbn        = {978-1-4613-0233-9},
     pages       = {39--58},
     publisher   = {Springer US},
-    url         = {https://doi.org/10.1007/978-1-4613-0233-9_3},
     year        = {2003},
     abstract    = {Today, most successful applications of optimization in the automotive industry are at the detailed-design level. Examples include structural optimization of metal gauges and beam cross sections, topology optimization of cast parts, and engine calibration. Despite these successes, it is fair to say that optimization is used less often, and has had a smaller impact, than most researchers might have expected. The reason is the presence of numerous barriers, such as poor connections between computer aided design (CAD) and computer aided engineering (CAE) software, insufficient predictive accuracy of computer simulations, difficulty in automating and iterating computer analyses, long simulation times, and poor availability of data. As a result, until recently, the focus has just been on getting to the point where we can do optimization. Fortunately, many of these barriers are being overcome, and the next decade is likely to witness a fast growth in the use of optimization
                   within the industry. Accordingly, the focus will shift to more interesting challenges, such as robust design, multi-disciplinary optimization, and the roll-down of vehicle-level requirements to subsystem specifications.}
@@ -30138,10 +30183,8 @@
     publisher   = {Cambridge University Press},
     url         = {https://mdobook.github.io},
     year        = {2022},
-    abstract    = {https://mdobook.github.io
-                  
-                  Based on course-tested material, this rigorous yet accessible graduate textbook covers both fundamental and advanced optimization theory and algorithms. It covers a wide range of numerical methods and topics, including both gradient-based and gradient-free algorithms, multidisciplinary design optimization, and uncertainty, with instruction on how to determine which algorithm should be used for a given application. It also provides an overview of models and how to prepare them for use with numerical optimization, including derivative computation. Over 400 high-quality visualizations and numerous examples facilitate understanding of the theory, and practical tips address common issues encountered in practical engineering design optimization and how to address them. Numerous end-of-chapter homework problems, progressing in difficulty, help put knowledge into practice. Accompanied online by a solutions manual for instructors and source code for problems, this is ideal for
-                  a one- or two-semester graduate course on optimization in aerospace, civil, mechanical, electrical, and chemical engineering departments.
+    abstract    = {Based on course-tested material, this rigorous yet accessible graduate textbook covers both fundamental and advanced optimization theory and algorithms. It covers a wide range of numerical methods and topics, including both gradient-based and gradient-free algorithms, multidisciplinary design optimization, and uncertainty, with instruction on how to determine which algorithm should be used for a given application. It also provides an overview of models and how to prepare them for use with numerical optimization, including derivative computation. Over 400 high-quality visualizations and numerous examples facilitate understanding of the theory, and practical tips address common issues encountered in practical engineering design optimization and how to address them. Numerous end-of-chapter homework problems, progressing in difficulty, help put knowledge into practice. Accompanied online by a solutions manual for instructors and source code for problems, this is ideal
+                  for a one- or two-semester graduate course on optimization in aerospace, civil, mechanical, electrical, and chemical engineering departments.
                   
                   Table of contents:
                   
@@ -38977,7 +39020,7 @@
 }
 
 @Book{Schlichting1979,
-    author      = {Hermann T. Schlichting and Erich A. Truckenbrodt},
+    author      = {Hermann Schlichting and Erich A. Truckenbrodt},
     title       = {Aerodynamics of the Aeroplane},
     edition     = {2nd},
     publisher   = {McGraw Hill Higher Education},
@@ -38985,19 +39028,20 @@
 }
 
 @Book{Schlichting1979b,
-    author      = {H. Schlichting and K. Gersten},
+    author      = {Hermann Schlichting and Klaus Gersten},
     title       = {Boundary-Layer Theory},
     edition     = {7th},
     publisher   = {McGraw Hill},
     year        = {1979}
 }
 
-@Book{Schlichting2003,
-    author      = {H. Schlichting and K. Gersten},
+@Book{Schlichting2000,
+    author      = {Hermann Schlichting and Klaus Gersten},
     title       = {Boundary-Layer Theory},
-    address     = {Boston},
+    address     = {Boston, MA},
+    edition     = {8th},
     publisher   = {Springer},
-    year        = {2003}
+    year        = {2000}
 }
 
 @Book{Schmid2001,
@@ -46212,9 +46256,16 @@
 @Article{Wang2024,
     author      = {Jiachen Wang and Joaquim R. R. A. Martins and Xiaosong Du},
     title       = {Automated Optimal Experimental Design Strategy for Reduced Order Modeling of Aerodynamic Flow Field},
+    doi         = {10.1016/j.ast.2024.109214},
     journal     = {Aerospace Science and Technology},
-    note        = {(In press)},
-    year        = {2024}
+    note        = {=},
+    pages       = {109214},
+    volume      = {150},
+    year        = {2024},
+    abstract    = {Aerodynamic flow fields reveal essential physical insights (such as shocks) that substantially affect aerodynamic performance. However, conventional flow field computations require time-consuming simulations. Alternatively, reduced-order models (ROMs) allow fast flow field predictions, enabling real-time decision-making. Efficient sampling is required to train ROMs without incurring prohibitive costs. In this paper, we propose a fully automated optimal experimental design (Auto-OED) strategy on proper orthogonal decomposition (POD) for ROM-based rapid flow field predictions. Auto-OED uses two individual optimal experimental design (OED) strategies, automatically selects the number of POD bases for the first sampling strategy, and intelligently switches to the second strategy on the fly. We showcased the Auto-OED strategy on airfoil flow field predictions in the transonic regime. OED-based ROMs were constructed over 20 trials for robustness tests with a total of 40
+                  training samples in each trial, including 16 random initial samples by Latin hypercube sampling (LHS) and 24 OED samples. The error reductions confirm the viability of the proposed Auto-OED-based ROM in fluid field predictions and potentially other engineering applications of a similar type.
+                  
+                  }
 }
 
 @InProceedings{WangJegelka2017,
