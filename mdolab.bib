@@ -117,6 +117,18 @@
     year        = {1959}
 }
 
+@InProceedings{Abdul-Kaiyoom2024,
+    author      = {M. A. Saja Abdul-Kaiyoom and Anil Yildirim and and Joaquim R. R. A. Martins},
+    title       = {Robust {S}chur-Complement Solvers and Large-Scale Multidisciplinary Design Optimization},
+    booktitle   = {34th Congress of the International Council of the Aeronautical Sciences},
+    keywords    = {ANK, OpenMDAO, MPhys},
+    month       = {September},
+    year        = {2024},
+    abstract    = {Multidisciplinary models are composed of numerous implicit systems that are solved in a coupled manner. A common challenge arises when an individual discipline's Jacobian is non-invertible, which results in the coupled multidisciplinary model representing a saddle-point problem. In general, the small-scale multidisciplinary saddle-point problems are solved with the coupled Newton's method. Nevertheless, coupled solver approaches are difficult to build and have robustness problems. In addition, they necessitate solving large coupled linear systems in large-scale applications. In this work, we use the newly developed nonlinear and linear Schur complement (SC) solvers, appropriate for multidisciplinary models based on computational fluid dynamics (CFD) to solve these saddle-point problems. The SC solvers are not susceptible to the robustness problems of conventional coupled solutions since they leverage specialized CFD solvers. Thanks to these solvers, the conventional
+                  constrained optimization, which has a saddle-point system in its Jacobian, can be transformed into unconstrained optimizations. In this work, we demonstrate several applications of Schur-complement-based optimizations of CFD-based saddle-point problems: aerodynamic shape optimization (ASO) of a wing and coupled aeropropulsive design optimization of a podded propulsor. In the ASO cases, the Schur-complement solvers-based optimizations outperform the conventional constrained optimizations. Although the conventional optimization in the coupled aeropropulsive design optimization problem outperforms the SC solvers-based optimization, it requires an effective scaling of the design variables of the boundary conditions and the constraints. SC solvers-based optimizations always provide a feasible design at each design iteration, whereas the conventional approach does not. Furthermore, in large-scale nonlinear saddle-point problems, the nonlinear SC solver offers an alternative
+                  way to obtain a feasible solution for a given design instead of carrying out a modest optimization in order to get feasible solutions. In the CFD-based saddle-point applications, SC solvers will play an important role in the future because they are robust and can solve the saddle-point problem using the native solvers of the specialized CFD model.}
+}
+
 @InProceedings{AbdulKaiyoom2023a,
     author      = {M. A. Saja Abdul-Kaiyoom and Anil Yildirim and and Joaquim R. R. A. Martins},
     title       = {Coupled Aeropropulsive Design Optimization of an Over-Wing Nacelle Configuration},
@@ -141,6 +153,16 @@
     abstract    = {Over-wing nacelle (OWN) configurations have two advantages over the traditional under-wing nacelle (UWN) configurations: 1. they make it easier to integrate high bypass ratio (BPR) and ultra-high BPR engines by removing ground clearance concerns, and 2. they significantly reduce noise because the wing blocks the noise of the fan and the jet. Despite their benefits, OWN technology is not widely used in real aircraft designs because of the challenges and lack of research in aeropropulsive integration of the propulsion system. In this work, we present multipoint aeropropulsive design optimizations of an OWN configuration to address several scenarios. To effectively design the propulsor in OWN, we consider on-design and off-design formulations of engine design concepts. In this work, we present one single-point optimization and three multipoint optimizations. In the multipoint optimizations, the objective is to minimize the shaft power at cruise conditions subject to
                   constraints. To compare the performance degradation of single-point optimization, we performed several sub-optimizations to reflect the multipoint cases. The single-point optimal design required additional 0.4\% shaft power across the cruise conditions when compared to the multipoint optimization with 3 cruise points. In addition, distortion-constrained and distortion-unconstrained optimizations were performed at the take-off scenario. By modifying the inlet shape of the nacelle, the distortion-constrained optimization effectively reduces the distortion in the take-off scenario at the outermost radial ring over the fan by penalizing the cruise performance. The multipoint optimizations in this work highlight a number of significant design effects. An effective design is produced by including the required flight conditions and specifying the proper objective and constraints in the OWN multipoint problem. These design optimization capabilities will be crucial in
                   determining the viability of novel propulsion concepts for next-generation OWN aircraft.}
+}
+
+@Article{AbdulKaiyoom2024,
+    author      = {M. A. Saja Abdul-Kaiyoom and Anil Yildirim and and Joaquim R. R. A. Martins},
+    title       = {Coupled Aeropropulsive Design Optimization of an Over-Wing Nacelle Configuration},
+    journal     = {Journal of Aircraft},
+    keywords    = {aeropropulsion, openmdao, xsede,MPhys},
+    year        = {2024},
+    abstract    = {Optimal nacelle placement is critical to commercial or transport aircraft designs that use engines mounted with nacelles. Over-wing nacelle (OWN) configuration has a high potential to improve upon the conventional under-wing nacelle (UWN) configuration. OWN configurations have two critical benefits when compared to the conventional UWN configuration: 1. they ease the integration of high BPR and ultra-high BPR engines by alleviating ground clearance issues, and 2. they provide a significant amount of noise reduction because the wing blocks the noise of the fan and the jet. Despite their advantages, the OWN technology is not used in practical aircraft designs due to the difficulties in the aeropropulsive integration of the propulsion system. In this work, we propose using a coupled aeropropulsive design optimization framework to study the aeropropulsive integration for OWN configurations. The coupling behavior between the aerodynamics of the wing and the propulsion
+                  system is extremely important. Especially in OWN configurations, the propulsion system is highly influenced by the aerodynamic performance of the wing. In this paper, we address the design problem of coupling between the aerodynamic and the propulsion system. We also explore wide range of design space to achieve the best practical design. The changes in wing shape are insignificant when the OWN configuration is optimized for different FPR. Wing in OWN performs better when the propulsor is close to the wing's root; however, the overall drag increases when the propulsor is close to the root. This increases the shaft power need. In addition, nacelle placement at the aft of the trailing edge shows better performance than forward of the trailing edge of the wing. These advancements in design optimization capabilities will be critical in the future design of OWN configurations to achieve more environmentally sustainable aircraft designs.}
 }
 
 @Article{abel,
@@ -398,19 +420,15 @@
                   cases where climb fuel burn is significant, we introduce a simple change to traditional fuel burn approximation methods that allows the optimizer to find nearly all the fuel burn reduction of mission-based optimization but at the computational cost of multipoint optimization.}
 }
 
-@Article{Adler2024,
-    author      = {Adler, Eytan J. and Martins, Joaquim R. R. A.},
-    title       = {Blended Wing Body Configuration for Hydrogen-Powered Aviation},
-    doi         = {10.2514/1.C037582},
-    issn        = {1533-3868},
-    journal     = {Journal of Aircraft},
-    keywords    = {OpenMDAO, OpenConcept, OpenAeroStruct},
-    month       = {January},
-    pdfurl      = {https://www.researchgate.net/profile/Eytan-Adler/publication/377749153_Blended_wing_body_configuration_for_hydrogen-powered_aviation/links/65b5a5f81e1ec12eff5180e3/Blended-wing-body-configuration-for-hydrogen-powered-aviation.pdf},
-    publisher   = {American Institute of Aeronautics and Astronautics},
-    year        = {2024},
-    abstract    = {Hydrogen aircraft have the potential to achieve more significant climate impact reductions at a lower cost than aircraft powered by biofuels or other drop-in sustainable aviation fuels. Nevertheless, even as a liquid, hydrogen requires four times more volume than kerosene to store the same energy. Companies and researchers have suggested that the blended wing body configuration is well-suited to hydrogen because it can efficiently store large fuel tanks. However, nobody has quantified this claim, at least publicly. We address this gap by comparing optimized kerosene and hydrogen versions of blended wing body and tube and wing aircraft. Our models predict that, with ambitious hydrogen tank technology assumptions, a hydrogen blended wing body has a 3.8\% energy penalty compared to a kerosene blended wing body. In contrast, the energy penalty for a tube and wing is 5.1\%. These results suggest that the blended wing body configuration is slightly better suited to
-                  hydrogen than a tube and wing. However, the conclusion breaks down under less optimistic scenarios where lightweight conformal liquid hydrogen tanks are unavailable. Nonetheless, the energy penalties of switching the two configurations to hydrogen have a similar order of magnitude. Any kerosene blended wing body fuel burn benefit over a tube and wing also applies to hydrogen versions. As a result, kerosene blended wing body technology developments, such as maturing the structural design of the noncircular pressurized passenger cabin, remain valuable for future hydrogen-powered aircraft.}
+@InProceedings{Adler2024,
+    author      = {Eytan J. Adler and Andrew H. R. Lamkin and Joaquim R. R. A. Martins},
+    title       = {Ducted Heat Exchanger Thermal and Aerodynamic Shape Optimization},
+    address     = {Florence, Italy},
+    booktitle   = {34th Congress of the International Council of the Aeronautical Sciences},
+    month       = {September},
+    year        = {2022},
+    abstract    = {Interest in aircraft electrification and hydrogen fuel cells is driving demand for efficient waste heat management systems. Ultimately, most of the heat must be rejected to the freestream air. Ducted heat exchangers, also called ducted radiators, are the most common and effective way to do this. Engineers manually design ducted heat exchangers by adjusting the duct's shape and heat exchanger's configuration to reduce drag and transfer sufficient heat. This manual approach misses potential performance improvements because engineers cannot simultaneously consider all of the complex interactions between the detailed duct shape, heat exchanger design, and operating conditions. To find these potential gains, we apply gradient-based optimization to a three-dimensional ducted heat exchanger computational fluid dyanmics model. The optimizer determines the duct shape, heat exchanger size, heater exchanger channel geometry, and coolant flow rate that minimize the ducted heat
+                  exchanger's power requirements while rejecting enough heat. Gradient-based optimization enables the use of nearly 100 shape design variables, creating a large design space and allowing fine tuning of the optimized design. When applied to an arbitrary, poorly-performing baseline, our method produces a nuanced and sophisticated ducted heat exchanger design with five times less cruise drag. Employing this method in the design of electric and fuel cell aircraft thermal management could uncover performance not achievable with manual design practices.}
 }
 
 @webpage{ADtools,
@@ -447,6 +465,17 @@
     pages       = {40--57},
     volume      = {89},
     year        = {2017}
+}
+
+@Article{Afonso2023,
+    author      = {Frederico Afonso and Martin Sohst and Carlos M.A. Diogo and Sim{\~a}o S. Rodrigues and Ana Ferreira and In{\^e}s Ribeiro and Ricardo Marques and Francisco F.C. Rego and Abdolrasoul Sohouli and Joana Portugal-Pereira and Hugo Policarpo and Bruno Soares and Bruna Ferreira and Edgar C. Fernandes and Fernando Lau and Afzal Suleman},
+    title       = {Strategies towards a more sustainable aviation: A systematic review},
+    doi         = {10.1016/j.paerosci.2022.100878},
+    issn        = {0376-0421},
+    journal     = {Progress in Aerospace Sciences},
+    pages       = {100878},
+    volume      = {137},
+    year        = {2023}
 }
 
 @InProceedings{Agarwal2011,
@@ -5624,6 +5653,17 @@
     month       = {August},
     note        = {{AIAA} 93-3932},
     year        = 1993
+}
+
+@Article{Bravo-Mosquera2022,
+    author      = {Pedro D. Bravo-Mosquera and Fernando M. Catalano and David W. Zingg},
+    title       = {Unconventional aircraft for civil aviation: A review of concepts and design methodologies},
+    doi         = {10.1016/j.paerosci.2022.100813},
+    journal     = {Progress in Aerospace Sciences},
+    month       = {May},
+    pages       = {100813},
+    volume      = {131},
+    year        = {2022}
 }
 
 @Article{Breguet1923a,
@@ -11939,6 +11979,15 @@
     year        = {2015}
 }
 
+@Conference{Erhard2021,
+    author      = {R. M. Erhard and J. J. Alonso},
+    title       = {A comparison of propeller wake models for distributed electric propulsion and Evtol aircraft in complex flow conditions},
+    journal     = {AIAA SciTech Forum},
+    month       = {Dec},
+    url         = {https://arc.aiaa.org/doi/abs/10.2514/6.2022-1676},
+    year        = {2021}
+}
+
 @Book{Ericson:2004:RCD:1121584,
     author      = {Ericson, Christer},
     title       = {Real-Time Collision Detection},
@@ -14387,13 +14436,15 @@
     year        = {2008}
 }
 
-@Unpublished{Giles2008a,
+@TechReport{Giles2008a,
     author      = {Mike Giles},
     title       = {An extended collection of matrix derivative results for forward and reverse mode algorithmic differentiation},
     address     = {Oxford, UK},
     institution = {Oxford University Computing Laboratory},
     keywords    = {AD},
     month       = {January},
+    number      = {NA-08/01},
+    type        = {Technical Report},
     url         = {https://people.maths.ox.ac.uk/gilesm/files/NA-08-01.pdf},
     year        = {2008}
 }
@@ -16905,6 +16956,17 @@
     publisher   = {The Open Journal},
     volume      = {8},
     year        = {2023}
+}
+
+@InProceedings{Hajdik2024a,
+    author      = {Hannah M. Hajdik and Anil Yildirim and Joaquim R. R. A. Martins},
+    title       = {Aerodynamic shape optimization of filleted intersections with surface mesh deformation},
+    booktitle   = {34th Congress of the International Council of the Aeronautical Sciences},
+    keywords    = {ANK, OpenMDAO, MPhys},
+    month       = {September},
+    year        = {2024},
+    abstract    = {Component intersections are a persistent challenge in aerodynamic design with the drag of a full configuration that is typically larger than that of its individual components. To remedy this, designers create fairings and fillets between the component surfaces to reduce this interference drag. These additions require iterative design and costly analyses to perfect, but aerodynamic shape optimization can find a better design quicker than traditional processes. For designs involving intersecting components, special handling of deformations is needed to preserve mesh quality within aerodynamic shape optimization. In this work, we present a method that uses inverse distance warping to deform a fillet between two components for the minimum drag design that retains mesh quality. We show that this method is tractable within an aerodynamic shape optimization process and results in lower drag designs than those optimized without changing the intersection region. This method
+                  enables better aircraft designs through more detailed aerodynamic shape optimization.}
 }
 
 @Article{Hajela1983,
@@ -20167,6 +20229,15 @@
     year        = {2004}
 }
 
+@Misc{International-Civil-Aviation-Organization-Industry-High-Level-Group2019,
+    author      = {{International Civil Aviation Organization Industry High Level Group}},
+    title       = {Aviation Benefits Report 2019},
+    howpublished= {\url{https://www.icao.int/sustainability/Documents/AVIATION-BENEFITS-2019-web.pdf}},
+    note        = {Accessed November 17, 2022},
+    publisher   = {Industry High-level Group},
+    year        = {2019}
+}
+
 @Article{Iollo2001,
     author      = {Iollo, A and Ferlauto, M and Zannetti, L},
     title       = {An aerodynamic optimization method based on the inverse problem adjoint equations},
@@ -22113,6 +22184,23 @@
     year        = {2023},
     abstract    = {The conceptual design process of aircraft starts by deciding the representative mission requirements, followed by optimization of design variables to satisfy the given requirements. However, the appropriate mission requirements are not obvious, especially when designing package delivery UAVs (also called drones). The UAVs must accommodate various combinations of package weights and delivery distances. The complexity increases further when designing a heterogeneous fleet of UAVs that serves a large number of customers. This work addresses this problem by solving coupled design-operation optimization to find optimal mission requirements and optimal UAV designs simultaneously. We formulate this problem as mixed-integer nonlinear optimization and propose a sequential heuristic algorithm to solve the coupled problem. The benchmark study of the proposed algorithm against a nonconvex branch-and-cut solver shows that the sequential heuristics are effective. We also
                   demonstrate that the simultaneous UAV design and routing optimization reduces the UAV weight across the fleet by more than 12\% on average compared to the conventional baseline.}
+}
+
+@PhDThesis{Kaneko2024,
+    author      = {Shugo Kaneko},
+    title       = {Multidisciplinary Design Optimization of Delivery Uncrewed Aerial Vehicles Considering Operations},
+    address     = {Ann Arbor, MI},
+    keywords    = {xsede, OpenMDAO},
+    school      = {University of Michigan},
+    year        = {2024},
+    abstract    = {Uncrewed aerial vehicles (UAVs) enable rapid and environmentally friendly delivery of lightweight payloads, such as commercial packages, food, and medical supplies. Designing an energy-efficient UAV is the key to achieving the full potential of UAV delivery and lowering the environmental impact. To do so, multidisciplinary design optimization (MDO) is a powerful tool that assists engineers with design tasks and accelerates design space exploration by automatically finding the optimal design given the requirements and assumptions.
+                  
+                  This dissertation focuses on conceptual design optimization of delivery UAVs considering flight operations. Incorporating flight operational analysis and optimization in the UAV conceptual design process is important because the expected flight operations drive the design requirements, hence the UAV design. At the same time, the optimal flight operations are dependent on the UAV design parameters, meaning that the optimal UAV design and flight operations are mutually coupled. I apply MDO to capture this design-operation coupling, which ultimately improves the design and performance of delivery UAVs.
+                  
+                  In the first part of this dissertation, I present design optimization of a UAV fleet considering delivery operations. This problem simultaneously optimizes the fleet size and composition, UAV design variables, and delivery routing to design a fleet that fulfills expected delivery demands. To solve this mixed-integer nonlinear optimization problem, I propose an effective sequential heuristic algorithm that combines gradient-based design optimization and vehicle routing heuristics. I then demonstrate the accuracy, computational efficiency, and scalability of the proposed algorithm by comparing it to a commercial branch-and-cut solver. The results show that simultaneous fleet design and routing optimization reduces the fleet acquisition cost and delivery energy consumption by up to 20% compared to conventional uncoupled optimization.
+                  
+                  In the second part, I perform UAV conceptual design optimization considering takeoff flight operations, focusing on a single vehicle design in higher resolution. This problem yields simultaneous optimization of UAV design and takeoff trajectory, and I apply gradient-based optimization to solve it efficiently. To reduce the computational cost of gradient-based optimization, I propose new hierarchical linear solution strategies to accelerate derivative computations. I also perform benchmark studies of monolithic MDO architectures and design-trajectory coupling strategies to identify the best approach in terms of computational cost. The results of this dissertation show that simultaneous optimization can find a more energy-efficient UAV design compared to uncoupled optimization. This is achieved by capturing the system-level trade-offs between the efficiency in different flight phases, which uncoupled optimization cannot fully address. This demonstrates the importance of
+                  incorporating takeoff trajectory optimization in the conceptual design process of delivery UAVs.}
 }
 
 @InProceedings{Kaneko2024a,
@@ -24372,6 +24460,17 @@
     year        = {2022}
 }
 
+@Article{Koyuncuoglu2022a,
+    author      = {Koyuncuoglu, Heyecan U. and He, Ping},
+    title       = {Simultaneous wing shape and actuator parameter optimization using the adjoint method},
+    doi         = {10.1016/j.ast.2022.107876},
+    issn        = {12709638},
+    journal     = {Aerospace Science and Technology},
+    publisher   = {Elsevier Masson SAS},
+    volume      = {130},
+    year        = {2022}
+}
+
 @InProceedings{Koyuncuoglu2023,
     author      = {Koyuncuoglu, Heyecan and He, Ping},
     title       = {{CFD} Based Multi-Component Aerodynamic Optimization for Wing Propeller Coupling},
@@ -25799,6 +25898,16 @@
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
     volume      = {53},
     year        = 2015
+}
+
+@Conference{LeDoux2020,
+    author      = {Stephen T. LeDoux and Dmitry Kamenetskiy and Pei Li and David P. Young and Jonathan Elliot and Philip Cross},
+    title       = {Comparisons of the Aerodynamic Shape Optimization of the CommonResearch Model Wing},
+    booktitle   = {AIAA Scitech Conference},
+    keywords    = {ADODG},
+    month       = {January},
+    note        = {Oral presentation},
+    year        = {2020}
 }
 
 @Article{Ledsinger2002,
@@ -30198,6 +30307,17 @@
                   and other aerodynamic shape optimization problems. Among the ADODG benchmarks, we focus on the RANS-based problems and discuss some of the issues encountered, including comparing Euler and RANS results and design-space multimodality. The availability of these benchmarks and the open-source tools is expected to enable further studies and benchmarks in CFD-based aerodynamic design optimization and MDO.}
 }
 
+@InProceedings{Martins2024,
+    author      = {Joaquim R. R. A. Martins and M. A. Saja Abdul-Kaiyoom and Eytan J. Adler and Alasdair C. Gray and Hannah Hajdik and Eirikur Jonsson and Andrew H. R. Lamkin, Bernardo Pacini and Anil Yildirim},
+    title       = {Shaping Sustainable Aviation with {CFD}-Based Design Optimization},
+    booktitle   = {34th Congress of the International Council of the Aeronautical Sciences},
+    keywords    = {ANK, MPhys},
+    month       = {September},
+    year        = {2024},
+    abstract    = {Component intersections are a persistent challenge in aerodynamic design with the drag of a full configuration that is typically larger than that of its individual components. To remedy this, designers create fairings and fillets between the component surfaces to reduce this interference drag. These additions require iterative design and costly analyses to perfect, but aerodynamic shape optimization can find a better design quicker than traditional processes. For designs involving intersecting components, special handling of deformations is needed to preserve mesh quality within aerodynamic shape optimization. In this work, we present a method that uses inverse distance warping to deform a fillet between two components for the minimum drag design that retains mesh quality. We show that this method is tractable within an aerodynamic shape optimization process and results in lower drag designs than those optimized without changing the intersection region. This method
+                  enables better aircraft designs through more detailed aerodynamic shape optimization.}
+}
+
 @Article{Martins:2004:HFA,
     author      = {Joaquim R. R. A. Martins and Juan J. Alonso and James J. Reuther},
     title       = {High-Fidelity Aerostructural Design Optimization of a Supersonic Business Jet},
@@ -31834,7 +31954,7 @@
     title       = {Personal Air Vehicles: A Rural/Regional and Intra-Urban On-Demand Transportation System},
     address     = {Dayton, Ohio},
     booktitle   = {Journal of the American Institute of Aeronautics and Astronautics (AIAA)},
-    month       = {jul},
+    month       = {July},
     organization= {AIAA},
     pages       = {1--20},
     year        = {2003}
@@ -32151,10 +32271,6 @@
     pages       = {1061 - 1068},
     volume      = {38},
     year        = {2002}
-}
-
-@webpage{MPhys,
-    url         = {https://github.com/OpenMDAO/mphys}
 }
 
 @Article{MPI:1994,
@@ -33143,13 +33259,21 @@
 }
 
 @InProceedings{Ng2023a,
-    author      = {Galen W Ng and Eirikur Jonsson and Sicheng He and Joaquim R. R. A. Martins},
+    author      = {Galen W. Ng and Eirikur Jonsson and Sicheng He and Joaquim R. R. A. Martins},
     title       = {Coupled Strip Theory and Finite Element Method for Stability Analysis of Composite Hydrofoils},
     address     = {Lorient, France},
     booktitle   = {Proceedings of the 6th International Conference on Innovation in High Performance Sailing Yachts and Wind-Assisted Ships},
     keywords    = {ONR},
     month       = {May},
     year        = {2023}
+}
+
+@Article{Ng2024,
+    author      = {Galen W. Ng and Eirikur Jonsson and Sicheng He and Joaquim R.R.A. Martins},
+    title       = {Dynamic hydroelasticity of composite appendages with reverse-mode algorithmic differentiation},
+    doi         = {10.1016/j.compstruct.2024.118367},
+    journal     = {Composite Structures},
+    year        = {2024}
 }
 
 @Article{Ng:2010:A,
@@ -34255,7 +34379,7 @@
 
 @InProceedings{Pacini2023b,
     author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
-    title       = {Multipoint Aerostructural Optimization for Urban Air Mobility Vehicle Design},
+    title       = {Towards Aerostructural Optimization for Urban Air Mobility Vehicle Design},
     booktitle   = {AIAA Scitech Forum 2023},
     doi         = {10.2514/6.2023-0326},
     keywords    = {xsede, MPhys},
@@ -34275,6 +34399,14 @@
     year        = {2023},
     abstract    = {Many urban air mobility vehicle designs feature propellers integrated with fuselage, wings, and other appendages. These vehicle designs are based on complex configurations with novel propulsion systems and flight technology. The tightly coupled nature of the systems in these vehicles and the novel technologies within them create opportunities for vehicle analysis and optimization. Furthermore, the geometries being developed are unique, utilizing advanced materials for integral components. Aerodynamic, structural, and acoustic analysis and optimization can provide insight into their performance, and how the propellers, structures, and lifting surfaces can be designed to further improve vehicle efficiency considering operational constraints. This work details an aero-structural-acoustic optimization toolchain built with the MACH and OpenMDAO tools, embedded within the modeling and optimization framework called MPhys. This analysis and optimization framework utilizes
                   multiple model fidelities, including hybrid blade element momentum theory, computational fluid dynamics, finite-element modeling, and an aeroacoustic analogy. With this toolchain, this work presents gradient-based aero-structural-acoustic optimization, minimizing required flight power while ensuring structural integrity and respecting acoustic considerations. The toolchain is applied to the NASA tiltwing concept vehicle to optimize the wing and propeller designs, yielding a 17.8\% reduction in required power for cruise flight while considering aerodynamic, structural, and acoustic constraints. This aero-structural-acoustic optimization framework can help make vehicle designs more efficient, lighter, and quieter.}
+}
+
+@PhDThesis{Pacini2024,
+    author      = {Bernardo Pacini},
+    title       = {Aerodynamic, Aeroacoustic, and Aerostructural Design Optimization for Propeller-Driven Aircraft},
+    address     = {Ann Arbor, MI},
+    school      = {University of Michigan},
+    year        = {2024}
 }
 
 @Article{Padron2019,
@@ -40867,6 +40999,17 @@
     year        = {2018}
 }
 
+@Article{Sinnige2019,
+    author      = {Sinnige, T and van Arnhem, N and Stokkermans, T C A and Eitelberg, G and Veldhuis, L L M},
+    title       = {Wingtip-Mounted Propellers: Aerodynamic Analysis of Interaction Effects and Comparison with Conventional Layout},
+    doi         = {10.2514/1.C034978},
+    journal     = {Journal of Aircraft},
+    number      = {1},
+    pages       = {295--312},
+    volume      = {56},
+    year        = {2019}
+}
+
 @Article{Sirkes1997,
     author      = {Ziv Sirkes and Eli Tziperman},
     title       = {Finite Difference of Adjoint or Adjoint of Finite Difference?},
@@ -43209,6 +43352,15 @@
     year        = {1972}
 }
 
+@Manual{TASOPT,
+    author      = {Mark Drela},
+    title       = {TASOPT 2.00---Transport Aircraft System OPTimization},
+    address     = {Cambridge, MA},
+    month       = {March},
+    organization= {MIT},
+    year        = {2010}
+}
+
 @TechReport{Tatting2002b,
     author      = {Tatting, B. F. and Gurdal, Z.},
     title       = {Design and manufacture of elastically tailored tow placed plates},
@@ -45268,6 +45420,14 @@
     year        = {2000}
 }
 
+@InProceedings{Veldhuis2004,
+    author      = {Veldhuis, L. L. M.},
+    title       = {Review of Propeller-Wing Aerodynamic Interference},
+    booktitle   = {Proceeding of the ICAS 2004 Congress},
+    organization= {ICAS},
+    year        = {2004}
+}
+
 @PhDThesis{Veldhuis2005,
     author      = {Veldhuis, L. L. M.},
     title       = {Propeller Wing Aerodynamic Interference},
@@ -45874,6 +46034,16 @@
     stuff       = {AIAA/AHS/ASEE Aircraft Design Systems and Operations Conference, Dayton, OH},
     type        = {\emph{{AIAA} Paper}},
     year        = {1990}
+}
+
+@Article{Wallington2024,
+    author      = {Timothy J. Wallington and Maxwell Woody and Geoffrey M. Lewis and Gregory A. Keoleian and Eytan J. Adler and and Joaquim R. R. A. Martins},
+    title       = {Green Hydrogen Pathways, Energy Efficiencies, and Intensities for Ground, Air, and Marine Transportation},
+    journal     = {Joule},
+    note        = {(In press)},
+    year        = {2024},
+    abstract    = {Green hydrogen produced by electrolysis with renewable electricity can be used directly or in synthetic fuels (e-fuels) to decarbonize road, rail, marine, and air transportation. System inefficiencies during hydrogen or e-fuel production, storage, transportation, dispensing, and use lead to approximately 80-90% loss of the initial electrical energy input. Electric-powered ground, marine, and air transport is approximately 3-8 times more energy efficient than hydrogen alternatives. Renewable electricity sources in the U.S. are insufficient to support hydrogen production for light-duty vehicles. Green hydrogen should be used strategically in heavy-duty road, rail, aviation, and marine transportation where electrification alternatives are constrained by load and range. Energy intensity for hydrogen transport measured by renewable electricity per unit of service follows current trends for petroleum-fueled transport. For freight, ships and rail are the least intensive
+                  modes followed by heavy duty trucks, then aircraft: 0.04, 0.2, 2, and 20 MJ per t-km, respectively.}
 }
 
 @Misc{walsh00multidisciplinary,
@@ -46675,6 +46845,15 @@
     pages       = {1--20},
     url         = {http://arc.aiaa.org},
     year        = {2019}
+}
+
+@TechReport{Whiteside2021,
+    author      = {Whiteside, S K S and Pollard, B P and Antcliff, K R and Zawodny, N S and Fei, X and Silva, C and Medina, G L},
+    title       = {Design of a Tiltwing Concept Vehicle for Urban Air Mobility},
+    address     = {Hampton, Virginia},
+    institution = {NASA Langley Research Center},
+    number      = {May},
+    year        = {2021}
 }
 
 @InProceedings{Whitfield1983,
@@ -48122,6 +48301,14 @@
     note        = {ICCFD11-0702},
     url         = {https://www.iccfd.org/iccfd11/assets/pdf/papers/ICCFD11_Paper-0702.pdf},
     year        = {2022}
+}
+
+@Article{Yildirim2024,
+    author      = {Anil Yildirim and Kevin E. Jacobson and Joshua L. Anibal and Bret K. Stanford and Justin S. Gray and Charles A. Mader and Joaquim R. R. A. Martins and Graeme J. Kennedy},
+    title       = {{MPhys}: A Modular Multiphysics Library for Coupled Simulation and Adjoint Derivative Computation},
+    journal     = {Structural and Multidisciplinary Optimization},
+    note        = {(In press)},
+    year        = {2024}
 }
 
 @InProceedings{Yilmaz2020,
