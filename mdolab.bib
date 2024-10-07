@@ -120,13 +120,22 @@
 @InProceedings{Abdul-Kaiyoom2024,
     author      = {M. A. Saja Abdul-Kaiyoom and Anil Yildirim and and Joaquim R. R. A. Martins},
     title       = {Robust {S}chur-Complement Solvers and Large-Scale Multidisciplinary Design Optimization},
+    address     = {Florence, Italy},
     booktitle   = {34th Congress of the International Council of the Aeronautical Sciences},
     keywords    = {ANK, OpenMDAO, MPhys},
     month       = {September},
     year        = {2024},
     abstract    = {Multidisciplinary models are composed of numerous implicit systems that are solved in a coupled manner. A common challenge arises when an individual discipline's Jacobian is non-invertible, which results in the coupled multidisciplinary model representing a saddle-point problem. In general, the small-scale multidisciplinary saddle-point problems are solved with the coupled Newton's method. Nevertheless, coupled solver approaches are difficult to build and have robustness problems. In addition, they necessitate solving large coupled linear systems in large-scale applications. In this work, we use the newly developed nonlinear and linear Schur complement (SC) solvers, appropriate for multidisciplinary models based on computational fluid dynamics (CFD) to solve these saddle-point problems. The SC solvers are not susceptible to the robustness problems of conventional coupled solutions since they leverage specialized CFD solvers. Thanks to these solvers, the conventional
-                  constrained optimization, which has a saddle-point system in its Jacobian, can be transformed into unconstrained optimizations. In this work, we demonstrate several applications of Schur-complement-based optimizations of CFD-based saddle-point problems: aerodynamic shape optimization (ASO) of a wing and coupled aeropropulsive design optimization of a podded propulsor. In the ASO cases, the Schur-complement solvers-based optimizations outperform the conventional constrained optimizations. Although the conventional optimization in the coupled aeropropulsive design optimization problem outperforms the SC solvers-based optimization, it requires an effective scaling of the design variables of the boundary conditions and the constraints. SC solvers-based optimizations always provide a feasible design at each design iteration, whereas the conventional approach does not. Furthermore, in large-scale nonlinear saddle-point problems, the nonlinear SC solver offers an alternative
+                  constrained optimization, which has a saddle-point system in its Jacobian, can be transformed into unconstrained optimizations. In this work, we demonstrate several applications of Schur-complement-based optimizations of CFD-based saddle-point problems: aerodynamic shape optimization (ASO) of a wing and coupled aeropropulsive design optimization of a podded propulsor. In the ASO cases, the Schur complement solvers-based optimizations outperform the conventional constrained optimizations. Although the conventional optimization in the coupled aeropropulsive design optimization problem outperforms the SC solvers-based optimization, it requires an effective scaling of the design variables of the boundary conditions and the constraints. SC solvers-based optimizations always provide a feasible design at each design iteration, whereas the conventional approach does not. Furthermore, in large-scale nonlinear saddle-point problems, the nonlinear SC solver offers an alternative
                   way to obtain a feasible solution for a given design instead of carrying out a modest optimization in order to get feasible solutions. In the CFD-based saddle-point applications, SC solvers will play an important role in the future because they are robust and can solve the saddle-point problem using the native solvers of the specialized CFD model.}
+}
+
+@Article{Abdul-Kaiyoom2024a,
+    author      = {Mohamed Arshath Saja Abdul-Kaiyoom and Anil Yildirim and Alasdair C. Gray and Joaquim R. R. A. Martins},
+    title       = {Airfoil Separation Constraint Formulation for Aerodynamic Shape Optimization},
+    journal     = {Journal of Aircraft},
+    note        = {(In press)},
+    year        = {2024}
 }
 
 @InProceedings{AbdulKaiyoom2023a,
@@ -429,6 +438,40 @@
     year        = {2022},
     abstract    = {Interest in aircraft electrification and hydrogen fuel cells is driving demand for efficient waste heat management systems. Ultimately, most of the heat must be rejected to the freestream air. Ducted heat exchangers, also called ducted radiators, are the most common and effective way to do this. Engineers manually design ducted heat exchangers by adjusting the duct's shape and heat exchanger's configuration to reduce drag and transfer sufficient heat. This manual approach misses potential performance improvements because engineers cannot simultaneously consider all of the complex interactions between the detailed duct shape, heat exchanger design, and operating conditions. To find these potential gains, we apply gradient-based optimization to a three-dimensional ducted heat exchanger computational fluid dyanmics model. The optimizer determines the duct shape, heat exchanger size, heater exchanger channel geometry, and coolant flow rate that minimize the ducted heat
                   exchanger's power requirements while rejecting enough heat. Gradient-based optimization enables the use of nearly 100 shape design variables, creating a large design space and allowing fine tuning of the optimized design. When applied to an arbitrary, poorly-performing baseline, our method produces a nuanced and sophisticated ducted heat exchanger design with five times less cruise drag. Employing this method in the design of electric and fuel cell aircraft thermal management could uncover performance not achievable with manual design practices.}
+}
+
+@Article{Adler2024a,
+    author      = {Eytan J. Adler and Joaquim R. R. A. Martins},
+    title       = {Blended wing body configuration for hydrogen-powered aviation},
+    doi         = {10.2514/1.C037582},
+    journal     = {Journal of Aircraft},
+    keywords    = {OpenMDAO, OpenAeroStruct, OpenConcept},
+    month       = {May},
+    number      = {3},
+    pdfurl      = {https://www.researchgate.net/profile/Eytan-Adler/publication/377749153_Blended_wing_body_configuration_for_hydrogen-powered_aviation/links/65b5a5f81e1ec12eff5180e3/Blended-Wing-Body-Configuration-for-Hydrogen-Powered-Aviation.pdf?origin=publicationDetail&_sg%5B0%5D=8-SiYLJd2NSgRUILyijvJhtJsZUEXullbE5dHeVb0dl3Splj-cgUQlKrfvJZdpNSrQImlmeUCpvMT4xSGEH_qw.zTpSFMQh6C9gg9l8RyEMsYSrx4I9daMdmp2x32rijX6DMtUa6K8EFvPhLaMWO9cIcPfVyyXxFXEiDImNVHHtvg&_sg%5B1%5D=K8eCACmvPlpfTdarAcYsOXUVFgXUlp1blgWIw0xI3PC4vEI5OlLxwzt0Ax2ZUsN1Ul09YzrTYlAOUXJw_7WSwiBRDX2YoQ7kD5FoQ8uotwpA.zTpSFMQh6C9gg9l8RyEMsYSrx4I9daMdmp2x32rijX6DMtUa6K8EFvPhLaMWO9cIcPfVyyXxFXEiDImNVHHtvg&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19},
+    volume      = {61},
+    year        = {2024},
+    abstract    = {Hydrogen aircraft have the potential to achieve more significant climate impact reductions at a lower cost than aircraft powered by biofuels or other drop-in sustainable aviation fuels. Nevertheless, even as a liquid, hydrogen requires four times more volume than kerosene to store the same energy. Companies and researchers have suggested that the blended wing body configuration is well-suited to hydrogen because it can efficiently store large fuel tanks. However, nobody has quantified this claim, at least publicly. We address this gap by comparing optimized kerosene and hydrogen versions of blended wing body and tube and wing aircraft. Our models predict that, with ambitious hydrogen tank technology assumptions, a hydrogen blended wing body has a 3.8% energy penalty compared to a kerosene blended wing body. In contrast, the energy penalty for a tube and wing is 5.1%. These results suggest that the blended wing body configuration is slightly better suited to hydrogen
+                  than a tube and wing. However, the conclusion breaks down under less optimistic scenarios where lightweight conformal liquid hydrogen tanks are unavailable. Nonetheless, the energy penalties of switching the two configurations to hydrogen have a similar order of magnitude. Any kerosene blended wing body fuel burn benefit over a tube and wing also applies to hydrogen versions. As a result, kerosene blended wing body technology developments, such as maturing the structural design of the noncircular pressurized passenger cabin, remain valuable for future hydrogen-powered aircraft.
+                  
+                  }
+}
+
+@Article{Adler2025,
+    author      = {Eytan J. Adler and Andrew H. R. Lamkin and Joaquim R. R. A. Martins},
+    title       = {Aircraft Ducted Heat Exchanger Aerodynamic Shape and Thermal Optimization},
+    doi         = {10.1115/1.4066438},
+    issn        = {2832-8450},
+    journal     = {{ASME} Journal of Heat and Mass Transfer},
+    keywords    = {OpenMDAO, OpenConcept, MPhys, ank, pleiades},
+    month       = {01},
+    number      = {1},
+    pages       = {011902},
+    pdfurl      = {https://www.researchgate.net/profile/Eytan-Adler/publication/383834938_Aircraft_ducted_heat_exchanger_aerodynamic_shape_and_thermal_optimization/links/66faa6b6553d245f9e44fe2e},
+    volume      = {147},
+    year        = {2025},
+    abstract    = {Interest in aircraft electrification and hydrogen fuel cells is driving demand for efficient waste heat management systems. Ultimately, most of the heat must be rejected to the freestream air. Ducted heat exchangers, also called ducted radiators, are the most common and effective way to do this. Engineers manually design ducted heat exchangers by adjusting the duct's shape and heat exchanger's configuration to reduce drag and transfer sufficient heat. This manual approach misses potential performance improvements because engineers cannot simultaneously consider all of the complex interactions between the detailed duct shape, heat exchanger design, and operating conditions. To find these potential gains, we apply gradient-based optimization to a three-dimensional ducted heat exchanger computational fluid dynamics model. The optimizer determines the duct shape, heat exchanger size, heater exchanger channel geometry, and coolant flow rate that minimize the ducted heat
+                  exchanger's power requirements while rejecting enough heat. Gradient-based optimization enables the use of nearly 100 shape design variables, creating a large design space and allowing fine tuning of the optimal design. When applied to an arbitrary, poorly-performing baseline, our method produces a nuanced and sophisticated ducted heat exchanger design with five times less cruise drag. Employing this method in the design of electric and fuel cell aircraft thermal management could uncover performance not achievable with manual design practices. }
 }
 
 @webpage{ADtools,
@@ -7839,6 +7882,7 @@
 @InProceedings{Chauhan2024,
     author      = {Shamsheer S. Chauhan and Gustavo Padovany da Silva and Gustavo L. O. Halila and Joaquim R. R. A. Martins andJo{\~a}o Luiz F. Azevedo},
     title       = {Investigating the Influence of an Inboard Propeller's Vertical Offset on a Trailing Wing's Lift and Drag Distributions},
+    address     = {Florence, Italy},
     booktitle   = {Proceedings of the 34th International Council of the Aerospace Sciences},
     month       = {September},
     year        = {2024},
@@ -15460,6 +15504,16 @@
     year        = {2008}
 }
 
+@InProceedings{Gratz2024,
+    author      = {Jennifer Gratz and Jason Kirk and Carl Recine and John Jasa and Eliot Aretskin-Hariton and Kenneth Moore and Kiran Marfatia},
+    title       = {Aviary: An Open-Source Multidisciplinary Design, Analysis, and Optimization Tool for Modeling Aircraft With Analytic Gradients},
+    address     = {Las Vegas, NV},
+    booktitle   = {Proceedings of the Aviation Forum},
+    doi         = {10.2514/6.2024-4219},
+    month       = {July},
+    year        = {2024}
+}
+
 @Misc{Gratzer:1999,
     author      = {Gratzer, L.B. and Clark, J.},
     title       = {The Spiroid-Tipped Wing, US Patent No. 5,102,068.},
@@ -16957,9 +17011,11 @@
 @InProceedings{Hajdik2024a,
     author      = {Hannah M. Hajdik and Anil Yildirim and Joaquim R. R. A. Martins},
     title       = {Aerodynamic shape optimization of filleted intersections with surface mesh deformation},
+    address     = {Florence, Italy},
     booktitle   = {34th Congress of the International Council of the Aeronautical Sciences},
-    keywords    = {ANK, OpenMDAO, MPhys},
+    keywords    = {ANK, OpenMDAO, MPhys,beststudentpaper},
     month       = {September},
+    pdfurl      = {https://www.researchgate.net/profile/Hannah_Hajdik/publication/384292928_Aerodynamic_shape_optimization_of_filleted_intersections_with_surface_mesh_deformation/links/66f3238c553d245f9e34d722/Aerodynamic-shape-optimization-of-filleted-intersections-with-surface-mesh-deformation.pdf?origin=publicationDetail&_sg%5B0%5D=ODhrd5rCgzN70dkONvefQZJEsVEbgeasjgKMbgyIKq3KK9fSiy4r9cHw3P-9bThYyIHjjxKTQ2ljOyj1XdtcXw.Lg_WIu_NEgjO1PniJy7-Ykal2UPz3riDxNg_tYDgANyfa-JKB0BBjjYHqHILWYNufJckhZeZ_CJy7V6Zd7Gjjw&_sg%5B1%5D=sNROdKboKAL1ma61hJuRlJ7PQQJXQbGyXf3UD__XHEZKfrLi-9NyZU7DzDjpvu648yR3rwblgxCyfwHa3bq1LmleSbu-JRmwiByaFWsWPWqf.Lg_WIu_NEgjO1PniJy7-Ykal2UPz3riDxNg_tYDgANyfa-JKB0BBjjYHqHILWYNufJckhZeZ_CJy7V6Zd7Gjjw&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InNlYXJjaCIsInBhZ2UiOiJwdWJsaWNhdGlvbiIsInByZXZpb3VzUGFnZSI6InNlYXJjaCIsInBvc2l0aW9uIjoicGFnZUhlYWRlciJ9fQ},
     year        = {2024},
     abstract    = {Component intersections are a persistent challenge in aerodynamic design with the drag of a full configuration that is typically larger than that of its individual components. To remedy this, designers create fairings and fillets between the component surfaces to reduce this interference drag. These additions require iterative design and costly analyses to perfect, but aerodynamic shape optimization can find a better design quicker than traditional processes. For designs involving intersecting components, special handling of deformations is needed to preserve mesh quality within aerodynamic shape optimization. In this work, we present a method that uses inverse distance warping to deform a fillet between two components for the minimum drag design that retains mesh quality. We show that this method is tractable within an aerodynamic shape optimization process and results in lower drag designs than those optimized without changing the intersection region. This method
                   enables better aircraft designs through more detailed aerodynamic shape optimization.}
@@ -18317,6 +18373,14 @@
     title       = {High-fidelity aerodynamic and aerostructural optimization of {UAV} propellers using the adjoint method},
     booktitle   = {AIAA SciTech 2023 Forum},
     year        = {2023}
+}
+
+@Article{He2024,
+    author      = {Sicheng He and Eirikur Jonsson and Jichao Li and Joaquim R. R. A. Martins},
+    title       = {Adjoint-based design optimization of stability constrained systems},
+    journal     = {AIAA Journal},
+    note        = {(In press)},
+    year        = {2024}
 }
 
 @InProceedings{Hearn2016a,
@@ -22210,6 +22274,31 @@
     year        = {2024},
     abstract    = {Simultaneous design and trajectory optimization aims to find the best possible design of a dynamic engineering system, such as an aircraft, by considering the coupling between a physical system design and its trajectory. Multidisciplinary design optimization (MDO) fully considers this coupling and corresponding design trade-offs. This article discusses the computational efficiency of MDO formulations for design-trajectory optimization. We perform numerical studies to compare two MDO architectures and two design-trajectory coupling strategies on aircraft design test problems. The test problems concurrently optimize a climb trajectory, wing design based on a low-fidelity aerostructural analysis, and aircraft sizing variables. The results indicate that surrogate-based coupling is more efficient than direct coupling when there are only a few coupling variables from a trajectory to a disciplinary model, whereas direct coupling is preferable otherwise. The simultaneous
                   analysis and design (SAND) architecture outperforms the multidisciplinary feasible (MDF) architecture when using direct coupling, whereas the costs of SAND and MDF are comparable with surrogate-based coupling. The results and discussion in this paper provide general guidelines for selecting a computationally efficient MDO formulation for simultaneous design and trajectory optimization. }
+}
+
+@Article{Kaneko2024b,
+    author      = {Shugo Kaneko and Joaquim R. R. A. Martins},
+    title       = {Simultaneous optimization of design and takeoff trajectory for an {eVTOL} aircraft},
+    doi         = {10.1016/j.ast.2024.109617},
+    journal     = {Aerospace Science and Technology},
+    note        = {(In press)},
+    year        = {2024},
+    abstract    = {When designing a vertical takeoff and landing (VTOL) aircraft, it is crucial to consider various operating conditions, including hover, wing-borne cruise, and transition. Takeoff transition and climb phases are critical for vehicle conceptual design because they drive the motor and battery sizing. However, these flight phases are often ignored or simplified in the conceptual design literature due to the complexity of transition dynamics. To address this limitation, we propose simultaneous optimization of VTOL aircraft conceptual design and takeoff trajectory. Simultaneous optimization incorporates the takeoff transition and climb flight dynamics into VTOL design optimization in a fully coupled manner. This paper presents the design-trajectory optimization of lift-plus-cruise and tailsitter UAVs for delivery missions. As a result, simultaneous optimization reduces total energy consumption by 7.4% compared to uncoupled optimization and by 4.8% from iterative sequential
+                  optimization in the lift-plus-cruise configuration. It also achieves a 29% energy reduction from uncoupled optimization in the tailsitter configuration. Incorporating takeoff trajectory optimization in UAV sizing enables accurate estimation of takeoff and climb energy, which avoids undersizing or oversizing the battery. Furthermore, simultaneous optimization trades the vehicle weight penalty for a more energy-efficient climb with early transition. These system-level trade-offs can only be captured by simultaneous optimization; they cannot be captured by uncoupled or iterative sequential optimization.}
+}
+
+@Article{Kaneko2024c,
+    author      = {Shugo Kaneko and Joaquim R. R. A. Martins},
+    title       = {Simultaneous optimization of design and takeoff trajectory for an {eVTOL} aircraft},
+    doi         = {10.1016/j.ast.2024.109617},
+    journal     = {Aerospace Science and Technology},
+    keywords    = {OpenMDAO, Dymos},
+    month       = {September},
+    pages       = {109617},
+    volume      = {155},
+    year        = {2024},
+    abstract    = {When designing a vertical takeoff and landing (VTOL) aircraft, it is crucial to consider various operating conditions, including hover, wing-borne cruise, and transition. Takeoff transition and climb phases are critical for vehicle conceptual design because they drive the motor and battery sizing. However, these flight phases are often ignored or simplified in the conceptual design literature due to the complexity of transition dynamics. To address this limitation, we propose simultaneous optimization of VTOL aircraft conceptual design and takeoff trajectory. Simultaneous optimization incorporates the takeoff transition and climb flight dynamics into VTOL design optimization in a fully coupled manner. This paper presents the design-trajectory optimization of lift-plus-cruise and tailsitter UAVs for delivery missions. As a result, simultaneous optimization reduces total energy consumption by 7.4\% compared to uncoupled optimization and by 4.8\% from iterative
+                  sequential optimization in the lift-plus-cruise configuration. It also achieves a 29\% energy reduction from uncoupled optimization in the tailsitter configuration. Incorporating takeoff trajectory optimization in UAV sizing enables accurate estimation of takeoff and climb energy, which avoids undersizing or oversizing the battery. Furthermore, simultaneous optimization trades the vehicle weight penalty for a more energy-efficient climb with early transition. These system-level trade-offs can only be captured by simultaneous optimization; they cannot be captured by uncoupled or iterative sequential optimization.}
 }
 
 @Article{KANG2019,
@@ -33273,14 +33362,16 @@
     year        = {2024}
 }
 
-@Article{Ng2024a,
+@Article{Ng2025,
     author      = {Galen W. Ng and Yingqian Liao and Anil Yildirim and Joaquim R. R. A. Martins},
     title       = {Hydrostructural Optimization of Subcavitating Cambered and Symmetric Composite Foils},
     doi         = {10.1016/j.compstruct.2024.118545},
     journal     = {Composite Structures},
-    note        = {(In press)},
+    month       = {January},
+    pages       = {118545},
     pdfurl      = {https://www.researchgate.net/profile/Galen-Ng-3/publication/383646055_Hydrostructural_Optimization_of_Subcavitating_Cambered_and_Symmetric_Composite_Foils/links/66d4ccc1bd2017366766276e/Hydrostructural-Optimization-of-Subcavitating-Cambered-and-Symmetric-Composite-Foils.pdf?origin=publicationDetail&_sg%5B0%5D=DGKZ1nHaKDlrb9N1Hq1_VacyBgCQllG0qeXk-dN-BYl1qbqbMU3hiYSQsScaKDFPerPVDkVHRQwjQzjfCw5r7w.tIjCTEmqPSw48WEfiVy2qOYO5iaQG6ktm14v4Lfug4tllmXj4nzt_fOgUdYc5oZkeRRrk3XiF0WGlhYze5qmcA&_sg%5B1%5D=LgzEyPuGTDNa-UfEmGgtcR0C4ge7WSbIDePmz10zEJjJh4isSAoL848ks4nduFK_QaE5uE3Xo9oRNFK0aj5DwQY03pHEiaIJnw0ggzT1W-iY.tIjCTEmqPSw48WEfiVy2qOYO5iaQG6ktm14v4Lfug4tllmXj4nzt_fOgUdYc5oZkeRRrk3XiF0WGlhYze5qmcA&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19},
-    year        = {2024}
+    volume      = {351},
+    year        = {2025}
 }
 
 @Article{Ng:2010:A,
